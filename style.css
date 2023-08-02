@@ -65,3 +65,57 @@ button {
   padding: 5px;
   margin-left: 5px;
 }
+/*This is the homepage plus navbar css section*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #2125f7;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(6, 6, 6);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #f70005;
+  color: white;
+}
+.topnav img {
+  float: left;
+  width: 40px;
+  margin: 8px;
+}
+#logo_name {
+  float: left;
+}
+body {
+  background-image: url("images/backround.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.row {
+  display: flex; /* equal height of the children */
+}
+
+.col {
+  flex: 1; /* additionally, equal width */
+
+  padding: 1em;
+}
+.col img {
+  height: 330px;
+}

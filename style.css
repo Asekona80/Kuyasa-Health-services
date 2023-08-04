@@ -115,6 +115,68 @@ line-height: 1.5;
 line-height: 1.5;
 }
 
+/* Styling for the cards*/
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.card{
+  background-color: black;
+  width: 270px;
+  margin: 10px;
+  border-radius: 15px;
 
+}
 
+.card-image {
+  height: 300px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+
+}
+
+/*Images that will be used in the cards*/
+.img-1 {
+  background-image: url('/images/schedule.png');
+}
+
+.img2 {
+  background-image: url("/images/assistance.png");
+}
+
+.img3 {
+  background-image: url("/images/prescription.png");
+}
+
+.img4 {
+  background-image: url("/images/mental.jpg");
+}
+
+.card p{
+  padding: 10px;
+  color: white;
+}
+
+.card h2 {
+  color: white;
+}
+
+.card a{
+  background-color: red;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.card:hover{
+  background-color: rgb(red, green, blue);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}

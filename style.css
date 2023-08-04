@@ -201,6 +201,11 @@ line-height: 1.5;
 form {
   border: 3px solid #f1f1f1;
   width: 420px;
+  top: 20px;
+}
+.form h4{
+  color: #2125f7;
+  font-size: 22px;
 }
 
 /* Full-width inputs */
@@ -212,6 +217,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: content-box;
+  background: transparent;
 }
 
 /* Set a style for  button */
@@ -224,16 +230,39 @@ button {
   cursor: pointer;
   width: 100%;
   height: 30px;
-  font-size: small;
+  font-size: 15px;
   text-align: center;
-  
+  transition: 0.4 ease;
 }
 
 /* Add a hover effect for button */
 button:hover {
-  opacity: 0.8;
+  background-color: rgb(71, 66, 66);
+  color: rgb(120, 120, 241);
+}
+.button a{
+text-decoration: none;
+color:black;
+font-weight: bold;
 }
 
+.form .link{
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form.link a{
+  text-decoration: none;
+  color: #2125f7;
+}
+.logwith{
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+.icon a{
+  color: #0d0d1d;
+}
 /* Add padding to containers */
 .container {
   padding: 16px 17px;

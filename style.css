@@ -90,6 +90,9 @@ body {
 .col img {
   height: 600px;
 }
+.col p{
+  border-top-left-radius: 1px;
+}
 /* applying CSS to the about us page*/
 h2{
   color: black;
@@ -179,4 +182,72 @@ line-height: 1.5;
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
+}
+.form{
+  width: 250px;
+  height:380px ;
+  background: linear-gradient( to top,rgb(188, 188, 243));
+  position: relative;
+  top: 20px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.form h2{
+  width: 200px;
+  text-align: center;
+}  
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+  width: 420px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  height: 10px;
+  padding: 19px;
+  margin: 8px ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: content-box;
+}
+
+/* Set a style for  button */
+button {
+  background-color: #68d2fc;
+  color: white;
+  padding: 14px 10px;
+  margin: 8px ;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  font-size: small;
+  text-align: center;
+  
+}
+
+/* Add a hover effect for button */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px 17px;
+}
+
+/* The "Forgot password" text */
+span.password {
+  padding-top: 16px;
+}
+
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+  span.passw {
+    display: block;
+    float: none;
+  }
 }

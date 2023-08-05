@@ -140,20 +140,27 @@ line-height: 1.5;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
-  
+}
 
+
+.img1 {
+    background-image: url("images/schedule.png");
+  margin: 20%;
 }
 
 .img2 {
-  background-image: url("/images/assistance.png");
+  background-image: url("images/assistance.png");
+  margin: 20%;
 }
 
 .img3 {
-  background-image: url("/images/prescription.png");
+  background-image: url("images/prescription.png");
+  margin: 20%;
 }
 
 .img4 {
-  background-image: url("/images/mental.jpg");
+  background-image: url("images/mental.png");
+  margin: 20%;
 }
 
 .card p{
@@ -163,6 +170,8 @@ line-height: 1.5;
 
 .card h2 {
   color: white;
+  padding: 10%;
+  margin: 0;
 }
 
 .card a{

@@ -1,11 +1,10 @@
-
 /* this is the contact us css section*/
 .back-homepage {
   margin-top: 70px;
 }
 h1 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20px;
   padding: 5px;
 }
 p {
@@ -29,9 +28,10 @@ input {
   margin: 2px;
 }
 
-button {
-  width: 15%;
-  background-color: #4a6be5;
+.button {
+  width: 40%;
+  height: 20%;
+  background-color: #68d2fc;
   border: 2px solid transparent;
   border-radius: 5px;
   display: block;
@@ -90,48 +90,44 @@ body {
 .col img {
   height: 600px;
 }
-.col p{
+.col p {
   border-top-left-radius: 1px;
 }
 /* applying CSS to the about us page*/
-h2{
+h2 {
   color: black;
   font-size: 40px;
-  margin-top: 100px;
+  margin-top: 20px;
 }
-h3{
+h3 {
   color: black;
   font-size: 40px;
 }
 
-.vision-statement{
-  text-align: left;
-font-size: 20px;
-line-height: 1.5;
-
-
-}
-
-.mission-statement{
+.vision-statement {
   text-align: left;
   font-size: 20px;
-line-height: 1.5;
+  line-height: 1.5;
+}
+
+.mission-statement {
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 /* Styling for the cards*/
-.container{
+.container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 
-.card{
+.card {
   background-color: black;
   width: 270px;
   margin: 10px;
   border-radius: 15px;
-
 }
 
 .card-image {
@@ -142,9 +138,8 @@ line-height: 1.5;
   border-radius: 15px 15px 0 0;
 }
 
-
 .img1 {
-    background-image: url("images/schedule.png");
+  background-image: url("images/schedule.png");
   margin: 20%;
 }
 
@@ -163,7 +158,7 @@ line-height: 1.5;
   margin: 20%;
 }
 
-.card p{
+.card p {
   padding: 10px;
   color: white;
 }
@@ -174,7 +169,7 @@ line-height: 1.5;
   margin: 0;
 }
 
-.card a{
+.card a {
   background-color: red;
   color: white;
   padding: 15px 20px;
@@ -183,26 +178,29 @@ line-height: 1.5;
   margin: 20px 50px;
 }
 
-.card:hover{
+.card:hover {
   background-color: rgb(red, green, blue);
   color: white;
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
 }
-.form{
+.form {
   width: 250px;
-  height:380px ;
-  background: linear-gradient( to top,rgb(188, 188, 243));
+  height: 380px;
+  background: linear-gradient(to top, rgb(188, 188, 243));
   position: relative;
   top: 20px;
   border-radius: 10px;
   padding: 25px;
 }
-.form h2{
+.form h2 {
   width: 200px;
   text-align: center;
-}  
+}
+a {
+  text-decoration: none;
+}
 
 /* Bordered form */
 form {
@@ -210,17 +208,18 @@ form {
   width: 420px;
   top: 20px;
 }
-.form h4{
+.form h4 {
   color: #2125f7;
   font-size: 22px;
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   height: 10px;
   padding: 19px;
-  margin: 8px ;
+  margin: 8px;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: content-box;
@@ -231,15 +230,16 @@ input[type=text], input[type=password] {
 button {
   background-color: #68d2fc;
   color: white;
-  padding: 14px 10px;
-  margin: 8px ;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 8px;
   border: none;
   cursor: pointer;
   width: 100%;
-  height: 30px;
-  font-size: 15px;
+  height: 40px;
+  font-size: 20px;
   text-align: center;
-  transition: 0.4 ease;
+  transition: 0.4s ease-out;
 }
 
 /* Add a hover effect for button */
@@ -247,27 +247,26 @@ button:hover {
   background-color: rgb(71, 66, 66);
   color: rgb(120, 120, 241);
 }
-.button a{
-text-decoration: none;
-color:black;
-font-weight: bold;
+.button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-.form .link{
+.form .link {
   font-size: 17px;
   padding-top: 20px;
   text-align: center;
 }
-.form.link a{
+.form.link a {
   text-decoration: none;
   color: #2125f7;
 }
-.logwith{
+.logwith {
   padding-bottom: 10px;
   text-align: center;
-
 }
-.icon a{
+.icon a {
   color: #0d0d1d;
 }
 /* Add padding to containers */

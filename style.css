@@ -123,6 +123,7 @@ line-height: 1.5;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 
 .card{
@@ -134,16 +135,13 @@ line-height: 1.5;
 }
 
 .card-image {
-  height: 300px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
+  
 
-}
-
-/*Images that will be used in the cards*/
-.img-1 {
-  background-image: url('/images/schedule.png');
 }
 
 .img2 {

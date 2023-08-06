@@ -126,7 +126,7 @@ h3 {
 .card {
   background-color: black;
   width: 270px;
-  margin: 10px;
+  margin: 15px;
   border-radius: 15px;
 }
 
@@ -135,7 +135,7 @@ h3 {
   height: 150px;
   margin-bottom: 15px;
   background-size: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
 }
 
 .img1 {
@@ -155,7 +155,7 @@ h3 {
 
 .img4 {
   background-image: url("images/mental.png");
-  margin: 20%;
+  margin: 13%;
 }
 
 .card p {
@@ -176,6 +176,7 @@ h3 {
   display: block;
   text-align: center;
   margin: 20px 50px;
+  border-radius: 5px;
 }
 
 .card:hover {

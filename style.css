@@ -121,6 +121,7 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 
 .card {
@@ -128,6 +129,7 @@ h3 {
   width: 270px;
   margin: 15px;
   border-radius: 15px;
+  height: 650px;
 }
 
 .card-image {

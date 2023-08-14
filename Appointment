@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="style.css">
+   </head> 
+   <body>
+    <!-- Navigation bar-->
+    <div class="topnav">
+        <!-- Clinic logo & name of health center -->
+        <img src="images/cross.png" alt="Kuyasa Health Center Logo">
+        <a id="logo_name"> Kuyasa Health Center </a>
+        <a href="contact.html">Contact</a>
+        <a href="Services.html">Services</a>
+        <a href="About Us.html">About Us</a>
+        <a class="active"href="index.html">Home</a>
+    </div>
+
+    <div class="inner-layer">
+        <div class="containers">
+            <div class=" row">
+                <div class="col-sm-7">
+                    <div class="content">
+
+                    </div>
+
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-data">
+                        <div class="form-head">
+
+                        </div>
+                        <div class="form-body">
+                            <div class="row form-row">
+                                <input type="text" placeholder="Enter Full Name" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                                <input type="number" placeholder="Enter Mobile" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                                <input type="text" placeholder="Enter Email Address" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                                <input type="datetime-local" placeholder="Appointment date" class="form-control">
+                            </div>
+
+                            <h6>Address Details</h6>
+                            <div class="row form-row">
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Enter Area" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Enter City" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Enter State" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Postal Code" class="form-control">
+                                </div>
+                                
+
+                            </div>
+
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+   </body>
+</html>

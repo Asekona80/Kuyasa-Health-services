@@ -1,7 +1,10 @@
+
+
 /* this is the contact us css section*/
 .back-homepage {
   margin-top: 70px;
 }
+
 h1 {
   text-align: center;
   margin-top: 20px;
@@ -81,15 +84,16 @@ body {
 .row {
   display: flex; /* equal height of the children */
 }
-
+/* additionally, equal width */
 .col {
-  flex: 1; /* additionally, equal width */
+  flex: 1; 
 
   padding: 1em;
 }
 .col img {
   height: 600px;
 }
+<<<<<<< Updated upstream
 .col p {
   border-top-left-radius: 1px;
 }
@@ -283,9 +287,25 @@ span.password {
 }
 
 /* Change styles for span on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   span.passw {
     display: block;
-    float: none;
+    float:none;
+  }
+
+}
+@media screen and (max-width: 400px){
+.topnav a{
+  display: block;
+
+
   }
 }
+=======
+.card{
+
+  width: 350px;
+  height: 500px;
+  
+}
+>>>>>>> Stashed changes

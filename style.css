@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /* this is the contact us css section*/
@@ -424,4 +425,8 @@ button[type="submit"]:hover {
   
 >>>>>>> Stashed changes
 }
+=======
+body{
+  background: red;
+>>>>>>> 4bc9e83fed59b1202a8150f6505510c041612ce0
 }

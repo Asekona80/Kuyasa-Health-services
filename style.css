@@ -1,3 +1,18 @@
+:root{
+    --text-color: rgb(74, 121, 252);;
+    --hover-color:#FFF;
+    --neon-box-shadow:0 0.5rem #44fcfc;
+    --font-neon-text-shadow:0 0 10px rgba(185, 235, 250, 0.32),
+    0 0 20px rgba(185, 235, 250, 0.32),
+    0 0 30px rgba(185, 235, 250, 0.32),
+    0 0 40px rgba(185, 235, 250, 0.32),
+    0 0 70px rgba(1185, 235, 250, 0.32),
+    0 0 80px rgba(185, 235, 250, 0.32),
+    0 0 100px rgba(185, 235, 250, 0.32),
+    0 0 150px rgba(185, 235, 250, 0.32);
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -26,19 +41,7 @@ header{
     padding: 20px;
 }
 
-:root{
-    --text-color: rgb(74, 121, 252);;
-    --hover-color:#FFF;
-    --neon-box-shadow:0 0.5rem #44fcfc;
-    --font-neon-text-shadow:0 0 10px rgba(185, 235, 250, 0.32),
-    0 0 20px rgba(185, 235, 250, 0.32),
-    0 0 30px rgba(185, 235, 250, 0.32),
-    0 0 40px rgba(185, 235, 250, 0.32),
-    0 0 70px rgba(1185, 235, 250, 0.32),
-    0 0 80px rgba(185, 235, 250, 0.32),
-    0 0 100px rgba(185, 235, 250, 0.32),
-    0 0 150px rgba(185, 235, 250, 0.32);
-}
+
 header{
     display: flex;
     align-items: center;

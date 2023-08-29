@@ -1,7 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+   
+}
+
 body{
   background:rgb(220, 236, 250);
 }
-
 
 h2{
   margin-top: 250px;
@@ -9,8 +17,55 @@ h2{
   font-size: 3.5rem;
   font-family: "DM Serif Display";
 }
-.collapse-navbar-collapse{
-  color: azure;
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+:root{
+    --text-color: rgb(74, 121, 252);;
+    --hover-color:#FFF;
+    --neon-box-shadow:0 0.5rem #44fcfc;
+    --font-neon-text-shadow:0 0 10px rgba(185, 235, 250, 0.32),
+    0 0 20px rgba(185, 235, 250, 0.32),
+    0 0 30px rgba(185, 235, 250, 0.32),
+    0 0 40px rgba(185, 235, 250, 0.32),
+    0 0 70px rgba(1185, 235, 250, 0.32),
+    0 0 80px rgba(185, 235, 250, 0.32),
+    0 0 100px rgba(185, 235, 250, 0.32),
+    0 0 150px rgba(185, 235, 250, 0.32);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20.1px;
+    text-decoration: none;
+}
+.navbar a:hover{
+color: var(--hover-color);
+text-shadow:0 0 10px rgb(181, 245, 245),
+0 0 20px rgb(181, 245, 245),
+0 0 30px rgba(181, 245, 245),
+0 0 40px rgba(181, 245, 245),
+0 0 70px rgba(181, 245, 245),
+0 0 80px rgba(181, 245, 245),
+0 0 100px rgba(181, 245, 245),
+0 0 150px rgba(181, 245, 245); 
 }
 
   .slide-container{

@@ -10,13 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f3db6f10ca.js" crossorigin="anonymous"></script>
     <title>Kuyasa-Health-Services</title>
   </head>
-
+<body>
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cbe6fa;">
     <div class="container-fluid">
-      <img src="images/Group 1.png" alt="homepage-icon" width="40" height="40"></a>
+      <img src="images/Group 1.png" alt="homepage-icon" width="40" height="40">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,8 +42,6 @@
   <img src="images/image6.png" alt="homepage-icon" class="image-fluid rounded m-5 " width="600">
   </div>
 </div>
-<body>
-<h3 class="border bg-info mb-5">Border across the page here</h3>
   <!--Cards Content-->
   <div class="cards">
 <div class="services">
@@ -70,11 +69,8 @@
 </div>
 </div>
     <!-- Add more rows here if needed -->
-
-
-  <section>
+  
     <div class="container text-center">
-
       <div class="row justify-content-md-center">
         <div id="about-us-slogan" class="col-md-8">
           Kuyasa Health services is dedicated to advancing medical knowledge and delivering innovative treatments to improve the health and lives of our patients, striving for excellence in all aspects of healthcare.
@@ -101,21 +97,94 @@
       </div>
       <div class="col-sm">
         <img src="images/community-compassionate.png" class="about-us-images" alt="">
-        <p class="bold-p">Community-Centered Wellness:</p>
+        <p class="bold-p mb-5">Community-Centered Wellness:</p>
         <p>Our mission is to be a cornerstone of health and well-being in our community.</p>
       </div>
     </div>
   </div>
+
   <!-- <p>contact form will go here</p> -->
-  </section>
-  <h3 class="border bg-info mb-5">Border across the page here</h3>
-  <section>
-    <p>contact will go below about us</p>
-    </section>
-    <h3 class="border bg-info mb-5">Border across the page here</h3>
-  <footer>
-  <p>the social media logos will go on the footer</p>
-  </footer>
+  <div class="container-form">
+      <div class="row m-5">
+        <div class="col-xs-12 col-sm-6">
+          <h3 class="mb-3">Get in touch with us</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot mb-3"></i> 97 Durham Avenue,
+              Salt River, Cape Town,7925
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope mb-3"></i>
+              admin@kuyasahealth.org.za
+            </li>
+            <li>
+              <i class="fa-solid fa-globe mb-3"></i> www.kuyasahealth.org.za
+            </li>
+            <li><i class="fa-solid fa-phone mb-3"></i> 021 720 8989</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <form action="">
+            <div class="mb-3">
+              <label for="name" class="form-label">First Name:</label>
+              <input
+                type="text"
+                class="form-control rounded-pill"
+                id="first-name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="form-label">Last Name:</label>
+              <input
+                type="text"
+                class="form-control rounded-pill"
+                id="last-name"
+                placeholder="Enter your Last Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control rounded-pill"
+                id="email"
+                placeholder="Example@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Phone Number:</label>
+              <input
+                type="number"
+                class="form-control rounded-pill"
+                id="phone-number"
+                placeholder="+277243366789"
+              />
+            </div>
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control rounded"
+                placeholder="Write your message here...."
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Message:</label>
+            </div>
+            <button type="button" class="btn btn-primary rounded-pill me-5 mb-5">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+   <div class="social-media">
+      <footer>
+        <a href=""><i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i></a>
+        <a href=""><i class="fa-brands fa-facebook" id="facebook-icon"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter" id="twitter-icon"></i></a>
+      </footer>
+    </div>
 
 </body>
 </html>

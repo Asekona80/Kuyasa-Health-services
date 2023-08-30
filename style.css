@@ -1,49 +1,42 @@
-
-:root{
-    --text-color: rgb(74, 121, 252);;
-    --hover-color:#FFF;
-    --neon-box-shadow:0 0.5rem #44fcfc;
-    --font-neon-text-shadow:0 0 10px rgba(185, 235, 250, 0.32),
-    0 0 20px rgba(185, 235, 250, 0.32),
-    0 0 30px rgba(185, 235, 250, 0.32),
-    0 0 40px rgba(185, 235, 250, 0.32),
-    0 0 70px rgba(1185, 235, 250, 0.32),
-    0 0 80px rgba(185, 235, 250, 0.32),
-    0 0 100px rgba(185, 235, 250, 0.32),
+:root {
+  --text-color: rgb(74, 121, 252);
+  --hover-color: #fff;
+  --neon-box-shadow: 0 0.5rem #44fcfc;
+  --font-neon-text-shadow: 0 0 10px rgba(185, 235, 250, 0.32),
+    0 0 20px rgba(185, 235, 250, 0.32), 0 0 30px rgba(185, 235, 250, 0.32),
+    0 0 40px rgba(185, 235, 250, 0.32), 0 0 70px rgba(1185, 235, 250, 0.32),
+    0 0 80px rgba(185, 235, 250, 0.32), 0 0 100px rgba(185, 235, 250, 0.32),
     0 0 150px rgba(185, 235, 250, 0.32);
 }
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    scroll-behavior: smooth;
-   
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
-body{
-  background:rgb(220, 236, 250);
+body {
+  background: rgb(220, 236, 250);
   color: #154275;
 }
 /* slogan styling*/
-h2{
+h2 {
   margin-top: 250px;
   color: rgb(74, 121, 252);
   font-size: 3.5rem;
   font-family: "DM Serif Display";
 }
 /* navbar css styling */
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-    padding:0;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  padding: 0;
 }
-
 
 /* what selector is this applying to{
     align-items: center;
@@ -52,55 +45,51 @@ header{
     padding: 20px;
     padding:0;
 } */
-.navbar{
-    display: flex;
+.navbar {
+  display: flex;
 }
-.navbar a{
-    color: var(--text-color);
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 20.1px;
-    text-decoration: none;
+.navbar a {
+  color: var(--text-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20.1px;
+  text-decoration: none;
 }
-.navbar a:hover{
-color: var(--hover-color);
-text-shadow:0 0 10px rgb(181, 245, 245),
-0 0 20px rgb(181, 245, 245),
-0 0 30px rgba(181, 245, 245),
-0 0 40px rgba(181, 245, 245),
-0 0 70px rgba(181, 245, 245),
-0 0 80px rgba(181, 245, 245),
-0 0 100px rgba(181, 245, 245),
-0 0 150px rgba(181, 245, 245); 
+.navbar a:hover {
+  color: var(--hover-color);
+  text-shadow: 0 0 10px rgb(181, 245, 245), 0 0 20px rgb(181, 245, 245),
+    0 0 30px rgba(181, 245, 245), 0 0 40px rgba(181, 245, 245),
+    0 0 70px rgba(181, 245, 245), 0 0 80px rgba(181, 245, 245),
+    0 0 100px rgba(181, 245, 245), 0 0 150px rgba(181, 245, 245);
 }
 
 /* services card styling*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.cards{
+.cards {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
 }
-.cards h2{
+.cards h2 {
   font-size: 40px;
   margin: 0 0 30px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
 }
-.services{
+.services {
   display: flex;
   align-items: center;
 }
-.content{
+.content {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
@@ -108,54 +97,54 @@ text-shadow:0 0 10px rgb(181, 245, 245),
   padding: 20px;
   border: 2px solid black;
   border-radius: 4px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.content .fa{
+.content .fa {
   font-size: 70px;
   margin: 16px 0;
 }
-.content > *{
+.content > * {
   flex: 1 1 100%;
 }
-.content:hover{
+.content:hover {
   color: white;
 }
-.content:hover a{
+.content:hover a {
   border-color: white;
   background: white;
 }
-.content-1:hover{
-  border-color: #4267B2;
-  background: #4267B2;
+.content-1:hover {
+  border-color: #4267b2;
+  background: #4267b2;
 }
-.content-1:hover a{
-  color: #4267B2;
+.content-1:hover a {
+  color: #4267b2;
 }
-.content-2:hover{
-    border-color: #4267B2;
-    background: #4267B2;
+.content-2:hover {
+  border-color: #4267b2;
+  background: #4267b2;
 }
-.content-2:hover a{
+.content-2:hover a {
   color: #075e54;
 }
-.content-3:hover{
-    border-color: #4267B2;
-    background: #4267B2;
+.content-3:hover {
+  border-color: #4267b2;
+  background: #4267b2;
 }
-.content-3:hover a{
+.content-3:hover a {
   color: #075e54;
 }
-.content h2{
+.content h2 {
   font-size: 30px;
   margin: 16px 0;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.content p{
+.content p {
   font-size: 17px;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.content a{
+.content a {
   margin: 22px 0;
   background: rgb(74, 121, 252);
   color: white;
@@ -164,37 +153,37 @@ text-shadow:0 0 10px rgb(181, 245, 245),
   border: 1px solid black;
   padding: 15px 0;
   border-radius: 25px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-.content a:hover{
+.content a:hover {
   border-radius: 4px;
 }
 @media (max-width: 900px) {
-  .services{
+  .services {
     display: flex;
     flex-direction: column;
   }
 }
-#about-us-slogan{
-    font-size: 21pt;
-    font-family: "DM Serif Display";
+#about-us-slogan {
+  font-size: 21pt;
+  font-family: "DM Serif Display";
 }
-.bold-p{
-    font-weight: bold;
+.bold-p {
+  font-weight: bold;
 }
-.about-us-images{
-    height: 100px ;
+.about-us-images {
+  height: 100px;
 }
- 
-.justify-content-md-center{
-    padding-top: 40px;
-    padding-bottom: 5px;
+
+.justify-content-md-center {
+  padding-top: 40px;
+  padding-bottom: 5px;
 }
-.about-us{
-    padding-top: 30px;
+.about-us {
+  padding-top: 30px;
 }
-.bg-info{
-    background-color: #6098cc!important;
+.bg-info {
+  background-color: #6098cc !important;
 }
 
 .navbar {
@@ -202,12 +191,70 @@ text-shadow:0 0 10px rgb(181, 245, 245),
 }
 
 .navbar-scrolled {
-  background-color: rgba(0, 0, 0, 0.8); /* Change this to your desired background color */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Change this to your desired background color */
   opacity: 0.9; /* Change this to your desired opacity */
 }
-.navbar{
-  padding-top: 2px!important;
-  padding-bottom: 2px!important;
+.navbar {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
 
-  font-family: "DM Serif Display"!important;
+  font-family: "DM Serif Display" !important;
+}
+/*contact form styling*/
+.container-form {
+  margin-top: 20px;
+}
+ul {
+  list-style: none;
+}
+
+form {
+  width: 80%;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: #cbe6fa;
+  padding: 5%;
+}
+#first-name {
+  height: 40px;
+}
+#last-name {
+  height: 40px;
+}
+#email {
+  height: 40px;
+}
+#phone-number {
+  height: 40px;
+}
+button {
+  width: 100px;
+  padding: 70px;
+  margin-left: 50px;
+}
+
+/*Social media icon styling*/
+#whatsapp-icon {
+  color: #27d367;
+  font-size: 3rem;
+}
+#facebook-icon {
+  color: #1093f4;
+  font-size: 3rem;
+}
+#twitter-icon {
+  color: #0f1419;
+  font-size: 3rem;
+}
+/*media query targeting form*/
+@media screen and (max-width: 415px) {
+  form {
+    display: inline-block;
+    width: 100%;
+  }
 }

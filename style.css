@@ -263,13 +263,6 @@ button {
   color: #0f1419;
   font-size: 1.5rem;
 }
-/*media query targeting form*/
-@media screen and (max-width: 415px) {
-  form {
-    display: inline-block;
-    width: 100%;
-  }
-}
 
 /* trying to see the css cards */
 

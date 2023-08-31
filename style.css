@@ -38,7 +38,12 @@ header {
   padding: 20px;
   padding: 0;
 }
-
+.border1, .border2, .border3{
+  margin: 18%;
+}
+.border4{
+  margin: 10%;
+}
 /* what selector is this applying to{
     align-items: center;
     justify-content: space-between;
@@ -71,7 +76,7 @@ header {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .cards {
   max-width: 1100px;
@@ -248,15 +253,15 @@ button {
 /*Social media icon styling*/
 #whatsapp-icon {
   color: #27d367;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 #facebook-icon {
   color: #1093f4;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 #twitter-icon {
   color: #0f1419;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 /*media query targeting form*/
 @media screen and (max-width: 415px) {

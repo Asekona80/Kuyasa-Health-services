@@ -270,3 +270,18 @@ button {
     width: 100%;
   }
 }
+
+/* trying to see the css cards */
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.img1 {
+  background-image: url("images/appointment-24.png");
+  margin: 20%;
+}

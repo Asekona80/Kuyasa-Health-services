@@ -38,8 +38,12 @@ header {
   padding: 20px;
   padding: 0;
 }
-.border1, .border2, .border3{
-  margin: 18%;
+.border1, .border3{
+  margin: 15%;
+}
+.border2{
+  margin: 5%;
+
 }
 .border4{
   margin: 10%;

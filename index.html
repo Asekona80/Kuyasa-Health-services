@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/f3db6f10ca.js" crossorigin="anonymous"></script>
+   
     <title>Kuyasa-Health-Services</title>
   </head>
 <body>
@@ -95,7 +96,7 @@
         <p class="bold-p">Promoting Wellness for All</p>
         <p>We are dedicated to prevention, early intervention, and personalized care to ensure the well-being of our communities.</p>
       </div>
-      <div class="col-sm"> 
+     <!-- <div class="col-sm"> 
         <img src="images/compassionate.png" class="about-us-images"  alt="">
         <p class="bold-p">Compassionate Care</p>
         <p>Our mission is to deliver compassionate healthcare that focuses on treating the whole person.</p>
@@ -106,7 +107,7 @@
         <p>Our mission is to be a cornerstone of health and well-being in our community.</p>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <!-- <p>contact form will go here</p> -->
   <div class="border3"></div>
@@ -132,14 +133,15 @@
           <a href="https://www.facebook.com/profile.php?id=100095427094712"><i class="fa-brands fa-facebook" id="facebook-icon"></i></a>
           <a href=""><i class="fa-brands fa-x-twitter" id="twitter-icon"></i></a>
         </div>
+
         <div class="col-xs-12 col-sm-6">
-          <form action="">
+          <form action="index.html" onsubmit="return formValidation()">
             <div class="mb-3">
               <label for="name" class="form-label">First Name:</label>
               <input
                 type="text"
                 class="form-control rounded-pill"
-                id="first-name"
+                id="first-name" name="first-name"
                 placeholder="Enter your name"
                 required
               />
@@ -149,7 +151,7 @@
               <input
                 type="text"
                 class="form-control rounded-pill"
-                id="last-name"
+                id="last-name" name="last-name"
                 placeholder="Enter your last name"
                 required
               />
@@ -159,16 +161,16 @@
               <input
                 type="email"
                 class="form-control rounded-pill"
-                id="email"
+                id="email" name="email"
                 placeholder="Example@gmail.com"
               />
             </div>
             <div class="mb-3">
               <label for="number" class="form-label">Phone Number:</label>
               <input
-                type="number"
+                type="phone"
                 class="form-control rounded-pill"
-                id="phone-number"
+                id="phone-number" name="phone-number"
                 placeholder="+277243366789"
               />
             </div>
@@ -180,7 +182,7 @@
               ></textarea>
               <label for="floatingTextarea">Message:</label>
             </div>
-            <button type="button" class="btn btn-primary rounded-pill me-5 mb-5">
+            <button type="button"  value="button" class="btn btn-primary rounded-pill me-5 mb-5">
               Submit
             </button>
           </form>
@@ -194,6 +196,6 @@
         </p>
       </footer>
     
-<script src="script.js"></script>
+      <script src="script.js"></script>
 </body>
 </html>

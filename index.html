@@ -26,21 +26,24 @@
         <header>
           <ul class="navbar">
               <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
               <li><a href="#service">Service</a></li>
+              <li><a href="#about">About Us</a></li>
               <li><a href="#contact">Contact</a></li>
           </ul>
       </header>
       </div>
     </div>
   </nav>
-<div class="row">
-  <div class="col-6">
-    <h2 class="mt-5 text-center p-5">Elevating Health, Empowering Lives <br/>
-      Because You Deserve the Best.</h2>
+<!-- <div class="row">
+  <div class="col-12">
+ <video id="homepage-video" src="images/homepage-video.mp4" controls autoplay style="width: 100%; height: auto;"></video>   
   </div>
-  <div class="col-6">
-  <img src="images/image6.png" alt="homepage-icon" class="image-fluid rounded m-5 " width="600">
+</div> -->
+<div class="video-container">
+  <div class="row">
+    <div class="col-12">
+      <video id="homepage-video" src="images/homepage-video.mp4" controls autoplay style="width: inherit; height: calc(100vh - 56px);"></video>
+    </div>
   </div>
 </div>
   <!--Cards Content-->
@@ -135,7 +138,7 @@
         </div>
 
         <div class="col-xs-12 col-sm-6">
-          <form action="index.html" onsubmit="return formValidation()">
+          <form id="myForm">
             <div class="mb-3">
               <label for="name" class="form-label">First Name:</label>
               <input
@@ -171,7 +174,7 @@
                 type="phone"
                 class="form-control rounded-pill"
                 id="phone-number" name="phone-number"
-                placeholder="+277243366789"
+                placeholder="0731234567"
               />
             </div>
             <div class="form-floating mb-3">
@@ -182,10 +185,11 @@
               ></textarea>
               <label for="floatingTextarea">Message:</label>
             </div>
-            <button type="button"  value="button" class="btn btn-primary rounded-pill me-5 mb-5">
+            <button type="submit" id="button" value="button" class="btn btn-primary rounded-pill me-5 mb-5">
               Submit
             </button>
           </form>
+          <div id="errorMessages"></div>
         </div>
       </div>
     </div>

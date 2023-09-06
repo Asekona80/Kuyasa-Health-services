@@ -286,7 +286,12 @@ button {
 .img1 {
   background-image: url("images/appointment-24.png");
   margin: 20%;
-}
-#homepage-video {
 
+}
+@media (max-width: 768px) {
+
+}
+  
+@media (max-width: 480px) {
+  
 }

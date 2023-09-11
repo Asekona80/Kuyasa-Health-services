@@ -83,6 +83,7 @@
 body {
   background: rgb(220, 236, 250);
   color: #154275;
+  display: grid;
 }
 
 .content h2 {
@@ -223,123 +224,140 @@ button[type="submit"]:hover {
 
 /* This is the styling for the footer only */
 
-.footer::before::after{
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.footer{
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  display: grid;
-  font-size: 14px;
-}
-
-footer{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #9b9b9b;
-  line-height: 3.8;
-  font-size: 80px;
-  text-transform: uppercase;
-  font-weight: bold;
-  flex-flow: row wrap;
-  padding: 50px;
-  color: #fff;
+/* Footer styling */
+.footer {
   background-color: #011c39;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.footer-left{
-  margin-right: 1.25em;
-  margin-bottom: 2em;
+.footer-left {
+  flex: 1;
+  margin-right: 20px;
+  max-width: 25%;
 }
 
-.footer-left img{
-  width: 25%;
+.footer-left img {
+  max-width: 100%;
 }
 
-h2{
-  font-weight:600;
-  font-size: 17px;
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
+  justify-content: space-between; /* Distribute space between sections */
 }
 
-.footer ul{
+.footer-links,
+.footer-address {
+  flex-basis: calc(50% - 20px); /* Set the width of each section to 50% with some spacing */
+}
+
+.footer-links h2,
+.footer-address h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul,
+.footer-address ul {
   list-style: none;
   padding-left: 0;
 }
 
-.footer li{
-  line-height: 2em;
+.footer-links li,
+.footer-address li {
+  margin-bottom: 5px;
 }
 
-.footer a{
+.footer-links a,
+.footer-address a {
   text-decoration: none;
-}
-
-.footer-right{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.footer-right > *{
-  flex: 1 50%;
-  margin-right: 1.25em;
-}
-
-.box a{
-  color: #999;;
-}
-
-.footer-bottom{
-  text-align: center;
-  color: #999;
-  padding-top: 50px;
-}
-
-.footer-left p{
-  padding-right: 20%;
   color: #999;
 }
 
-.socials a{
+
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #999;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
   background: #364a62;
   width: 40px;
   height: 40px;
   display: inline-block;
   margin-right: 10px;
-
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
 }
 
-.socials a i{
+.socials a i {
   color: #e7f2f4;
-  padding: 10px 12px;
+  font-size: 20px;
 }
 
-@media screen and (min-width: 600px){
-  .footer-right > * {
-    flex: 1;
+.footer-bottom {
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 15px;
+    text-align: center;
   }
   .footer-left {
-    flex: 1 0px;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   .footer-right {
-    flex: 2 0px;
+    max-width: 100%;
+  }
+  body {
+    font-size: 16px;
   }
 }
 
-@media (max-width: 600px) {
-  .footer{
-    padding: 15px;
-  }
-  body{
-    font-size: 55px;}
-  
+/* API Map */
+
+.map img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px; /* Adjust the spacing as needed */
 }

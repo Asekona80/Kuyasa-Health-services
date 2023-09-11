@@ -5,58 +5,67 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   list-style: none;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
 /* navbar css styling */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#hero{
   width: 100%;
-  padding: 20px;
-  padding: 0;
+  height: 1000px;
+  background: url("images/medical-1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 32px;
 }
+.container-h{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.navbar .logo{
+  margin-right: 20%;
+  margin-bottom: 20%;
+}
+
+.navbar .menu a {
+  color: #ffffff ;
+  margin-left: 20px;
+  font-size: 18px ;
+  font-weight: bold;
+  transition-duration: 0.4sS;
+  letter-spacing: 0.54px;
+}
+.navbar .menu a:hover{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+.btn-box{
+  width: 15%;
+  margin-top: 250px;
+  background: #ffffff;
+  padding:14px  20px;
+  border-radius: 50px;
+  color: #2e2c2c;
+}
+.hero-desc .btn-join{
+  margin-top: 60px;
+}
+
 .border1, .border3{
   margin: 15%;
 }
+
 .border2{
   margin: 5%;
 
 }
 .border4{
   margin: 10%;
-}
-.navbar {
-
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it's above other content */
-}
-.navbar a {
-  color: var(--text-color);
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 20.1px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: var(--hover-color);
-  text-shadow: 0 0 10px rgb(181, 245, 245), 0 0 20px rgb(181, 245, 245),
-    0 0 30px rgba(181, 245, 245), 0 0 40px rgba(181, 245, 245),
-    0 0 70px rgba(181, 245, 245), 0 0 80px rgba(181, 245, 245),
-    0 0 100px rgba(181, 245, 245), 0 0 150px rgba(181, 245, 245);
-}
-
-:root {
-  --text-color: rgb(74, 121, 252);
-  --hover-color: #fff;
-  --neon-box-shadow: 0 0.5rem #44fcfc;
-  --font-neon-text-shadow: 0 0 10px rgba(185, 235, 250, 0.32),
-    0 0 20px rgba(185, 235, 250, 0.32), 0 0 30px rgba(185, 235, 250, 0.32),
-    0 0 40px rgba(185, 235, 250, 0.32), 0 0 70px rgba(1185, 235, 250, 0.32),
-    0 0 80px rgba(185, 235, 250, 0.32), 0 0 100px rgba(185, 235, 250, 0.32),
-    0 0 150px rgba(185, 235, 250, 0.32);
 }
 
 body {

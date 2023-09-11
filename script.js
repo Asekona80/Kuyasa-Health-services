@@ -10,18 +10,14 @@ function validateForm(event) {
   errorMessages.innerHTML = '';
 
   // Get form values
-  const first_name=document.getElementById('first-name').value.trim();
-  const last_name=document.getElementById('last-name').value.trim();
+  const name=document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
-  const number = document.getElementById('phone-number').value.trim();
-  const message = document.getElementById('floatingTextarea').value.trim();
+  const number = document.getElementById('number').value.trim();
+  const message = document.getElementById('message').value.trim();
 
   // Validation rules (you can customize these)
-  if (first_name === '') {
-    displayError('first Name is required');
-  }
-  if (last_name === '') {
-    displayError('last Name is required');
+  if (name === '') {
+    displayError('Name is required');
   }
 
   if (email === '') {
@@ -66,4 +62,4 @@ function isValidNumber(number) {
     return phonePattern.test(number);
   }
 // Attach the form validation function to the form's submit event
-form.addEventListener('submit', validateForm);
+form.addEventListener('submit', validateForm)

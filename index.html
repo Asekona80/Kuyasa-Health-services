@@ -9,6 +9,28 @@
     <script src="https://kit.fontawesome.com/f3db6f10ca.js" crossorigin="anonymous"></script>
     <title>Kuyasa-Health-Services</title>
 </head>
+<style>
+    /* Styling for the back to top button */
+    .scrollTop{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        padding: 10px 15px;
+        background-color: #053067;
+        color: #fff;
+        border-radius: 5px;
+        border-radius: 1px solid #fff;
+        cursor: pointer;
+        transition: all 0.5s ease 0s;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        
+    }
+    .scrollTop:hover{
+        background-color: #f7f7f7;
+        color: #000;
+    }
+</style>
 <body>
   <!--Hero section and navabr-->
   <section id="hero">
@@ -39,7 +61,7 @@
     </div>
   </section>
     <!-- slideshow for services -->
-  >
+  
     
     <!-- About Us Section -->
     <div class="border2"> <a href="" id="about">About us</a></div>
@@ -124,5 +146,13 @@
  <!-- JavaScript File -->
  <script src="script.js"></script>
 
+ <!-- Back to top button script-->
+<div onclick="scrollToTop()" class="scrollTop"> Top</div>
+<script>
+    function scrollToTop(){
+        window.scrollTo(0, 0);
+    }
+
+</script>
 </body>
 </html>

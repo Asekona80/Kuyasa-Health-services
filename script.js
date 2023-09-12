@@ -1,3 +1,39 @@
+//slideshow code
+const cards = document.querySelectorAll('.card');
+const paginationButtons = document.querySelectorAll('.pagination button');
+let currentIndex = 0;
+
+function showCard(index) {
+  cards.forEach((card, i) => {
+    if (i === index) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+function nextCard() {
+  currentIndex = (currentIndex + 1) % cards.length;
+  showCard(currentIndex);
+}
+
+function previousCard() {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  showCard(currentIndex);
+}
+
+// Show the initial card
+showCard(currentIndex);
+
+// Auto-advance to the next card every 5 seconds (adjust as needed)
+setInterval(nextCard, 5000); // Change the interval duration (in milliseconds) as needed
+
+
+
+
+
+
 // Get a reference to the form and error message container
 const form = document.getElementById('myForm');
 const errorMessages = document.getElementById('errorMessages');

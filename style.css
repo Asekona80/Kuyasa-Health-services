@@ -7,6 +7,11 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+body {
+  background: rgb(220, 236, 250);
+
+  display: grid;
+}
 /* navbar css styling */
 #hero{
   width: 100%;
@@ -30,6 +35,7 @@
   margin-bottom: 20%;
   margin-left: 20px;
 }
+
 
 .navbar .menu a {
   color: #ffffff ;
@@ -72,7 +78,7 @@
 }
 
 .border2{
-  margin: 5%;
+  margin: 0;
   text-align: center;
   font-size: 50px;
 }
@@ -80,37 +86,77 @@
   margin: 10%;
 }
 
-body {
-  background: rgb(220, 236, 250);
-  color: #154275;
-  display: grid;
+
+/* Styling for Services and The Cards/slideshow*/
+.services{
+  background-color: #B9D9EB;
+  padding: 10px;
 }
 
-.content h2 {
-  font-size: 30px;
-  margin: 16px 0;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.container-services {
+  margin:10%;
+  box-shadow: 4px 4px 8px 4px rgba(53, 172, 228, 0.2);
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-right: 15%;
+  margin-left: 22%;
+  text-align: center;
+  background-color: #fff;
 }
-.content p {
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  flex-direction: row;
+  height:400px;
+  padding: 10px;
+ 
 }
-.content a {
-  margin: 22px 0;
-  background: rgb(74, 121, 252);
-  color: white;
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img {
+  margin-right: 80%;
+  border-radius: 1rem;
+
+}
+
+.content1 p,
+h3,
+a,
+.content2 p,
+h3,
+a,
+.content3 p,
+h3,
+a,
+.content4 p,
+h3,
+a {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  text-align: center;
+  padding: 20px;
+}
+.content1 a,
+.content2 a,
+.content3 a,
+.content4 a {
   text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid black;
-  padding: 15px 0;
-  border-radius: 25px;
-  transition: 0.3s ease;
+  color: #000;
+  background-color: #4cb6e8;
+  border: 2px solid #4cb6e8;
+  border-radius: 1.5rem;
+  padding: 10px;
+  font-size: 1.5rem;
 }
-.content a:hover {
-  border-radius: 4px;
-}
-
+.container-services img {
+  max-width: 100%;
+  height: auto;
+ 
+  }
 /* Events page styling */
 
 
@@ -125,19 +171,8 @@ background-color: #011c39;
 }
 /* trying to see the css cards */
 
-.card-image {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 15px;
-  background-size: cover;
-  border-radius: 15px;
-}
 
-.img1 {
-  background-image: url("images/appointment-24.png");
-  margin: 20%;
 
-}
 /**/
 #about-us-slogan {
   font-size: 21pt;
@@ -221,6 +256,43 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+/* join us form*/
+.join-form {
+  background-color: #B9D9EB;
+  border-radius: 50px;
+  padding: 20px;
+  width: 40%;
+  margin-left:25%;
+  margin-top: 100px;
+  padding: 20px;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.join-form h5 {
+  margin-top: 0;
+}
+input, select {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.benefits {
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 /*Social media icon styling*/
 #whatsapp-icon {
   color: #27d367;
@@ -238,11 +310,7 @@ button[type="submit"]:hover {
 /* This is the styling for the footer only */
 
 /* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /* Footer styling */
 .footer {

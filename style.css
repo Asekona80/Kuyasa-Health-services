@@ -7,6 +7,11 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+body {
+  background: rgb(220, 236, 250);
+
+  display: grid;
+}
 /* navbar css styling */
 #hero{
   width: 100%;
@@ -73,7 +78,7 @@
 }
 
 .border2{
-  margin: 5%;
+  margin: 0;
   text-align: center;
   font-size: 50px;
 }
@@ -81,13 +86,12 @@
   margin: 10%;
 }
 
-body {
-  background: rgb(220, 236, 250);
-  color: #154275;
-  display: grid;
-}
 
 /* Styling for Services and The Cards/slideshow*/
+.services{
+  background-color: #B9D9EB;
+  padding: 10px;
+}
 
 .container-services {
   margin:10%;
@@ -153,11 +157,6 @@ a {
   height: auto;
  
   }
-  
-
-
-
-
 /* Events page styling */
 
 

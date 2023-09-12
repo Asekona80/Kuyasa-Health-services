@@ -221,6 +221,52 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+/* join us form*/
+.join-form {
+  background-color: #B9D9EB;
+  border-radius: 50px;
+  padding: 20px;
+  width: 40%;
+  margin-left:25%;
+  margin-top: 100px;
+  padding: 20px;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.join-form h5 {
+  margin-top: 0;
+}
+input, select {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.benefits {
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+form{
+
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: #B9D9EB;
+
+ 
+
+}
+
 /*Social media icon styling*/
 #whatsapp-icon {
   color: #27d367;

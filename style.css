@@ -30,6 +30,11 @@
   margin-bottom: 20%;
   margin-left: 20px;
 }
+.logo{
+  margin-bottom: 20%;
+  margin-left: 20px;
+  width: 20px;
+}
 
 .navbar .menu a {
   color: #ffffff ;
@@ -256,15 +261,6 @@ button {
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-form{
-
-  border-radius: 50px;
-  border: 1px solid transparent;
-  background-color: #B9D9EB;
-
- 
-
 }
 
 /*Social media icon styling*/

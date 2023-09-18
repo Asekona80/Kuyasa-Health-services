@@ -76,9 +76,7 @@ body {
 }
 
 .border1, .border3{
-  margin: 0;
-  text-align: center;
-  font-size: 50px;
+  margin: 15%;
 }
 
 .border2{
@@ -250,7 +248,7 @@ a {
   padding-bottom: 0;
 }
 
-.additional-info, .info {
+.additional-info .info {
   font-size: 0.9em;
   margin-bottom: 20px;
   text-align: center;

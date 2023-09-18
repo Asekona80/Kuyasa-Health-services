@@ -99,3 +99,24 @@ function isValidNumber(number) {
   }
 // Attach the form validation function to the form's submit event
 form.addEventListener('submit', validateForm)
+
+
+   // script.js
+
+   function updateCurrentTime() {
+    const currentTimeElement = document.getElementById("current-time");
+
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, "0"); // Add leading zero if needed
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const seconds = now.getSeconds().toString().padStart(2, "0");
+
+    const currentTimeString = `${hours}:${minutes}:${seconds}`;
+    currentTimeElement.textContent = `Current Time: ${currentTimeString}`;
+}
+
+// Update the current time every second
+setInterval(updateCurrentTime, 1000);
+
+// Call the function immediately to set the initial time
+updateCurrentTime();

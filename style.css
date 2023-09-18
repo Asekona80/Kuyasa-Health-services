@@ -55,20 +55,24 @@ body {
   margin-bottom: 50px;
 }
 .btn-box  {
-  width: 10%;
+  width: 11%;
   background: #ffffff;
   padding:25px;
   border: #ffffff;
   border-radius: 25px;
   margin-left: 100px;
   text-align: center;
+
+  
 }
 .btn-box a{
   color: #2e2c2c;
+
 }
 
 .btn-box .btn-join{
   margin-top: 60px;
+
 }
 
 .border1, .border3{

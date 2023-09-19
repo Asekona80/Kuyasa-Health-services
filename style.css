@@ -136,7 +136,6 @@ body {
   .bold-p {
     font-weight: bold;
   }
-
   .about-us-images {
     cursor: pointer;
     transition: transform 0.2s;
@@ -178,22 +177,6 @@ body {
 .articleText{
   font-size: 1.5rem;
 }
-<<<<<<< Updated upstream
-.container-services img {
-  max-width: 100%;
- 
-  }
-=======
-
-
-/* Events page styling */
->>>>>>> Stashed changes
-
-
-/* trying to see the css cards */
-
-
-
 /**/
 #about-us-slogan {
   font-size: 21pt;

@@ -1,4 +1,4 @@
-//slideshow code
+//slideshow code//
 const cards = document.querySelectorAll('.card');
 const paginationButtons = document.querySelectorAll('.pagination button');
 let currentIndex = 0;

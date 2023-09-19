@@ -144,7 +144,7 @@ body {
 /* Styling for Services and The Cards/slideshow*/
 .services{
   background-color: #B9D9EB;
- margin: 10px;
+ margin: 0 ;
 }
 
 .container-services {
@@ -156,6 +156,7 @@ body {
   margin-left: 22%;
   text-align: center;
   background-color: #fff;
+  padding:3rem;
 }
 .card1,
 .card2,
@@ -208,7 +209,6 @@ a {
 }
 .container-services img {
   max-width: 100%;
-  height: auto;
  
   }
 /* Events page styling */

@@ -7,6 +7,10 @@
     <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://kit.fontawesome.com/f3db6f10ca.js" crossorigin="anonymous"></script>
     <title>Kuyasa-Health-Services</title>
 </head>
@@ -104,25 +108,89 @@
       
 <!-- slideshow for services -->
 <section class="services" >
-  <div class="border2"> <span id="services">Our Services</span></div>
-  
-  <div class="wrapper">
-      <div class="Image">
-          <figure>
-              <div class="image-container ">
-            <div class="image-responsive">
-                <img data-image="responsiveImage" src="images/support.jpg"class="" width="500">
-            </div>
-</div>
-          </figure>
-        </div>
-        <div class="article-info">
-          
-          <div class="articleTitle">Mental Support</div>
+  <div class="border2"> <span id="services">Our Services</span>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+          <div class="mySlides fade">
+              <div class="wrapper">
+                  <div class="Image">
+                      <figure>
+                          <div class="image-container ">
+                              <div class="image-responsive">
+                                  <img data-image="responsiveImage" src="images/support.jpg" class="" width="500">
+                              </div>
+                          </div>
+                      </figure>
+                  </div>
+                  <div class="article-info">
+                      <div class="articleTitle"> Support</div>
+                      <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a step towards healing, and know that you are not alone in this journey."</div>
+                  </div>
+              </div>
+          </div>
 
-          <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a step towards healing, and know that you are not alone in this journey."</div>
+          <div class="mySlides fade">
+              <div class="wrapper">
+                  <div class="Image">
+                      <figure>
+                          <div class="image-container ">
+                              <div class="image-responsive">
+                                  <img data-image="responsiveImage" src="images/mental.jpg" class="" width="500">
+                              </div>
+                          </div>
+                      </figure>
+                  </div>
+                  <div class="article-info">
+                      <div class="articleTitle">Mental Support</div>
+                      <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a step towards healing, and know that you are not alone in this journey."</div>
+                  </div>
+              </div>
+          </div>
 
-        </div>
+          <div class="mySlides fade">
+              <div class="wrapper">
+                  <div class="Image">
+                      <figure>
+                          <div class="image-container ">
+                              <div class="image-responsive">
+                                  <img data-image="responsiveImage" src="images/schedule.jpg" class="" width="500">
+                              </div>
+                          </div>
+                      </figure>
+                  </div>
+                  <div class="article-info">
+                      <div class="articleTitle">Schedule</div>
+                      <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a step towards healing, and know that you are not alone in this journey."</div>
+                  </div>
+              </div>
+          </div>
+          <div class="mySlides fade">
+              <div class="wrapper">
+                  <div class="Image">
+                      <figure>
+                          <div class="image-container ">
+                              <div class="image-responsive">
+                                  <img data-image="responsiveImage" src="images/location.jpg" class="" width="500">
+                              </div>
+                          </div>
+                      </figure>
+                  </div>
+                  <div class="article-info">
+                      <div class="articleTitle">Location</div>
+                      <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a step towards healing, and know that you are not alone in this journey."</div>
+                  </div>
+              </div>
+          </div>
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)">&#x2022;</span>
+              <span class="dot" onclick="currentSlide(2)">&#x2022;</span>
+              <span class="dot" onclick="currentSlide(3)">&#x2022;</span>
+              <span class="dot" onclick="currentSlide(4)">&#x2022;</span>
+          </div>
+          <!-- Next and previous buttons -->
+<!--          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+<!--          <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
       </div>
     </div>
    
@@ -134,12 +202,15 @@
     <!-- Contact Form Section -->
     <div class="border3"></div>
      <!-- Contact Form -->
-     
+
      <div class="container-form" ><a href="" id="contact"></a>
        <div class="form-photo">
      <img src="images/image5.jpg" alt="" width="600">
     </div>
-       
+     <div class="container-form" ><a href="" id="contact"></a>
+
+        <h1 >Contact Us</h1>
+
         <form id="myForm" class="form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" >
@@ -161,7 +232,7 @@
   
     <footer class="footer">
         <div class="footer-left">
-            <img src="images\Group 1.png" alt="Logo1" width="15%">
+            <img src="images/Group 1.png" alt="Logo1" width="15%">
             <p> Kuyasa Health services is dedicated to advancing medical knowledge and delivering innovative treatments to improve the health and lives of our patients, striving for excellence in all aspects of healthcare.</p>
             <div class="socials">
                 <a href="#"><i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i></a>
@@ -203,8 +274,48 @@
             <p> Created by The Bug Slayers. &copy; All rights reserved 2023.</p>
         </div>
     </footer>
-    
+        <!-- CHAT BAR BLOCK -->
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Chat with us!
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            </button>
 
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                           placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                       onclick="sendButton()"></i>
+                                </div>
+                            </div>
+
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
  <!-- JavaScript File -->
  <script src="script.js"></script>
 
@@ -227,5 +338,8 @@ images.forEach(image => {
     });
 });
 </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="static/javascripts/responses.js"></script>
+        <script src="static/javascripts/chat.js"></script>
 </body>
 </html>

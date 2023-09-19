@@ -12,6 +12,7 @@ body {
 
   display: grid;
 }
+
 /* navbar css styling */
 #hero{
   width: 100%;
@@ -630,3 +631,4 @@ map img {
   height: auto;
   margin-top: 10px;
 }
+

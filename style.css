@@ -133,6 +133,14 @@ body {
   .bold-p {
     font-weight: bold;
   }
+
+  .about-us-images {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.image-hover:hover {
+  transform: scale(1.1); /* Increase the size of the image on hover */
+}
 /* Styling for Services and The Cards/slideshow*/
 .services{
   background-color: #B9D9EB;
@@ -487,10 +495,6 @@ button {
 }
 
 /* This is the styling for the footer only */
-
-/* Reset some default styles */
-
-
 /* Footer styling */
 .footer {
   background-color: #011c39;

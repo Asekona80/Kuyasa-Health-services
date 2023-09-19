@@ -66,7 +66,7 @@
     
     <!-- About Us Section -->
     <section class="aboutUs" >
-      <div class="border1"> <span id="About-us">About Us</span></div>
+      <div class="border1"> <span id="about">About Us</span></div>
       <div class="Vision">
         <p> Kuyasa Health services is dedicated to advancing medical knowledge and delivering innovative treatments to improve the health and lives of our patients, striving for excellence in all aspects of healthcare.</p>
         <p>Dedicated to innovation and compassion, we strive to improve lives through personalized care.</p>
@@ -281,7 +281,18 @@
     function scrollToTop(){
         window.scrollTo(0, 0);
     }
+ 
+    const images = document.querySelectorAll('.about-us-images');
 
+images.forEach(image => {
+    image.addEventListener('mouseenter', () => {
+        image.classList.add('image-hover'); // Add the hover class
+    });
+
+    image.addEventListener('mouseleave', () => {
+        image.classList.remove('image-hover'); // Remove the hover class
+    });
+});
 </script>
 </body>
 </html>

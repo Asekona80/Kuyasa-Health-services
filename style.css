@@ -92,6 +92,10 @@ body {
   color: #053067;
 
 }
+.border3, .border4{
+  margin: 1%;
+}
+
 /* about us Styling*/
 .aboutUs {
   margin:2%;
@@ -177,6 +181,7 @@ body {
 .articleText{
   font-size: 1.5rem;
 }
+<<<<<<< Updated upstream
 /**/
 #about-us-slogan {
   font-size: 21pt;
@@ -199,11 +204,20 @@ body {
 .bg-info {
   background-color: #6098cc !important;
 }
+=======
+>>>>>>> Stashed changes
 
 /*contact form styling*/
-.container-form {
-  margin-top: 20px;
+.form-photo{
+  display: flex;
+  justify-content: space-between;
 }
+.form-photo img{
+  border: 2px solid red;
+  margin-right: 50%;
+  flex:1;
+  }
+
 ul {
   list-style: none;
 }
@@ -211,24 +225,25 @@ ul {
   max-width: 600px;
   padding: 20px;
   margin-left: 35%;
-  border-radius: 5px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+  flex:2;
 }
 
 h1 {
   color: #053067;
-  margin-right: 10%;
+  margin-left: 65%;
 }
 
 form {
-  width: 80%;
-  border-radius: 50px;
-  border: 1px solid transparent;
   background-color: #B9D9EB;
-  padding: 5%;
-  margin-left:10% ;
+  border-radius: 50px;
+  padding: 20px;
+  width: 80%;
+  margin-left:48%;
+  margin-top: 30px;
+  padding: 20px;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -261,6 +276,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+.
 /* join us form*/
 .join-form {
   background-color: #B9D9EB;
@@ -371,7 +387,9 @@ button {
   text-decoration: none;
   color: #999;
 }
-
+.footer p{
+  margin: 15px;
+}
 
 h2 {
   font-weight: bold;
@@ -393,12 +411,13 @@ h2 {
   color: #999;
 }
 
-.socials {
+#whatsapp-icon, #facebook-icon, #twitter-icon {
   margin-bottom: 55px;
+  font-size: 2rem;
+  margin-top: 50px;
 }
 
 .socials a {
-  background: #364a62;
   width: 40px;
   height: 40px;
   display: inline-block;

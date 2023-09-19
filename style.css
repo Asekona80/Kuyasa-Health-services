@@ -81,13 +81,15 @@ body {
   text-align: center;
   font-size: 50px;
   font-weight: 900;
+  color: #053067;
 }
 
 .border2 {
-  margin: 4%;
+  margin-top: 2%;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
+  color: #053067;
 
 }
 /* about us Styling*/
@@ -143,75 +145,49 @@ body {
   transform: scale(1.1); /* Increase the size of the image on hover */
 }
 /* Styling for Services and The Cards/slideshow*/
+
 .services{
-  background-color: #B9D9EB;
- margin: 0 ;
+  background: #B9D9EB;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
-
-.container-services {
-  margin:10%;
-  box-shadow: 4px 4px 8px 4px rgba(53, 172, 228, 0.2);
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin-right: 15%;
-  margin-left: 22%;
-  text-align: center;
+.wrapper{
+  width: 80%;
+  margin: 3%;
+  margin-left:10rem;
   background-color: #fff;
-  padding:3rem;
+  padding: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.card1,
-.card2,
-.card3,
-.card4 {
-  display: flex;
-  flex-direction: row;
-  height:400px;
-  padding: 10px;
- 
+.image-responsive{
+  padding: 1.5rem;
 }
-
-.card1 img,
-.card2 img,
-.card3 img,
-.card4 img {
-  margin-right: 80%;
-  border-radius: 1rem;
+.article-info{
+  margin-right:0;
+  padding: 2rem;
+}
+.articleTitle{
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+  color: #534C46;
 
 }
-
-.content1 p,
-h3,
-a,
-.content2 p,
-h3,
-a,
-.content3 p,
-h3,
-a,
-.content4 p,
-h3,
-a {
-  font-size: 1.5rem;
-  margin-left: 5px;
-  text-align: center;
-  padding: 20px;
-}
-.content1 a,
-.content2 a,
-.content3 a,
-.content4 a {
-  text-decoration: none;
-  color: #000;
-  background-color: #4cb6e8;
-  border: 2px solid #4cb6e8;
-  border-radius: 1.5rem;
-  padding: 10px;
+.articleText{
   font-size: 1.5rem;
 }
+<<<<<<< Updated upstream
 .container-services img {
   max-width: 100%;
  
   }
+=======
+
+
+/* Events page styling */
+>>>>>>> Stashed changes
 
 
 /* trying to see the css cards */
@@ -259,7 +235,7 @@ ul {
 }
 
 h1 {
-  color: #333;
+  color: #053067;
   margin-right: 10%;
 }
 

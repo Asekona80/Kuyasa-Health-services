@@ -7,6 +7,7 @@
     <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/f3db6f10ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="events.css">
     <title>Kuyasa-Health-Services</title>
 </head>
 <style>
@@ -31,57 +32,39 @@
     }
 
 /* The css code for the cards */
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
 
-body {
-  min-height: 100vh;
-  width: 100%;
-  font-size: 16px;
-  background: #eee;
-  color: #777;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
+#more {display: none;}
 </style>
+
 <body>
-    
-  <!--Hero section and navabr-->
-  <section id="hero-colour">
-       <!--  Events Card 1 -->
-    <div class="container-events">
-        <div class="item-container-events">
-            <div class="img-container-events">
-                <img src="images/testing2.jpg" alt="Event image">
+    <div class="container">
+        <div class="item-container">
+            <div class="img-container">
+                <img src="./images/img1.jpg" alt="Event image">
             </div>
-    
-            <div class="body-container-events">
-                <div class="overlay-events"></div>
-    
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
                 <div class="event-info">
-                    <p class="title-events">Title</p>
+                    <p class="title">event</p>
                     <div class="separator"></div>
-                    <p class="info">Address</p>
+                    <p class="info">area</p>
                     <p class="price">price</p>
-    
+
                     <div class="additional-info">
                         <p class="info">
                             <i class="fas fa-map-marker-alt"></i>
-                          Venue
+                            address
                         </p>
                         <p class="info">
                             <i class="far fa-calendar-alt"></i>
-                           Date and time
+                         time
                         </p>
-    
+
                         <p class="info description">
-                         This is where the information about the event will be<span>more...</span>
+                            information <span>more...</span>
                         </p>
                     </div>
                 </div>
@@ -89,56 +72,20 @@ body {
             </div>
         </div>
 
-        <!-- Events Card 2 -->
-        <div class="container-events">
-            <div class="item-container-events">
-                <div class="img-container-events">
-                    <img src="images/testing2.jpg" alt="Event image">
-                </div>
-        
-                <div class="body-container-events">
-                    <div class="overlay-events"></div>
-        
-                    <div class="event-info">
-                        <p class="title-events">Title</p>
-                        <div class="separator"></div>
-                        <p class="info">Address</p>
-                        <p class="price">price</p>
-        
-                        <div class="additional-info">
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                              Venue
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                               Date and time
-                            </p>
-        
-                            <p class="info description">
-                             This is where the information about the event will be<span>more...</span>
-                            </p>
-                        </div>
-                    </div>
-                    <button class="action">Book it</button>
-                </div>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="images/testing2.jpg" alt="Event image">
             </div>
 
-         <!--  Events Card 3 -->
-        <div class="item-container-events">
-            <div class="img-container-events">
-                <img src="images/event-img.jpg" alt="Event image">
-            </div>
-    
-            <div class="body-container-events">
-                <div class="overlay-events"></div>
-    
+            <div class="body-container">
+                <div class="overlay"></div>
+
                 <div class="event-info">
-                    <p class="title-events">Title</p>
+                    <p class="title">name</p>
                     <div class="separator"></div>
-                    <p class="info">Address</p>
-                    <p class="price">Price</p>
-    
+                    <p class="info">area</p>
+                    <p class="price"></p>
+
                     <div class="additional-info">
                         <p class="info">
                             <i class="fas fa-map-marker-alt"></i>
@@ -148,29 +95,83 @@ body {
                             <i class="far fa-calendar-alt"></i>
                             10:00
                         </p>
-    
+
                         <p class="info description">
-                            We are proud to partner with Kuyasa Health Service to provide this invaluable learning opportunity to medical students.  <span id="dots">more ...</span><span id="more">
-                            Kuyasa Health Service is dedicated to improving healthcare access and services in our community, and they share our commitment
-                            to nurturing future healthcare professionals.
+                            We are proud to partner with Kuyasa Health Service to provide this invaluable learning opportunity to medical students.<span>more...</span>
                         </p>
                     </div>
                 </div>
                 <button class="action">Book it</button>
             </div>
         </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="images/" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">event</p>
+                    <div class="separator"></div>
+                    <p class="info">address</p>
+                    <p class="price">price</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                           address
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            time
+                        </p>
+
+                        <p class="info description">
+                            Information <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action">Book it</button>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="./images/img4.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">event</p>
+                    <div class="separator"></div>
+                    <p class="info">place</p>
+                    <p class="price">price</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            place
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                           time
+                        </p>
+
+                        <p class="info description">
+                            Information <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action">Book it</button>
+            </div>
+        </div>
+    </div>
     
-       
-    </section>
-
-<!-- Event cards -->
-
-     <!-- Back to top button script-->
-<div onclick="scrollToTop()" class="scrollTop"> Top</div>
-<script>
-    function scrollToTop(){
-    window.scrollTo(0, 0);
-}
-</script>
 </body>
+</html>
 </html>

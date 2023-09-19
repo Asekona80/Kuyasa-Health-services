@@ -137,7 +137,7 @@ body {
 /* Styling for Services and The Cards/slideshow*/
 
 .services {
-  background: #b9d9eb;
+  background: #a8d5e8;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 }
@@ -169,40 +169,26 @@ body {
 }
 
 /*contact form styling*/
-.form-photo {
-  display: flex;
-  justify-content: space-between;
-}
-.form-photo img {
-  border: 2px solid red;
-  margin-right: 50%;
-  flex: 1;
-}
 
 ul {
   list-style: none;
 }
 .container-form {
-  max-width: 600px;
-  padding: 20px;
-  margin-left: 35%;
-  text-align: center;
-  flex: 2;
+  display: inline-flex;
+  width: 20%;
 }
 
-h1 {
-  color: #053067;
-  margin-left: 65%;
+.form-photo img {
+  border: 2px solid transparent;
+  border-radius: 2rem;
 }
 
 form {
   background-color: #b9d9eb;
   border-radius: 50px;
   padding: 20px;
-  width: 80%;
-  margin-left: 48%;
-  margin-top: 30px;
-  padding: 20px;
+  margin-left: 40%;
+  padding: 10px;
   justify-content: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }

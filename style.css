@@ -16,7 +16,7 @@ body {
 /* navbar css styling */
 #hero {
   width: 100%;
-  height: 1000px;
+  height: 850px;
   background: url("images/medical-1");
   background-position: center;
   background-repeat: no-repeat;
@@ -55,6 +55,8 @@ body {
 }
 .btn-box {
   width: 11%;
+  font-size: 1.5rem;
+  font-weight: 700;
   background: #ffffff;
   padding: 25px;
   border: #ffffff;
@@ -72,6 +74,7 @@ body {
 /* heading for about and services borders */
 .border1 {
   margin: 2%;
+  padding: 2rem;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
@@ -80,6 +83,7 @@ body {
 
 .border2 {
   margin-top: 2%;
+  padding: 2rem;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
@@ -162,12 +166,14 @@ body {
   font-size: 2.5rem;
   font-weight: 900;
   padding-bottom: 1.5rem;
-  color: #534c46;
+  color: #011C39;
 }
 .articleText {
   font-size: 1.5rem;
 }
-
+  .dot {
+    cursor: pointer;
+  }
 /*contact form styling*/
 
 ul {

@@ -29,7 +29,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 100000;
   width: 90%;
   position: fixed;
   top: 0;
@@ -39,6 +39,7 @@ body {
   align-items:center ;
   
 }
+/*
 .scroll{
   background: #a8d5e8;
   top: -100px;
@@ -53,17 +54,12 @@ body {
   100%{
     top: 20px;
   }
-}
+}*/
 .navbar .logo {
   margin-top:20px;
   margin-right:50px;
 }
-.logo{
-  cursor: pointer;
-  -webkit-background-clip: text;
-  color: transparent;
 
-}
 .navbar .menu a {
   color: #ffffff;
   font-size: 20px;
@@ -71,6 +67,11 @@ body {
   font-weight: 900;
   transition-duration: 0.4s;
   letter-spacing: 0.54px;
+  transition: 0.6s;
+  
+}
+.navbar .sticky .menu a{
+  color: #a8d5e8;
 }
 .navbar .menu a:hover {
   border-bottom: 2px solid #ffffff;
@@ -103,10 +104,11 @@ body {
 .btn-box .btn-join {
   margin-top: 60px;
 }
-.sticky {
+.navbar.sticky {
   position: fixed;
   top: 0;
   width: 100%;
+  background:  #a8d5e8;
 }
 .sticky + .content {
   padding-top: 60px;

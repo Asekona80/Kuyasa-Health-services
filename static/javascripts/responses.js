@@ -21,10 +21,10 @@ function getBotResponse(input) {
     else if (input.includes("medicine")) {
         return "which medication";
     }
-    else if (input.includes("would like to book an appointment")) {
+    else if (input.includes("I would like to book an appointment")) {
         return "Go to the appointment page";
-    } else if (input == "Do you telephone assistance") {
-        return "Would you like to be transferred to a consultant!";
+    } else if (input == "I would like telephone assistance") {
+        return "Great we will transfer you to a reliable consultant!";
     }
     else {
         return "Try asking something else!";

@@ -5,6 +5,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.logo {
+    position: absolute; /* or relative, depending on your layout */
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
 body {
     min-height: 100vh;
     width: 100%;
@@ -16,6 +25,9 @@ body {
     align-items: center;
     background-color: #17537a;
 }
+
+/* Events Highlights */
+
 
 .container {
     width: 100%;
@@ -146,4 +158,149 @@ body {
 
 .action:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* This is the styling for the footer only */
+/* Footer styling */
+.footer {
+  background-color: #011c39;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  flex: 1;
+  margin-right: 20px;
+  max-width: 25%;
+}
+
+.footer-left img {
+  max-width: 100%;
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
+  justify-content: space-between; /* Distribute space between sections */
+}
+
+.footer-links,
+.footer-address {
+  flex-basis: calc(
+    50% - 20px
+  ); /* Set the width of each section to 50% with some spacing */
+}
+
+.footer-links h2,
+.footer-address h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul,
+.footer-address ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li,
+.footer-address li {
+  margin-bottom: 5px;
+}
+
+.footer-links a,
+.footer-address a {
+  text-decoration: none;
+  color: #999;
+}
+.footer p {
+  margin: 15px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #999;
+}
+
+#whatsapp-icon,
+#facebook-icon,
+#twitter-icon {
+  margin-bottom: 55px;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.socials a i {
+  color: #e7f2f4;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 15px;
+    text-align: center;
+  }
+  .footer-left {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .footer-right {
+    max-width: 100%;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+/* API Map */
+
+map {
+  flex-basis: calc(
+    50% - 20px
+  ); /* Set the width of the map to 50% with some spacing */
+}
+
+map img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
 }

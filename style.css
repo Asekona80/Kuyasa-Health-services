@@ -173,26 +173,35 @@ body {
 ul {
   list-style: none;
 }
-.container-form {
-  display: inline-flex;
-  width: 30%;
+.form-container {
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+
+.form-photo {
+  flex: 1; /* Take up remaining space on the left */
 }
 
 .form-photo img {
   border: 2px solid transparent;
   border-radius: 2rem;
+  max-width: 100%;
+  height: auto;
 }
 
-form {
+.container-form {
+  width: 400px; /* Set the width of the form to 400px */
   background-color: #b9d9eb;
   border-radius: 50px;
-  width: 50%;
   padding: 20px;
-  margin-left: 40%;
-  padding: 10px;
-  justify-content: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
+
+form {
+  width: 100%; /* Make the form take up the full width of the container */
+}
+
 
 label {
   display: block;

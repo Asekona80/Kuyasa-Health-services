@@ -202,32 +202,28 @@
     <!-- Contact Form Section -->
     <div class="border3"></div>
      <!-- Contact Form -->
+        <div class="form-container">
+            <div class="form-photo">
+                <img src="images/image5.jpg" alt="" width="600">
+            </div>
+            <div class="container-form">
+                <a href="" id="contact"></a>
+                <h1>Contact Us</h1>
+                <form id="myForm" class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                    <label for="number">Number:</label>
+                    <input type="text" id="number" name="number">
+                    <label for="message">Message:</label>
+                    <textarea type="text" id="message" name="message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
 
-     <div class="container-form" ><a href="" id="contact"></a>
-       <div class="form-photo">
-     <img src="images/image5.jpg" alt="" width="600">
-    </div>
-     <div class="container-form" ><a href="" id="contact"></a>
-
-        <h1 >Contact Us</h1>
-
-        <form id="myForm" class="form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" >
-
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" >
-            
-            <label for="number">Number:</label>
-            <input type="text" id="number" name="number" >
-            
-            <label for="message">Message:</label>
-            <textarea type="text" id="message" name="message" ></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <div class="border4"></div>
+        <div class="border4"></div>
     <!-- Footer Section -->
   
     <footer class="footer">
@@ -291,31 +287,6 @@
                                 <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
                             </div>
 
-                            <!-- User input box -->
-                            <div class="chat-bar-input-block">
-                                <div id="userInput">
-                                    <input id="textInput" class="input-box" type="text" name="msg"
-                                           placeholder="Tap 'Enter' to send a message">
-                                    <p></p>
-                                </div>
-
-                                <div class="chat-bar-icons">
-                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
-                                       onclick="sendButton()"></i>
-                                </div>
-                            </div>
-
-                            <div id="chat-bar-bottom">
-                                <p></p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
  <!-- JavaScript File -->
  <script src="script.js"></script>
 
@@ -338,8 +309,8 @@ images.forEach(image => {
     });
 });
 </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="static/javascripts/responses.js"></script>
-        <script src="static/javascripts/chat.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/javascripts/responses.js"></script>
+<script src="static/javascripts/chat.js"></script>
 </body>
 </html>

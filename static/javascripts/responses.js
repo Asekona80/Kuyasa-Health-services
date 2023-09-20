@@ -17,7 +17,7 @@ function getBotResponse(input) {
     else if (input == "medicine") {
         return "which kind";
     }
-    //please use this includes, which avoids being direct and error prone
+    //please use this includes, which avoids being direct and error-prone
     else if (input.includes("medicine")) {
         return "which medication";
     } else {

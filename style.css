@@ -148,7 +148,7 @@ body {
   background: #a8d5e8;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  margin-top: 20%;
+
 }
 .wrapper {
   width: 80%;
@@ -210,6 +210,20 @@ ul {
   max-width: 100%;
   height: auto;
 }
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+.bounce-image {
+  animation: bounce 4s infinite;
+}
+
+
 .container-form {
   width: 600px;
   padding: 20px;

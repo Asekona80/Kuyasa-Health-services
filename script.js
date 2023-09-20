@@ -111,6 +111,17 @@ $(document).ready(function() {
       $('.menu-links').toggleClass('show-menu');
   });
 });
+//Making an image bounce
+const image = document.querySelector('.bounce-image');
+
+function toggleBounce() {
+    image.classList.toggle('bounce');
+}
+
+
+
+
+
 
 
 

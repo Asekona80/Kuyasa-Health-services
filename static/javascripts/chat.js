@@ -29,13 +29,12 @@ function getTime() {
         minutes = "0" + minutes;
     }
 
-    let time = hours + ":" + minutes;
-    return time;
+    return hours + ":" + minutes;
 }
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "What can I assist?"
+    let firstMessage = "What can we assist you with?"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -59,7 +58,7 @@ function getHardResponse(userText) {
 function getResponse() {
     let userText = $("#textInput").val();
 
-    if (userText == "") {
+    if (userText === "") {
         userText = "I love Code Palace!";
     }
 
@@ -99,7 +98,7 @@ function heartButton() {
 
 // Press enter to send a message
 $("#textInput").keypress(function (e) {
-    if (e.which == 13) {
+    if (e.which === 13) {
         getResponse();
     }
 });

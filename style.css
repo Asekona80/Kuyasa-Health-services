@@ -16,7 +16,7 @@ body {
 /* navbar css styling */
 #hero {
   width: 100%;
-  height: 1000px;
+  height: 850px;
   background: url("images/medical-1");
   background-position: center;
   background-repeat: no-repeat;
@@ -55,6 +55,8 @@ body {
 }
 .btn-box {
   width: 11%;
+  font-size: 1.5rem;
+  font-weight: 700;
   background: #ffffff;
   padding: 25px;
   border: #ffffff;
@@ -72,6 +74,7 @@ body {
 /* heading for about and services borders */
 .border1 {
   margin: 2%;
+  padding: 2rem;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
@@ -80,6 +83,7 @@ body {
 
 .border2 {
   margin-top: 2%;
+  padding: 2rem;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
@@ -88,6 +92,10 @@ body {
 .border3,
 .border4 {
   margin: 1%;
+  color: #053067;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
 }
 
 /* about us Styling*/
@@ -140,6 +148,7 @@ body {
   background: #a8d5e8;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
+  margin-top: 20%;
 }
 .wrapper {
   width: 80%;
@@ -162,53 +171,71 @@ body {
   font-size: 2.5rem;
   font-weight: 900;
   padding-bottom: 1.5rem;
-  color: #534c46;
+  color: #011C39;
 }
 .articleText {
   font-size: 1.5rem;
 }
-
+  .dot {
+    cursor: pointer;
+  }
 /*contact form styling*/
 
 ul {
   list-style: none;
 }
 
+/*contact form styling*/
 .form-container {
   display: flex;
-  align-items: center; /* Vertically align items */
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-photo-container {
+  text-align: center;
+  margin-bottom: 50px; 
+
 }
 
 .form-photo {
-  flex: 1; /* Take up remaining space on the left */
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
+  flex: 1; 
+  margin: 0; 
+  padding: 0; 
+  margin-left: 10%;
 }
 
 .form-photo img {
-  border: 2px solid transparent;
-  border-radius: 2rem;
   max-width: 100%;
   height: auto;
-  display: block; /* Remove any inline spacing */
 }
-
 .container-form {
-  width: 400px; /* Set the width of the form to 400px */
-  background-color: #b9d9eb;
-  border-radius: 50px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
+  width: 600px;
+  padding: 20px;
+  margin-right: 9%;
+
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
 }
 
 form {
-  width: 100%; /* Make the form take up the full width of the container */
+  width: 80%;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: #b9d9eb;
+  padding: 5%;
+  margin-left:10% ;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
 }
-
-
+/* Style the form title */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 label {
   display: block;
@@ -225,6 +252,7 @@ textarea {
   margin-bottom: 10%;
   border: 1px solid #ccc;
   border-radius: 4px;
+  text-align: center;
 }
 
 button[type="submit"] {
@@ -234,6 +262,7 @@ button[type="submit"] {
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+  align-items: center;
 }
 
 button[type="submit"]:hover {
@@ -317,15 +346,15 @@ button {
 .footer-right {
   flex: 1;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
-  justify-content: space-between; /* Distribute space between sections */
+  flex-wrap: wrap; 
+  justify-content: space-between; 
 }
 
 .footer-links,
 .footer-address {
   flex-basis: calc(
     50% - 20px
-  ); /* Set the width of each section to 50% with some spacing */
+  ); 
 }
 
 .footer-links h2,

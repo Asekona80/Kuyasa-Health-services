@@ -288,9 +288,9 @@ button[type="submit"]:hover {
   background-color: #b9d9eb;
   border-radius: 50px;
   padding: 20px;
-  width: 30%;
+  width: 40%;
   margin-left: 35%;
-  margin-top: 30px;
+  margin-bottom: 30px;
   justify-content: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }

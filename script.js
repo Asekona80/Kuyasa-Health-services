@@ -1,32 +1,46 @@
 //slideshow code//
-let slideIndex = 1;
-showSlides(slideIndex);
+
+let slideIndex = 0; // Start with the first slide (0-based index)
+showSlides();
 
 // Next/previous controls
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides((slideIndex = n - 1)); // Subtract 1 to match the 0-based index
 }
 
-function showSlides(n) {
+function showSlides() {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+
+    // Hide all slides
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+
+    // Remove the "active" class from all dots
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+
+    // Increment slideIndex and reset to 0 if it exceeds the number of slides
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1; // Start over from the first slide
+    }
+
+    // Display the current slide and set the corresponding dot as "active"
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
+
+// Automatically advance the slides every 3 seconds (adjust the interval as needed)
+setInterval(showSlides, 3000);
 
 
 

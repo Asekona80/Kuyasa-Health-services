@@ -10,9 +10,9 @@ function getBotResponse(input) {
 
     // Simple responses
     if (input == "hello") {
-        return "Hello there!";
-    } else if (input == "goodbye") {
-        return "Talk to you later!";
+        return "How can I be of assistance?.";
+    } else if (input == "Thank you!") {
+        return "Glad to be of assistance";
     }
     else if (input == "medicine") {
         return "which kind";

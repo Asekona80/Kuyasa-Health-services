@@ -29,11 +29,40 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  z-index: 1;
+  width: 90%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 80px;
+  align-items:center ;
+  
+}
+.scroll{
+  background: #a8d5e8;
+  top: -100px;
+  border-radius: 20px;
+  width: 90%;
+  animation: fadedown .4s ease 1s forwards;
+}
+@keyframes fadedown{
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 20px;
+  }
 }
 .navbar .logo {
-  margin-bottom: 20%;
-  margin-left: 20px;
+  margin-top:20px;
+  margin-right:50px;
+}
+.logo{
+  cursor: pointer;
+  -webkit-background-clip: text;
+  color: transparent;
+
 }
 .navbar .menu a {
   color: #ffffff;
@@ -53,6 +82,9 @@ body {
   margin-left: 100px;
   margin-bottom: 50px;
 }
+.hero-heading{
+  margin-top: 21%;
+}
 .btn-box {
   width: 11%;
   font-size: 1.5rem;
@@ -71,6 +103,15 @@ body {
 .btn-box .btn-join {
   margin-top: 60px;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
 /* heading for about and services borders */
 .border1 {
   margin: 2%;

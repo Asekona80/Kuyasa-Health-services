@@ -355,7 +355,15 @@
             });
         });
         
-
+let navbar=document.querySelector('navbar');
+document.addEventListener('scroll', () =>{
+ if(window.top.scrollY > 19){
+     navbar.classList.add('scroll');
+ }else{
+    navbar.classList.remove('scroll');
+    navbar.style.transition='.4s ease';
+ }
+})
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

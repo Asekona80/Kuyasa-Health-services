@@ -118,6 +118,15 @@ function toggleBounce() {
     image.classList.toggle('bounce');
 }
 
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+});
 
 
 

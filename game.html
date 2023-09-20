@@ -27,16 +27,35 @@
     margin-left: 20px;
     margin-top: 20px;
 }
+  .logo a {
+    color: white;
+    font-size: large;
+    font-weight: 300;
+    padding-right: 20px;
+  }
+  .highscore{
+    padding-left: 100px;
+    padding-right: 50px;
+    color: white;
+  }
+  #highscore{
+    color: white;
+  }
   </style>
 </head>
 
 <body>
 <div class="navbar">
-  <div class="logo">
-    <a href="events.html"><img src="images/Group 1.png" alt="logo" width="29%">Back to Events</a>
+  <div class="logo" >
+
+    <a href="index.html"><img src="images/Group 1.png" alt="logo" width="60">Home</a>
+    <a href="events.html">Back to Events</a>
+
   </div>
 </div>
 <canvas width="320" height="640" id="game"></canvas>
+<h1 class="highscore">High Score :</h1>
+<h1 id="highscore"></h1>
 <script>
 
 
@@ -123,6 +142,7 @@ function placeTetromino() {
 
         // game over if piece has any part offscreen
         if (tetromino.row + row < 0) {
+
           return showGameOver();
         }
 
@@ -134,6 +154,10 @@ function placeTetromino() {
   // check for line clears starting from the bottom and working our way up
   for (let row = playfield.length - 1; row >= 0; ) {
     if (playfield[row].every(cell => !!cell)) {
+      console.log("win");
+      latestHighScore++;
+      localStorage.setItem("highscore", latestHighScore);
+      console.log(localStorage.getItem("highscore"));
 
       // drop every row above this one
       for (let r = row; r >= 0; r--) {
@@ -165,12 +189,22 @@ function showGameOver() {
   context.textAlign = 'center';
   context.textBaseline = 'middle';
   context.fillText('GAME OVER!', canvas.width / 2, canvas.height / 2);
-}
+  if(highscore > localStorage.getItem('highscore')){
+    localStorage.setItem("highscore", highscore);
+
+  }
+  document.getElementById('highscore').textContent = highscore;
+ }
 
 const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
 const grid = 32;
 const tetrominoSequence = [];
+var latestHighScore = 0;
+const highscore = latestHighScore;
+localStorage.getItem("highscore");
+
+document.getElementById('highscore').textContent = localStorage.getItem("highscore");
 
 // keep track of what is in every cell of the game using a 2d array
 // tetris playfield is 10x20, with a few rows offscreen

@@ -7,6 +7,7 @@
     <!-- Link to external stylesheet for styling -->
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/f3db6f10ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="events.css">
     <title>Kuyasa-Health-Services</title>
 </head>
 <style>
@@ -14,7 +15,7 @@
     .scrollTop{
         position: fixed;
         bottom: 30px;
-        left: 30px; /* Change right to left */
+        right: 30px; /* Change right to right */
         padding: 10px 15px;
         background-color: #053067;
         color: #fff;
@@ -30,192 +31,112 @@
         color: #000;
     }
 
-/* The css code for the cards */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
 
-body {
-  min-height: 100vh;
-  width: 100%;
-  font-size: 16px;
-  background: #eee;
-  color: #777;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-*/
+#more {display: none;}
 </style>
+
+<!-- -->
 <body>
+        <a href="index.html"><img src="images/Group 1.png" alt="logo" width="50px">
+            </a>
+
+    <div class="container">
+        <div class="item-container">
+            <div class="img-container">
+                <img src="images/United.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">event</p>
+                    <div class="separator"></div>
+                    <p class="info">area</p>
+                    <p class="price">price</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            address
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                         time
+                        </p>
+
+                        <p class="info description">
+                            information <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action">Book it</button>
+            </div>
+        </div>
+
+
+
+        <div class="item-container">
+            <div class="img-container">
+                <img src="images/testing2.jpg" alt="Event image">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Shadow Day</p>
+                    <div class="separator"></div>
+                    <p class="info">area</p>
+                    <p class="price"></p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            97 Durham Ave, Salt River, Cape Town, 7925
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            10:00 - 13:00
+                        </p>
+
+                        <p class="info description">
+                            We are proud to partner with Kuyasa Health Service to provide this invaluable learning opportunity to medical students.
+                        </p>
+                    </div>
+                </div>
+                <button class="action">Book it</button>
+            </div>
+        </div>
+
+       
+
     
-  <!--Hero section and navabr-->
-  <section id="hero-colour">
-    <div class="container-h">
-    <div class="navbar">
-    <div class="logo">
-    <img src="images/Group 1.png" alt="logo" width="29%">   
-    </div>
-    <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="events.html">Events</a>
-    <a href="#contact">Contact</a>
-    </div>
-    </div>
-    </div>
-    </div>
 
-<!-- Event cards -->
-<!--
-<div class="container">
-    <div class="item-container">
-        <div class="img-container">
-            <img src="./images/img1.jpg" alt="Event image">
-        </div>
-
-        <div class="body-container">
-            <div class="overlay"></div>
-
-            <div class="event-info">
-                <p class="title">Bubbe's Book Club</p>
-                <div class="separator"></div>
-                <p class="info">Bellmore, NY</p>
-                <p class="price">Free</p>
-
-                <div class="additional-info">
-                    <p class="info">
-                        <i class="fas fa-map-marker-alt"></i>
-                        Grand Central Terminal
-                    </p>
-                    <p class="info">
-                        <i class="far fa-calendar-alt"></i>
-                        Sat, Sep 19, 10:00 AM EDT
-                    </p>
-
-                    <p class="info description">
-                        Welcome! Everyone has a unique perspective after reading a book, and we would love you
-                        to share yours with us! We meet one Sunday evening <span>more...</span>
-                    </p>
-                </div>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="images/tetris.png" alt="Event image">
             </div>
-            <button class="action">Book it</button>
-        </div>
-    </div>
 
-    <div class="item-container">
-        <div class="img-container">
-            <img src="./images/img2.jpg" alt="Event image">
-        </div>
+            <div class="body-container">
+                <div class="overlay"></div>
 
-        <div class="body-container">
-            <div class="overlay"></div>
-
-            <div class="event-info">
-                <p class="title">The Overstory</p>
-                <div class="separator"></div>
-                <p class="info">New York, NY</p>
-                <p class="price">29$</p>
-
-                <div class="additional-info">
-                    <p class="info">
-                        <i class="fas fa-map-marker-alt"></i>
-                        245 W 52nd St, New York
-                    </p>
-                    <p class="info">
-                        <i class="far fa-calendar-alt"></i>
-                        Sat, Sep 19, 10:00 AM EDT
-                    </p>
-
-                    <p class="info description">
-                        Welcome! Everyone has a unique perspective after reading a book, and we would love you
-                        to share yours with us! We meet one Sunday evening <span>more...</span>
-                    </p>
+                <div class="event-info">
+                    <p class="title">Play Tetris </p>
+                    <div class="separator"></div>
+                        <cite class="info description">
+                            Life is a Tetris. Do something good, it disappears immediately. But mistakes, they accumulate themselves. In the end everyone loses. 
+                        </cite>
+                    </div>
                 </div>
+                <a href="game.html">
+                    <button class="action">Play Now!</button>
+                  </a>
+                  
             </div>
-            <button class="action">Book it</button>
         </div>
     </div>
-
-    <div class="item-container">
-        <div class="img-container">
-            <img src="./images/img3.jpg" alt="Event image">
-        </div>
-
-        <div class="body-container">
-            <div class="overlay"></div>
-
-            <div class="event-info">
-                <p class="title">The NY Festival</p>
-                <div class="separator"></div>
-                <p class="info">New York, NY</p>
-                <p class="price">70$</p>
-
-                <div class="additional-info">
-                    <p class="info">
-                        <i class="fas fa-map-marker-alt"></i>
-                        245 W 52nd St, New York
-                    </p>
-                    <p class="info">
-                        <i class="far fa-calendar-alt"></i>
-                        Sat, Sep 19, 10:00 AM EDT
-                    </p>
-
-                    <p class="info description">
-                        Welcome! Everyone has a unique perspective after reading a book, and we would love you
-                        to share yours with us! We meet one Sunday evening <span>more...</span>
-                    </p>
-                </div>
-            </div>
-            <button class="action">Book it</button>
-        </div>
-    </div>
-
-    <div class="item-container">
-        <div class="img-container">
-            <img src="./images/img4.jpg" alt="Event image">
-        </div>
-
-        <div class="body-container">
-            <div class="overlay"></div>
-
-            <div class="event-info">
-                <p class="title">Tech Bubble Conf</p>
-                <div class="separator"></div>
-                <p class="info">New York, NY</p>
-                <p class="price">35$</p>
-
-                <div class="additional-info">
-                    <p class="info">
-                        <i class="fas fa-map-marker-alt"></i>
-                        245 W 52nd St, New York
-                    </p>
-                    <p class="info">
-                        <i class="far fa-calendar-alt"></i>
-                        Sat, Sep 19, 10:00 AM EDT
-                    </p>
-
-                    <p class="info description">
-                        Welcome! Everyone has a unique perspective after reading a book, and we would love you
-                        to share yours with us! We meet one Sunday evening <span>more...</span>
-                    </p>
-                </div>
-            </div>
-            <button class="action">Book it</button>
-        </div>
-    </div>
-</div>
--->
-     <!-- Back to top button script-->
-<div onclick="scrollToTop()" class="scrollTop"> Top</div>
-<script>
-    function scrollToTop(){
-    window.scrollTo(0, 0);
-}
-</script>
+    
 </body>
+</html>
 </html>

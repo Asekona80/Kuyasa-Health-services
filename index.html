@@ -2,176 +2,253 @@
 <html lang="en">
 <head>
     <!-- Metadata and External Resources -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- Link to external stylesheet for styling -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://kit.fontawesome.com/f3db6f10ca.js" crossorigin="anonymous"></script>
     <title>Kuyasa-Health-Services</title>
 </head>
 <style>
     /* Styling for the back to top button */
-    .scrollTop{
+    .scrollTop {
         position: fixed;
         bottom: 30px;
-        left: 30px; /* Change right to left */
+        right: 30px; /* Change right to left */
         padding: 10px 15px;
         background-color: #053067;
         color: #fff;
         border-radius: 5px;
-        border-radius: 1px solid #fff;
         cursor: pointer;
         transition: all 0.5s ease 0s;
         scroll-behavior: smooth;
         box-sizing: border-box;
-        
+
     }
-    .scrollTop:hover{
+
+    .scrollTop:hover {
         background-color: #f7f7f7;
         color: #000;
     }
 </style>
 <body>
-    
-  <!--Hero section and navabr-->
-  <section id="hero">
-    <div class="container-h">
-        <div class="navbar">
-            <div class="logo">
-             <img src="images/Group 1.png" alt="logo" width="29%">   
-            </div>
-            <div class="menu">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="events.html">Events</a>
-                <a href="#contact">Contact</a>
-            
-            </div>
-        </div>
-        <div class="hero-box">
-            <h4 class="hero-heading">
-           Elevating health, <br>
-           Empowering lives <br>
-           Because You Deserve The Best.
-        </h4>
-            <div class="btn-box">
-                <a href="#" class="btn-join">Join Us</a>
-
-            </div>
-        </div>
+<div class="mobile-menu">
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-  </section>
-    <!-- slideshow for services -->
-  
-    
+
+    <!--Hero section and navabr-->
+    <section id="hero">
+        <div class="container-h">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/Group 1.png" alt="logo" width="29%">
+                </div>
+                <div class="menu">
+                    <a href="#index.html">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="events.html">Events</a>
+                    <a href="#contact">Contact</a>
+
+                </div>
+            </div>
+            <div class="hero-box">
+                <h4 class="hero-heading">
+                    Elevating health, <br>
+                    Empowering lives <br>
+                    Because You Deserve The Best.
+                </h4>
+                <!--Join us button-->
+                <div class="btn-box">
+                    <a href="join.html" class="btn-join">Join Us</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Us Section -->
-    <div class="border2"> <a href="" id="about">About us</a></div>
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div id="about-us-slogan" class="col-md-8">
-                Kuyasa Health services is dedicated to advancing medical knowledge and delivering innovative treatments to improve the health and lives of our patients, striving for excellence in all aspects of healthcare.
-            </div>  
+    <section class="aboutUs">
+        <div class="border1"><span id="about">About Us</span></div>
+        <div class="Vision">
+            <p> Kuyasa Health services is dedicated to advancing medical knowledge and delivering innovative treatments
+                to improve the health and lives of our patients, striving for excellence in all aspects of
+                healthcare.</p>
+            <p>Dedicated to innovation and compassion, we strive to improve lives through personalized care.</p>
         </div>
-        <div class="row justify-content-md-center">
-            <div class="col-sm-4">
-                Dedicated to innovation and compassion, we strive to improve lives through personalized care.
+
+
+        <div class="container-aboutUs">
+            <div class="column">
+                <img src="images/wellness.png" class="about-us-images" alt="" width="100">
+                <p class="bold-p">Promoting Wellness for All</p>
+                <p class="promoting">We are dedicated to early intervention and personalized care to ensure the
+                    well-being of our communities.</p>
+            </div>
+
+            <div class="column">
+                <img src="images/compassionate.png" class="about-us-images" alt="" width="100">
+                <p class="bold-p">Compassionate Care</p>
+                <p class="compassionate">Our mission is to deliver compassionate healthcare that focuses on treating the
+                    whole person.</p>
+            </div>
+
+            <div class="column">
+                <img src="images/community-compassionate.png" class="about-us-images" alt="" width="100">
+                <p class="bold-p">Community-Centered Wellness:</p>
+                <p class="community">Our mission is to be a cornerstone of health and well-being in our community.</p>
             </div>
         </div>
-        <!-- About Us Images and Descriptions -->
-        <div class="container about-us">
-                    <img src="images/wellness.png" class="about-us-images" alt="">
-                    <p class="bold-p">Promoting Wellness for All</p>
-                    <p>We are dedicated to prevention, early intervention, and personalized care to ensure the well-being of our communities.</p>
-            
-                    <img src="images/compassionate.png" class="about-us-images"  alt="">
-                    <p class="">Compassionate Care</p>
-                    <p>Our mission is to deliver compassionate healthcare that focuses on treating the whole person.</p>
-                
-                    <img src="images/community-compassionate.png" class="about-us-images" alt="">
-                    <p class="bold-p">Community-Centered Wellness:</p>
-                    <p>Our mission is to be a cornerstone of health and well-being in our community.</p>
+    </section>
+
+
+    <!-- slideshow for services -->
+    <section class="services">
+        <div class="border2"><span id="services">Our Services</span>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="wrapper">
+                        <div class="Image">
+                            <figure>
+                                <div class="image-container ">
+                                    <div class="image-responsive">
+                                        <img data-image="responsiveImage" src="images/support.jpg" class="" width="500">
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="article-info">
+                            <div class="articleTitle"> Support</div>
+                            <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a
+                                step towards healing, and know that you are not alone in this journey."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="wrapper">
+                        <div class="Image">
+                            <figure>
+                                <div class="image-container ">
+                                    <div class="image-responsive">
+                                        <img data-image="responsiveImage" src="images/mental.jpg" class="" width="500">
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="article-info">
+                            <div class="articleTitle">Mental Support</div>
+                            <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a
+                                step towards healing, and know that you are not alone in this journey."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="wrapper">
+                        <div class="Image">
+                            <figure>
+                                <div class="image-container ">
+                                    <div class="image-responsive">
+                                        <img data-image="responsiveImage" src="images/schedule.jpg" class=""
+                                             width="500">
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="article-info">
+                            <div class="articleTitle">Schedule</div>
+                            <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a
+                                step towards healing, and know that you are not alone in this journey."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="wrapper">
+                        <div class="Image">
+                            <figure>
+                                <div class="image-container ">
+                                    <div class="image-responsive">
+                                        <img data-image="responsiveImage" src="images/location.jpg" class=""
+                                             width="500">
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="article-info">
+                            <div class="articleTitle">Location</div>
+                            <div class="articleText"> "You are stronger than your struggles. <br> Embrace each day as a
+                                step towards healing, and know that you are not alone in this journey."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)">&#x2022;</span>
+                    <span class="dot" onclick="currentSlide(2)">&#x2022;</span>
+                    <span class="dot" onclick="currentSlide(3)">&#x2022;</span>
+                    <span class="dot" onclick="currentSlide(4)">&#x2022;</span>
+                </div>
+                <!-- Next and previous buttons -->
+                <!--          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+                <!--          <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+            </div>
         </div>
 
-         <!-- CHAT BAR BLOCK --> 
-   <div class="chat-bar-collapsible"> 
-    <button id="chat-button" type=" button"class="collapsible">Chat with us!
-        <i id="chat-icon" style="color:#fff;" class="fa fa-fw fa-comments-o" ></i> 
-    </button>
-   <div class="content">
-   <div class="full-chat-block">
-   <!--Message Container-->
-   <div class="outer-container">
-   <div class= "chat-container">
-    <!--Messages-->
-    <div  id="chatbox">
-        <h5 id="chat-timestamp"></h5>
-        <p id="botStarterMessage" class=" botText"><span>Loading...</span></p>
-   </div>
 
-   <!--User Input Box-->
-   <div class="chat-bar-input-block">
-    <div id="userInput">
-        <input id="textInput" class="input-box" type="text" name="msg" placeholder="Tap 'Enter'to send a message"> 
-
-        <p></p>
-        <div>
-
-        <div class="chat-bar-icons ">
-            <i id="chat-icon" style="color:crimson;" class="fa fa-fw fa-heart" onclick="heartButton ()" ></i>
-            <i id="chat-icon" style="color:#333 ;" class="fa fa-fw fa-send" onclick="sendButton ()" ></i>
-        </div>
-        </div>
-        <div id="chat-bar-bottom">
-            <p></p>
-        </div>
+    </section>
 
 
-    </div>
-   </div>
-   
-
-   </div>
-   </div>
-<script src="response.js"></script>
-<script src="script.js"></script>
-<script src="home.js"></script>
-
-    
     <!-- Contact Form Section -->
     <div class="border3"></div>
-     <!-- Contact Form -->
-     
-     <div class="container-form" ><a href="" id="contact"></a>
-        <h1 >Contact Us</h1>
-        <form id="myForm" class="form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" >
-
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" >
-            
-            <label for="number">Number:</label>
-            <input type="text" id="number" name="number" >
-            
-            <label for="message">Message:</label>
-            <textarea type="text" id="message" name="message" ></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+    <!-- Contact Form -->
+    <div class="form-container">
+        <div class="form-photo">
+            <img src="images/image5.png" alt="" width="500">
+        </div>
+        <div class="container-form">
+            <a href="" id="contact"></a>
+            <h1>Contact Us</h1>
+            <form id="myForm" class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <label for="number">Number:</label>
+                <input type="text" id="number" name="number">
+                <label for="message">Message:</label>
+                <textarea type="text" id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 
-
-
+    <div class="border4"></div>
     <!-- Footer Section -->
-  
+
     <footer class="footer">
         <div class="footer-left">
-            <img src="images\Group 1.png" alt="Logo1" width="15%">
-            <p> Kuyasa Health services is dedicated to advancing medical knowledge and delivering innovative treatments to improve the health and lives of our patients, striving for excellence in all aspects of healthcare.</p>
+            <img src="images/Group 1.png" alt="Logo1" width="15%">
+            <p> Kuyasa Health services is dedicated to advancing medical knowledge and delivering innovative treatments
+                to improve the health and lives of our patients, striving for excellence in all aspects of
+                healthcare.</p>
             <div class="socials">
                 <a href="#"><i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100095427094712"><i class="fa-brands fa-facebook" id="facebook-icon"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100095427094712"><i class="fa-brands fa-facebook"
+                                                                                     id="facebook-icon"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter" id="twitter-icon"></i></a>
             </div>
         </div>
@@ -195,28 +272,89 @@
                     <li><a href="#services">Cape Town</a></li>
                     <li><a href="#events">7925</a></li>
                 </ul>
+
                 <div class="map">
-                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=97+Durham+Ave,+Salt+River,+Cape+Town,+7925&zoom=15&size=200x200&key=AIzaSyByYWyPgA6M25THX0nRRulj0sIJKk_bbZc" alt="Map">
+                    <a href="https://www.google.com/maps/dir/-33.8690248,18.6531911/97+Durham+Ave,+Salt+River,+Cape+Town,+7925/@-33.9013173,18.4778913,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1dcc5d08518ba1b9:0x1398e85e424f762!2m2!1d18.4606593!2d-33.9333712?entry=ttu">
+                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=97+Durham+Ave,+Salt+River,+Cape+Town,+7925&zoom=15&size=200x200&key=AIzaSyByYWyPgA6M25THX0nRRulj0sIJKk_bbZc"
+                             alt="Map"></a>
+
                 </div>
+
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p> Created by The Bug Slayers. &copy; All rights reserved 2023.</p>
         </div>
     </footer>
-    
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
 
- <!-- JavaScript File -->
- <script src="script.js"></script>
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
 
- <!-- Back to top button script-->
-<div onclick="scrollToTop()" class="scrollTop"> Top</div>
-<script>
-    function scrollToTop(){
-        window.scrollTo(0, 0);
-    }
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                       placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
 
-</script>
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                   onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                   onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+    <!-- Back to top button script-->
+    <div onclick="scrollToTop()" class="scrollTop"> Top</div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+
+        const images = document.querySelectorAll('.about-us-images');
+
+        images.forEach(image => {
+            image.addEventListener('mouseenter', () => {
+                image.classList.add('image-hover'); // Add the hover class
+            });
+
+            image.addEventListener('mouseleave', () => {
+                image.classList.remove('image-hover'); // Remove the hover class
+            });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="static/javascripts/responses.js"></script>
+    <script src="static/javascripts/chat.js"></script>
 </body>
 </html>

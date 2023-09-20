@@ -1,65 +1,102 @@
-// Get a reference to the form and error message container
-const form = document.getElementById('myForm');
-const errorMessages = document.getElementById('errorMessages');
+//slideshow code//
+let slideIndex = 1;
+showSlides(slideIndex);
 
-// Function to validate the form
-function validateForm(event) {
-  event.preventDefault(); // Prevent the form from submitting
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-  // Clear previous error messages
-  errorMessages.innerHTML = '';
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-  // Get form values
-  const name=document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const number = document.getElementById('number').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  // Validation rules (you can customize these)
-  if (name === '') {
-    displayError('Name is required');
-  }
-
-  if (email === '') {
-    displayError('Email is required');
-  } else if (!isValidEmail(email)) {
-    displayError('Invalid email format');
-  }
-
-    //Phone number validation
-    if (number === '') {
-        displayError('Please enter 10 digit number');
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    else if (!isValidNumber(number)) {
-        displayError('Invalid number format');
-      }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const myForm = document.getElementById("myForm");
+        const successMessage = document.getElementById("success-message");
+
+        myForm.addEventListener("submit", function (event) {
+            let isValid = true;
+
+            // Name validation
+            const nameInput = document.getElementById("name");
+            if (nameInput.value.trim() === "") {
+                isValid = false;
+                alert("Please enter your name.");
+            }
     
-    //Validate message is not empty
-    if (message === '') {
-        displayError('Please enter a message');
-    }
-  // If no errors, submit the form (you can replace this with your submission logic)
-  if (errorMessages.innerHTML === '') {
-    alert('Form submitted successfully!');
-    form.reset(); // Optionally, reset the form
-  }
+            // Email validation
+            const emailInput = document.getElementById("email");
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!emailPattern.test(emailInput.value)) {
+                isValid = false;
+                alert("Please enter a valid email address.");
+            }
+
+            // Message validation
+            const messageInput = document.getElementById("message");
+            if (messageInput.value.trim() === "") {
+                isValid = false;
+                alert("Please enter a message.");
+            }
+
+            // Number validation (optional)
+            const numberInput = document.getElementById("number");
+            if (numberInput.value.trim() !== "" && isNaN(numberInput.value)) {
+                isValid = false;
+                alert("Please enter a valid number.");
+            }
+            // Prevent form submission if validation fails
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    });
+
+   // script.js
+
+   function updateCurrentTime() {
+    const currentTimeElement = document.getElementById("current-time");
+
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, "0"); // Add leading zero if needed
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const seconds = now.getSeconds().toString().padStart(2, "0");
+
+    const currentTimeString = `${hours}:${minutes}:${seconds}`;
+    currentTimeElement.textContent = `Current Time: ${currentTimeString}`;
 }
 
-// Function to display error messages
-function displayError(message) {
-  const errorMessage = document.createElement('p');
-  errorMessage.textContent = message;
-  errorMessages.appendChild(errorMessage);
-}
+// Update the current time every second
+setInterval(updateCurrentTime, 1000);
 
-// Function to validate email using a simple regex
-function isValidEmail(email) {
-  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  return emailRegex.test(email);
-}
-function isValidNumber(number) {
-    const phonePattern = /^\d{10}$/; // Assumes a 10-digit format, modify for your region
-    return phonePattern.test(number);
-  }
-// Attach the form validation function to the form's submit event
-form.addEventListener('submit', validateForm)
+// Call the function immediately to set the initial time
+updateCurrentTime();
+
+$(document).ready(function() {
+  $('.menu-toggle').click(function() {
+      $('.menu-links').toggleClass('show-menu');
+  });
+});
+
+
+ 

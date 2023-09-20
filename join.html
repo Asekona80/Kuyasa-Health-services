@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Kuyasa-Health-Services</title>
+
+    <style>
+/* styles.css */
+/* Style the logo link */
+.logo a {
+    text-decoration: none; 
+
+}
+
+/* Style the logo image*/
+.logo{
+    max-width: 100px; 
+    margin-right: 100px;
+    margin-bottom:15px;
+    padding: 20px;
+   
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    
+    <a href="index.html">
+        <div class="logo">
+            <img src="images/Group 1.png" alt="logo" width="55px">   
+           </div>
+    </a>
+    <section class="join-form">
+            <h5>Get Started on Your Health Journey</h5>
+            <p>Fill out the form below to become a member of our health services.</p>
+            <form id="myForm" class="form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Full name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+
+                <label for="service">Select a Service:</label>
+                <select id="service" name="service" required>
+                    <option value="consultation">Health Consultation</option>
+                    <option value="fitness">Mental Health Support</option>
+                    <option value="wellness">Wellness Coaching</option>
+                </select>
+
+                <button type="submit">Join Now</button>
+            </form>
+        </section>
+        <section class="benefits">
+            <h5>Membership Benefits</h5>
+            <ul>
+                <li>Personalized health services</li>
+                <li>Access to expert advice</li>
+                <li>Regular health assessments</li>
+                <li>Exclusive discounts on services</li>
+            </ul>
+        </section>
+          <!-- Footer Section -->
+  
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="images\Group 1.png" alt="Logo1" width="15%">
+            <p> Kuyasa Health services is dedicated to advancing medical knowledge and delivering innovative treatments to improve the health and lives of our patients, striving for excellence in all aspects of healthcare.</p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100095427094712"><i class="fa-brands fa-facebook" id="facebook-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter" id="twitter-icon"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-links">
+                <h2> Useful Links </h2>
+                <ul class="box">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#gamelink">Memory Card Game</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h2> Address </h2>
+                <ul class="box">
+                    <li><a href="#home">97 Durham Ave</a></li>
+                    <li><a href="#about">Salt River</a></li>
+                    <li><a href="#services">Cape Town</a></li>
+                    <li><a href="#events">7925</a></li>
+                </ul>
+                
+                  <div class="map" >
+                    <a href="https://www.google.com/maps/dir/-33.8690248,18.6531911/97+Durham+Ave,+Salt+River,+Cape+Town,+7925/@-33.9013173,18.4778913,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1dcc5d08518ba1b9:0x1398e85e424f762!2m2!1d18.4606593!2d-33.9333712?entry=ttu">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=97+Durham+Ave,+Salt+River,+Cape+Town,+7925&zoom=15&size=200x200&key=AIzaSyByYWyPgA6M25THX0nRRulj0sIJKk_bbZc" alt="Map"></a>
+                  
+                  </div>
+
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p> Created by The Bug Slayers. &copy; All rights reserved 2023.</p>
+        </div>
+    </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const myForm = document.getElementById("myForm");
+                myForm.addEventListener("submit", function (event) {
+                    const nameInput = document.getElementById("name");
+                    const emailInput = document.getElementById("email");
+                    const serviceSelect = document.getElementById("service");
+                    let isValid = true;
+        
+                    // Validate name
+                    if (nameInput.value.trim() === "") {
+                        isValid = false;
+                        alert("Please enter your full name.");
+                    }
+        
+                    // Validate email
+                    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                    if (!emailPattern.test(emailInput.value)) {
+                        isValid = false;
+                        alert("Please enter a valid email address.");
+                    }
+        
+                    // Validate service selection
+                    if (serviceSelect.value === "") {
+                        isValid = false;
+                        alert("Please select a service.");
+                    }
+        
+                    // Prevent form submission if validation fails
+                    if (!isValid) {
+                        event.preventDefault();
+
+                    }
+                });
+          
+            });
+        </script>
+     
+        <script src="script.js"></script>
+        
+</body>
+</html>

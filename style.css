@@ -206,6 +206,7 @@ padding: 5px 100px;
 }
   .dot {
     cursor: pointer;
+    font-size: 2.5rem;
   }
 /*contact form styling*/
 
@@ -476,7 +477,37 @@ h2 {
   flex-basis: 100%;
 }
 
+@media screen and (max-width:600px) {
 
+
+
+
+.navbar, .aboutUs, .slideshow-container, .form-container, .footer, .container-h {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0 ;
+    padding: 0;
+    
+}
+  
+h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img{
+  display: none;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#services, #contact, #about, .footer{
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ .container-form{
+  width: 85%;
+ }
+}
 
 /* API Map */
 

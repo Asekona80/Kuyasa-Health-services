@@ -187,7 +187,7 @@ function placeTetromino() {
     }
   }
 
-  // check for line clears starting from the bottom and working our way up
+  //check for line clears starting from the bottom and working our way up
   for (let row = playfield.length - 1; row >= 0; ) {
     if (playfield[row].every(cell => !!cell)) {
       console.log("win");

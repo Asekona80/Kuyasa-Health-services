@@ -355,15 +355,12 @@
                 image.classList.remove('image-hover'); // Remove the hover class
             });
         });
-        
-let navbar=document.querySelector('navbar');
-document.addEventListener('scroll', () =>{
- if(window.top.scrollY > 19){
-     navbar.classList.add('scroll');
- }else{
-    navbar.classList.remove('scroll');
-    navbar.style.transition='.4s ease';
- }
+
+    </script>
+    <script type="text/javascript">
+window.addEventListener('scroll', function(){
+    var navbar= this.document.querySelector("navbar");
+    navbar.classList.toggle("sticky,", window.scrollY > 0);
 })
 
     </script>

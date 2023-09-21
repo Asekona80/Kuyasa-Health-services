@@ -128,10 +128,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-window.addEventListener('scroll', function(){
-    var navbar= this.document.querySelector("navbar");
-    navbar.classList.toggle("sticky,", window.scrollY > 0);
-})
 
 
 

@@ -22,8 +22,8 @@ function getBotResponse(input) {
         return "which medication";
     }
     else if (input.includes("I would like to book an appointment")) {
-        return "Go to the appointment page";
-    } else if (input == "I would like telephone assistance") {
+        return "Follow the appointment link";
+    } else if (input == "I would like direct assistance") {
         return "Great we will transfer you to a reliable consultant!";
     }
     else {

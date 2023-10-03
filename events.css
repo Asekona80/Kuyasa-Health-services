@@ -29,7 +29,10 @@ body {
 font-size: 1.2rem;
 color: #fff;
 }
-
+a:hover{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
 
 /* Events Highlights */
 

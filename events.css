@@ -4,7 +4,18 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  background: #eee;
+  color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17537a;
+  font-family: "Poppins", sans-serif;
+}
 .logo {
     position: absolute; /* or relative, depending on your layout */
     top: 0;
@@ -12,18 +23,15 @@
     margin-left: 20px;
     margin-top: 20px;
 }
-
-
-body {
-    min-height: 100vh;
-    width: 100%;
-    font-size: 16px;
-    background: #eee;
-    color: #777;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #17537a;
+.logo a{
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+font-size: 1.2rem;
+color: #fff;
+}
+a:hover{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
 }
 
 /* Events Highlights */

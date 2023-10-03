@@ -14,7 +14,7 @@ function getBotResponse(input) {
     } else if (input == "Thank you") {
         return "Glad to be of assistance 👍";
     }
-    else if (input == "medicine") {
+    else if (input == "I need medical assistance") {
         return "which kind";
     }
     //please use this includes, which avoids being direct and error-prone

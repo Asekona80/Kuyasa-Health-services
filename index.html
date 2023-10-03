@@ -236,7 +236,6 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-    
     </div>
 
     <div class="border4"></div>
@@ -280,9 +279,7 @@
                     <a href="https://www.google.com/maps/dir/-33.8690248,18.6531911/97+Durham+Ave,+Salt+River,+Cape+Town,+7925/@-33.9013173,18.4778913,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1dcc5d08518ba1b9:0x1398e85e424f762!2m2!1d18.4606593!2d-33.9333712?entry=ttu">
                         <img src="https://maps.googleapis.com/maps/api/staticmap?center=97+Durham+Ave,+Salt+River,+Cape+Town,+7925&zoom=15&size=200x200&key=AIzaSyByYWyPgA6M25THX0nRRulj0sIJKk_bbZc"
                              alt="Map"></a>
-
                 </div>
-
             </div>
         </div>
 
@@ -326,13 +323,10 @@
                         <div id="chat-bar-bottom">
                             <p></p>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
     <!-- JavaScript File -->
     <script src="script.js"></script>
@@ -360,8 +354,54 @@
     <script type="text/javascript">
 window.addEventListener('scroll', function(){
     var navbar= this.document.querySelector("navbar");
-    navbar.classList.toggle("sticky,", window.scrollY > 0);
-})
+    navbar.classList.toggle("sticky", window.scrollY > 0);
+});
+
+// This is the form data
+
+formElem.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let respone = await fetch('/article/formdata/post/user',{
+        method: 'POST',
+        body: new FormData (formElem)
+
+    });
+
+    let result = await respone.json();
+
+    alert(result.message);
+};
+
+ 
+window.onload = () => {
+document.getElementById('submitbtn').addEventListener("submit");
+}
+
+// Array Buffers
+  // Collect form data
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const number = document.getElementById('number').value;
+  const message = document.getElementById('message').value;
+
+  // Convert data to an ArrayBuffer
+  const encoder = new TextEncoder();
+  const nameArrayBuffer = encoder.encode(name).buffer;
+  const emailArrayBuffer = encoder.encode(email).buffer;
+  const numArrayBuffer = encoder.encode(number).buffer;
+  const messageArrayBuffer = encoder.encode(message).buffer;
+
+  // Log the ArrayBuffers to the console
+  console.log(nameArrayBuffer);
+  console.log(emailArrayBuffer);
+  console.log(messageArrayBuffer);
+
+  // You can perform further actions with the ArrayBuffers here
+
+                     
+
+           
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

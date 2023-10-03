@@ -97,7 +97,7 @@ setInterval(showSlides, 3000);
     const seconds = now.getSeconds().toString().padStart(2, "0");
 
     const currentTimeString = `${hours}:${minutes}:${seconds}`;
-    currentTimeElement.textContent = `Current Time: ${currentTimeString}`;
+    currentTimeElement.textContent = `CurrentTime: ${currentTimeString}`;
 }
 
 // Update the current time every second
@@ -111,6 +111,7 @@ $(document).ready(function() {
       $('.menu-links').toggleClass('show-menu');
   });
 });
+
 //Making an image bounce
 const image = document.querySelector('.bounce-image');
 

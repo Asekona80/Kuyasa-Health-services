@@ -473,7 +473,26 @@ h2 {
   padding-top: 50px;
   flex-basis: 100%;
 }
+  /* Styling for the back to top button */
+  .scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px; /* Change right to left */
+    padding: 10px 15px;
+    background-color: #053067;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 
+}
+
+.scrollTop:hover {
+    background-color: #f7f7f7;
+    color: #000;
+}
 @media screen and (max-width:600px) {
 .navbar, .aboutUs, .slideshow-container, .form-container, .footer, .container-h {
     flex-direction: column;

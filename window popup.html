@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="style.css">
     <title>Window popUps</title>
 </head>
 <body>
   <div class="popUp">
-
+<button id="close">&times;</button>
+<h2>Play Game</h2>
+<p>make sure you read the instructions carefully
+    before you play the game.
+</p>
+<a href="#">Start</a>
   </div>
+
+  <script>
+    window.addEventListener("load", function(){
+        setTimeout(
+         function open(event){
+            document.querySelector(".popUp").style.display="block";
+
+         },
+         1000   
+        )
+    })
+    document.querySelector("#close").addEventListener("click",function(){
+        document.querySelector(".popUp").style.display="none";
+    });
+  </script>
 </body>
 </html>

@@ -33,6 +33,35 @@
 
 
 #more {display: none;}
+/*popUp window style*/
+
+.popUp {
+      background-color: #e5f1f8;
+      width: 300px;
+      padding: 30px 40px;
+      position: absolute;
+      bottom: 55%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+      border-radius: 8px;
+      display: none;
+       z-index: 1;
+ }
+#close{
+  display: block;
+  margin: 0 0 10px auto;
+  font-size: 30px;
+  background-color: transparent;
+  color: #007bff;
+  outline: none;
+  cursor: pointer;
+}
+.popUp p{
+  font-size:13px ;
+  text-align: justify;
+  margin: 20px 0;
+  color: #000;
+}
 </style>
 
 
@@ -46,19 +75,6 @@
         </a>
         </div>
     </header>
-    <!-- Events Highlights -->
-   <!--<section class="event-highlights">
-        <section class="highlight">
-            <h3>Health Screenings</h3>
-            <p>8:00 AM - 11:00 AM</p>
-            <p>Free health screenings will be available, including blood pressure checks, cholesterol screenings, and BMI assessments. Medical professionals will be on hand to provide guidance and answer questions.</p>
-        </section>
-
-        <section class="highlight">
-            <h3>Fitness and Nutrition Workshops</h3>
-            <p>11:15 AM - 1:00 PM</p>
-            <p>Attendees can participate in interactive workshops led by fitness experts and nutritionists. Learn about exercise routines, healthy meal planning, and maintaining a balanced lifestyle.</p>
-        </section>--> <!-- Will do this later or maybe not -->
     <!-- Event Cards -->
     <div class="container">
         <div class="item-container">
@@ -147,19 +163,33 @@
                         </cite>
                     </div>
                 </div>
-                <a href="window popup.html">
-                    <button class="action" >Play Now!</button>
+                <a href="#popsy">
+                    <button class="action" id="openPopup">Play Now!</button>
                   </a>
                   
             </div>
         </div>
     </section>
-    
+    <!--PopUp Window-->
+    <div class="popUp" id="popsy">
+        <button id="close">&times;</button>
+        <h2>Play Game</h2>
+        <p>Make sure you read the instructions carefully before you play the game.</p>
+        <a href="game.html"><button>Start</button></a>
+    </div>
+
     <script>
-//        window.addEventListener('scroll', function(){
-//    var navbar= this.document.querySelector("navbar");
- //   navbar.classList.toggle("sticky", window.scrollY > 0);});
-    </script>
+          // Hide the popUp initially
+         document.querySelector(".popUp").style.display = "none";
+
+document.querySelector("#openPopup").addEventListener("click", function () {
+    document.querySelector(".popUp").style.display = "block";
+});
+
+document.querySelector("#close").addEventListener("click", function () {
+    document.querySelector(".popUp").style.display = "none";
+});
+        </script>
     
 </body>
 </html>

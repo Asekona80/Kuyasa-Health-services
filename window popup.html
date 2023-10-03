@@ -22,7 +22,7 @@
   border-radius: 8px;
   display: none;
 }
-.popUp button{
+#close{
   display: block;
   margin: 0 0 20px auto;
   font-size: 30px;
@@ -49,28 +49,23 @@ a{
 }
 </style>
 <body>
-  <div class="popUp">
+  <div class="popUp" id="popsy">
 
 <button id="close">&times;</button></a>
 <h2>Play Game</h2>
 <p>make sure you read the instructions carefully
     before you play the game.
 </p>
-<a href="game.html">Start</a>
+<a href="game.html"><button>Start</button></a>
   </div>
 
   <script>
-    window.addEventListener("load", function(){
-        setTimeout(
-         function open(event){
-            document.querySelector(".popUp").style.display="block";
+     document.querySelector("#openPopup").addEventListener("click", function () {
+      document.querySelector(".popUp").style.display = "block";
+    });
 
-         },
-         1000   
-        )
-    })
-    document.querySelector("#close").addEventListener("click",function(){
-        document.querySelector(".popUp").style.display="none";
+    document.querySelector("#close").addEventListener("click", function () {
+      document.querySelector(".popUp").style.display = "none";
     });
   </script>
 </body>

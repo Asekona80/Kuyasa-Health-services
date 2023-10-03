@@ -1,3 +1,5 @@
+
+    
 //slideshow code//
 
 let slideIndex = 0; // Start with the first slide (0-based index)

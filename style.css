@@ -482,8 +482,7 @@ h2 {
 }
 
 #whatsapp-icon,
-#facebook-icon,
-#twitter-icon {
+#facebook-icon {
   margin-bottom: 55px;
   font-size: 2rem;
   margin-top: 50px;
@@ -539,14 +538,7 @@ h2 {
     padding: 0;
     
 }
-.logo{
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  margin: 0 auto;
-  padding: 0;
-}
-  
+
 .navbar, h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img, .socials, .footer p, footer img{
   display: none;
   font-size: 1.5rem;
@@ -563,6 +555,16 @@ h2 {
  .container-form{
   width: 85%;
  }
+
+ #hero{
+  height: 40%;
+ }
+}
+
+@media screen and (min-width:400px) {
+.dropdown{
+  visibility: hidden !important;
+}
 }
 
 /* API Map */

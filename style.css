@@ -572,39 +572,3 @@ map img {
   margin-top: 10px;
 }
 
-.popUp{
-  background-color: #ffffff;
-  width: 440px;
-  padding: 30px 40px;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 8px;
-  display: none;
-}
-.popUp button{
-  display: block;
-  margin: 0 0 20px auto;
-  font-size: 30px;
-  background-color: transparent;
-  color: #007bff;
-  outline: none;
-  cursor: pointer;
-}
-.popUp p{
-  font-size:14px ;
-  text-align: justify;
-  margin: 20px 0;
-}
-a{
-  display: block;
-  width: 150px;
-  position: relative;
-  margin: auto;
-  text-align: center;
-  background-color: #0073e6;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 5px 0;
-}

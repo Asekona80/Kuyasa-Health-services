@@ -15,9 +15,13 @@
     align-items: center;
     justify-content: center;
   }
-
+  /* styling for instruction box*/
+#instructions{
+margin-right: 6rem;
+}
   canvas {
     border: 1px solid white;
+   
   }
 
   .logo {
@@ -83,14 +87,20 @@
 <div class="navbar">
   <div class="logo" >
 
-    <a href="index.html"><img src="images/Group 1.png" alt="logo" width="60"></a>
+    
     <a href="events.html">Back to Events</a>
 
   </div>
 </div>
+<canvas width="350" height="500" id="instructions">
+  <h3>Instructions</h3>
+</canvas>
+
+
 <canvas width="320" height="640" id="game"></canvas>
 <h1 class="highscore">High Score :</h1>
 <h1 id="highscore"></h1>
+
 
 <script>
 

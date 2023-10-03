@@ -22,6 +22,12 @@ font-family: "Poppins", sans-serif;
 font-size: 1.2rem;
 color: #fff;
 }
+h3{
+  margin:1.5rem;
+}
+ol{
+  line-height: 2rem;
+}
   canvas {
     border: 1px solid white;
    
@@ -45,7 +51,7 @@ color: #fff;
   }
   .logo a:hover{
     border-bottom: 2px solid #ffffff;
-  padding-bottom: 10px;
+    padding-bottom: 10px;
   }
   .highscore{
     padding-left: 100px;
@@ -57,7 +63,7 @@ font-size: 1.2rem;
   #highscore{
     color: #fff;
     font-family: "Poppins", sans-serif;
-font-size: 1.2rem;
+   font-size: 1.2rem;
   }
 
 #tetris {
@@ -101,23 +107,24 @@ font-size: 1.2rem;
 <div class="navbar">
   <div class="logo" >
     <a href="events.html">Back to Events</a>
-
   </div>
 </div>
+<div class="instructions">
 <h3>Instructions</h3>
   <ol>
-    <li>
+     <li>
       Left Arrow : Move the tetromino left.
       </li>
-    <li>Right Arrow: Move the tetromino right.
-     </li>
-     <li> Down Arrow: Accelerate the tetromino's fall speed.
+      <li>Right Arrow: Move the tetromino right.
+      </li>
+      <li> Down Arrow: Accelerate the tetromino's fall speed.
       </li>
       <li>Up Arrow: Rotate the tetromino clockwise.
        </li>
   </ol>
+</div>
 <canvas width="320" height="640" id="game"></canvas>
-<h1 class="highscore">High Score :</h1>
+<h1 class="highscore">High Score:</h1>
 <h1 id="highscore"></h1>
 
 

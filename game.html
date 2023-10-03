@@ -13,11 +13,14 @@
     background: rgb(31, 31, 147);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
   }
   /* styling for instruction box*/
-#instructions{
-margin-right: 6rem;
+h3, ol{
+margin:0;
+font-family: "Poppins", sans-serif;
+font-size: 1.2rem;
+color: #fff;
 }
   canvas {
     border: 1px solid white;
@@ -32,18 +35,25 @@ margin-right: 6rem;
     margin-top: 20px;
 }
   .logo a {
-    color: white;
+    color: #fff;
     font-size: large;
     font-weight: 300;
     padding-right: 20px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
   }
   .highscore{
     padding-left: 100px;
     padding-right: 50px;
-    color: white;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+font-size: 1.2rem;
   }
   #highscore{
-    color: white;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+font-size: 1.2rem;
   }
 
 #tetris {
@@ -86,17 +96,22 @@ margin-right: 6rem;
 <body>
 <div class="navbar">
   <div class="logo" >
-
-    
     <a href="events.html">Back to Events</a>
 
   </div>
 </div>
-<canvas width="350" height="500" id="instructions">
-  <h3>Instructions</h3>
-</canvas>
-
-
+<h3>Instructions</h3>
+  <ol>
+    <li>
+      Left Arrow : Move the tetromino left.
+      </li>
+    <li>Right Arrow: Move the tetromino right.
+     </li>
+     <li> Down Arrow: Accelerate the tetromino's fall speed.
+      </li>
+      <li>Up Arrow: Rotate the tetromino clockwise.
+       </li>
+  </ol>
 <canvas width="320" height="640" id="game"></canvas>
 <h1 class="highscore">High Score :</h1>
 <h1 id="highscore"></h1>

@@ -1,44 +1,62 @@
 
+
     
 //slideshow code//
 document.addEventListener("DOMContentLoaded", function () {
-let slideIndex = 0; 
+let slideIndex = 0; // Start with the first slide (0-based index)
 showSlides();
+
+// Next/previous controls
 
 function plusSlides(n) {
     showSlides((slideIndex += n));
 }
+
+// Thumbnail image controls
+
 function currentSlide(n) {
+    showSlides((slideIndex = n - 1)); // Subtract 1 to match the 0-based index
     showSlides((slideIndex = n - 1)); 
 }
 
 function showSlides() {
-    let i;
+
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
 
+    // Hide all slides
+    
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
+    // Remove the "active" class from all dots
+    
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
+    // Increment slideIndex and reset to 0 if it exceeds the number of slides
+    
     slideIndex++;
     if (slideIndex > slides.length) {
+        slideIndex = 1; // Start over from the first slide
         slideIndex = 1; 
     }
 
+    // Display the current slide and set the corresponding dot as "active"
+    
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
 
+// Automatically advance the slides every 3 seconds (adjust the interval as needed)
+
 setInterval(showSlides, 3000);
-});
 
 
-    document.addEventListener("DOMContentLoaded", function () {
+
+    
         const myForm = document.getElementById("myForm");
         const successMessage = document.getElementById("success-message");
 
@@ -82,7 +100,6 @@ setInterval(showSlides, 3000);
 
    // script.js
 
-   document.addEventListener("DOMContentLoaded", function () {
    function updateCurrentTime() {
     const currentTimeElement = document.getElementById("current-time");
 
@@ -93,7 +110,7 @@ setInterval(showSlides, 3000);
 
     const currentTimeString = `${hours}:${minutes}:${seconds}`;
     currentTimeElement.textContent = `CurrentTime: ${currentTimeString}`;
-
+}
 
 // Update the current time every second
 setInterval(updateCurrentTime, 1000);
@@ -106,29 +123,44 @@ $(document).ready(function() {
       $('.menu-links').toggleClass('show-menu');
   });
 });
-}});
-
 
 //Making an image bounce
-document.addEventListener("DOMContentLoaded", function () {
 const image = document.querySelector('.bounce-image');
 
 function toggleBounce() {
     image.classList.toggle('bounce');
 }
+
 const navbar = document.querySelector('.navbar');
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     navbar.classList.add('fixed');
   } else {
     navbar.classList.remove('fixed');
   }
-});
-});
+
+  formElem.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let respone = await fetch('/article/formdata/post/user',{
+        method: 'POST',
+        body: new FormData (formElem)
+
+    });
+
+    let result = await respone.json();
+
+    alert(result.message);
+};
+
+ 
+window.onload = () => {
+document.getElementById('submitbtn').addEventListener("submit");
+}
 
 // Array Buffers
   // Collect form data
-  document.addEventListener("DOMContentLoaded", function () {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const number = document.getElementById('number').value;
@@ -145,51 +177,8 @@ window.addEventListener('scroll', () => {
   console.log(nameArrayBuffer);
   console.log(emailArrayBuffer);
   console.log(messageArrayBuffer);
-  });
 
-// Form Data
-document.addEventListener("DOMContentLoaded", function () {
-  formElem.onsubmit = async (e) => {
-    e.preventDefault();
+  // You can perform further actions with the ArrayBuffers here
 
-    let respone = await fetch('/article/formdata/post/user',{
-        method: 'POST',
-        body: new FormData (formElem)
-
-    });
-
-    let result = await respone.json();
-
-    alert(result.message);
-}
-});
- 
-// not sure
-document.addEventListener("DOMContentLoaded", function () {
-window.addEventListener('scroll', function(){
-    var navbar= this.document.querySelector("navbar");
-    navbar.classList.toggle("sticky", window.scrollY > 0);
-});
-});
-
-// not really which code is this
-document.addEventListener("DOMContentLoaded", function () {
-window.onload = () => {
-    document.getElementById('submitbtn').addEventListener("submit");
-    }});
-    
-// back to top btn 
-document.addEventListener("DOMContentLoaded", function () {
-
-const images = document.querySelectorAll('.about-us-images');
-
-images.forEach(image => {
-    image.addEventListener('mouseenter', () => {
-        image.classList.add('image-hover'); // Add the hover class
-    });
-
-    image.addEventListener('mouseleave', () => {
-        image.classList.remove('image-hover'); // Remove the hover class
-    });
 });
 });

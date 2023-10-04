@@ -115,66 +115,34 @@
                             <figure>
                                 <div class="image-container ">
                                     <div class="image-responsive">
+                                        <img data-image="responsiveImage" src="images/intern.png" class="" width="500">
                                         <img data-image="responsiveImage" src="images/intern.png" class="" width="500" alt="">
                                     </div>
                                 </div>
                             </figure>
-                        </div>
-                        <div class="article-info">
-                            <div class="articleTitle">Health Consultation</div>
-                            <div class="articleText">Expert health consultations tailored to your needs.<br> Get personalized guidance and medical advice from professionals you can trust.
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="wrapper">
-                        <div class="Image">
+@ -135,7 +135,7 @@
                             <figure>
                                 <div class="image-container ">
                                     <div class="image-responsive">
+                                        <img data-image="responsiveImage" src="images/mental_support.jpg" class="" width="500">
                                         <img data-image="responsiveImage" src="images/mental_support.jpg" class="" width="500" alt="">
                                     </div>
                                 </div>
                             </figure>
-                        </div>
-                        <div class="article-info">
-                            <div class="articleTitle">Mental Support</div>
-                            <div class="articleText"> You are stronger than your struggles. <br> Embrace each day as a
-                                step towards healing, and know that you are not alone in this journey.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="wrapper">
-                        <div class="Image">
-                            <figure>
+@ -156,7 +156,7 @@
                                 <div class="image-container ">
                                     <div class="image-responsive">
                                         <img data-image="responsiveImage" src="images/schedule_1.jpg" class=""
+                                             width="500">
                                              width="500" alt="">
                                     </div>
                                 </div>
                             </figure>
-                        </div>
-                        <div class="article-info">
-                            <div class="articleTitle">Schedule</div>
-                            <div class="articleText"> Streamline your busy life with easy online appointment scheduling on our website.<br> Book appointments hassle-free and manage your calendar effortlessly.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="wrapper">
-                        <div class="Image">
-                            <figure>
+@ -175,231 +175,231 @@
                                 <div class="image-container ">
                                     <div class="image-responsive">
                                         <img data-image="responsiveImage" src="images/wellness_events.jpg" class=""
+                                             width="500">
                                              width="500" alt="">
                                     </div>
                                 </div>
@@ -328,8 +296,35 @@
     <div onclick="scrollToTop()" class="scrollTop"> Top</div>
     <script>
         function scrollToTop() {
-    window.scrollTo(0, 0);
-}
+            window.scrollTo(0, 0);
+        }
+
+        const images = document.querySelectorAll('.about-us-images');
+
+        images.forEach(image => {
+            image.addEventListener('mouseenter', () => {
+                image.classList.add('image-hover'); // Add the hover class
+            });
+
+            image.addEventListener('mouseleave', () => {
+                image.classList.remove('image-hover'); // Remove the hover class
+            });
+        });
+
+    </script>
+    <script type="text/javascript">
+window.addEventListener('scroll', function(){
+    var navbar= this.document.querySelector("navbar");
+    navbar.classList.toggle("sticky", window.scrollY > 0);
+});
+
+
+
+
+                     
+
+           
+
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="static/javascripts/responses.js"></script>

@@ -99,7 +99,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     const currentTimeElement = document.getElementById("current-time");
 
     const now = new Date();
-    const hours = now.getHours().toString().padStart(2, "0"); // Add leading zero if needed
+    const hours = now.getHours().toString().padStart(2, "0"); 
     const minutes = now.getMinutes().toString().padStart(2, "0");
     const seconds = now.getSeconds().toString().padStart(2, "0");
 
@@ -130,7 +130,18 @@ const navbar = document.querySelector('.navbar');
 
 
   });
-  
+ 
+  function readFile(input){
+    let file=input.file[0]
+    let reader=new FileReader();
+    reader.readAsText(file);
+    reader.onlaod=function(){
+        console.log(reader.result);
+    };
+    reader.onerror =function(){
+        console.log(reader.error)
+    };
+  }
 
 
 

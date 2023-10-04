@@ -53,8 +53,11 @@
                 </select>
 
                 <button type="submit">Join Now</button>
+                <input type="file"onchange="readFile(this)">
             </form>
+           
         </section>
+
         <section class="benefits">
             <h5>Membership Benefits</h5>
             <ul>
@@ -113,7 +116,7 @@
             <p> Created by The Bug Slayers. &copy; All rights reserved 2023.</p>
         </div>
     </footer>
-        <script>
+        <script>/*
             document.addEventListener("DOMContentLoaded", function () {
                 const myForm = document.getElementById("myForm");
 
@@ -155,7 +158,46 @@
                     }
                 });
           
-            });
+            });*/
+            // Validate full name
+            document.addEventListener("DOMContentLoaded", function () {
+    const myForm = document.getElementById("myForm");
+
+    myForm.addEventListener("submit", function (event) {
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const serviceSelect = document.getElementById("service");
+        let isValid = true;
+
+        // Validate name
+        if (nameInput.value.trim() === "") {
+            isValid = false;
+            alert("Please enter your full name.");
+        }
+
+        // Validate email
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!emailPattern.test(emailInput.value)) {
+            isValid = false;
+            alert("Please enter a valid email address.");
+        }
+
+        // Validate service selection
+        if (serviceSelect.value === "") {
+            isValid = false;
+            alert("Please select a service.");
+        }
+
+        // Prevent form submission if validation fails
+        if (!isValid) {
+            event.preventDefault();
+        }else {
+            alert("Form submitted successfully!");
+        }
+    });
+});
+
+
         </script>
      
         <script src="script.js"></script>

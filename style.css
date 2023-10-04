@@ -280,12 +280,10 @@ ul {
   animation: bounce 4s infinite;
 }
 
-
 .container-form {
   width: 600px;
   padding: 20px;
   margin-right: 9%;
-
   border-radius: 5px;
   text-align: center;
   justify-content: center;
@@ -298,8 +296,6 @@ form {
   background-color: #b9d9eb;
   padding: 5%;
   margin-left:10% ;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
 }
 /* Style the form title */
 h1 {
@@ -350,7 +346,6 @@ button[type="submit"]:hover {
   margin-left: 35%;
   margin-bottom: 30px;
   justify-content: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .join-form h5 {
   margin-top: 0;

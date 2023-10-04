@@ -577,20 +577,6 @@ h2 {
 }
 
 
-/* API Map */
-
-map {
-  flex-basis: calc(
-    50% - 20px
-  ); /* Set the width of the map to 50% with some spacing */
-}
-
-map img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-
 @media screen and (max-width: 767px) {
   /* CSS for small screens */
   .image-responsive img{
@@ -632,4 +618,18 @@ map img {
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* CSS for high-contrast mode */
 }
+}
+
+/* API Map */
+
+map {
+  flex-basis: calc(
+    50% - 20px
+  ); /* Set the width of the map to 50% with some spacing */
+}
+
+map img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
 }

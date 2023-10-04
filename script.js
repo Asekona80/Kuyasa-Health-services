@@ -123,14 +123,22 @@ function toggleBounce() {
 
 const navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll', () => {
+/*window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     navbar.classList.add('fixed');
   } else {
     navbar.classList.remove('fixed');
   }
-});
-
+});*/
+window.addEventListener('DOMContentLoaded', function() {
+    var navbar = document.querySelector('.navbar');
+    var homePage = document.querySelector('.home-page');
+  
+    if (homePage) {
+      navbar.classList.add('hidden');
+    }
+  });
+  
 
 
 

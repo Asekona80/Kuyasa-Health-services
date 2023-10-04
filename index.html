@@ -351,37 +351,7 @@
     <script type="text/javascript">
 
 
-// This is the form data
 
-myForm.onsubmit = async (e) => {
-    e.preventDefault();
-
-    let respone = await fetch('/article/formdata/post/user',{
-        method: 'POST',
-        body: new FormData (myForm)
-
-    });
-
-    let result = await respone.json();
-
-    alert(result.message);
-};
-
- 
-
-
-
-  // Convert data to an ArrayBuffer
-  const encoder = new TextEncoder();
-  const nameArrayBuffer = encoder.encode(name).buffer;
-  const emailArrayBuffer = encoder.encode(email).buffer;
-  const numArrayBuffer = encoder.encode(number).buffer;
-  const messageArrayBuffer = encoder.encode(message).buffer;
-
-  // Log the ArrayBuffers to the console
-  console.log(nameArrayBuffer);
-  console.log(emailArrayBuffer);
-  console.log(messageArrayBuffer);
 
   // You can perform further actions with the ArrayBuffers here 
   

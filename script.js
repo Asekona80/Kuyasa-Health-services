@@ -104,10 +104,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
     const currentTimeString = `${hours}:${minutes}:${seconds}`;
 
-    currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
+    //currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
 
     //currentTimeElement.textContent = `CurrentTime: ${currentTimeString}`;
-    currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
+    //currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
 
     //currentTimeElement.textContent = `CurrentTime: ${currentTimeString}`;
 
@@ -119,7 +119,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 setInterval(updateCurrentTime, 1000);
 
 // Call the function immediately to set the initial time
-updateCurrentTime();
+//updateCurrentTime();
 
 $(document).ready(function() {
   $('.menu-toggle').click(function() {
@@ -173,7 +173,7 @@ window.addEventListener('scroll', () => {
 
   const form = document.getElementById('myForm');
 
-form.addEventListener('submitbtn', async event => {
+form.addEventListener('submit', async event => {
   event.preventDefault();
 
   const data = new FormData(form);
@@ -196,6 +196,7 @@ form.addEventListener('submitbtn', async event => {
     console.log(err.message);
   }
 });
+
 
 
 

@@ -525,14 +525,6 @@ h2 {
     padding: 0;
     
 }
-
-.navbar, h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img, .socials, .footer p, footer img{
-  /*display: none;*/
-  font-size: 1rem;
-  margin: 0 auto;
-  padding: 0;
-
-}
 .image-responsive img{
   width: 300px;
 }
@@ -576,10 +568,9 @@ h2 {
   
 }
 
-
 @media screen and (max-width: 767px) {
   /* CSS for small screens */
-  .image-responsive img{
+  .image-responsive img, .navbar, h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img, .socials, .footer p, footer img{
     width: 300px;
   }
 }
@@ -593,6 +584,7 @@ h2 {
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   /* CSS for medium-sized screens (tablets) */
+
 }
 
 @media screen and (min-width: 1200px) {

@@ -227,7 +227,7 @@
                 <label for="message">Message:</label>
                 <textarea type="text" id="message" name="message" ></textarea>
     
-                <button type="submit">Submit</button>
+                <button type="submit" id="submitbtn" value="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -270,9 +270,7 @@
                 </ul>
 
                 <div class="map">
-                    <a href="https://www.google.com/maps/dir/-33.8690248,18.6531911/97+Durham+Ave,+Salt+River,+Cape+Town,+7925/@-33.9013173,18.4778913,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1dcc5d08518ba1b9:0x1398e85e424f762!2m2!1d18.4606593!2d-33.9333712?entry=ttu">
-                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=97+Durham+Ave,+Salt+River,+Cape+Town,+7925&zoom=15&size=200x200&key=AIzaSyByYWyPgA6M25THX0nRRulj0sIJKk_bbZc"
-                             alt="Map"></a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.3017348887256!2d18.458084375919277!3d-33.93336672240629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d08518ba1b9%3A0x1398e85e424f762!2s97%20Durham%20Ave%2C%20Salt%20River%2C%20Cape%20Town%2C%207925!5e0!3m2!1sen!2sza!4v1696413591113!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
                 </div>
             </div>
         </div>
@@ -346,19 +344,16 @@
 
     </script>
     <script type="text/javascript">
-window.addEventListener('scroll', function(){
-    var navbar= this.document.querySelector("navbar");
-    navbar.classList.toggle("sticky", window.scrollY > 0);
-});
+
 
 // This is the form data
 
-formElem.onsubmit = async (e) => {
+myForm.onsubmit = async (e) => {
     e.preventDefault();
 
     let respone = await fetch('/article/formdata/post/user',{
         method: 'POST',
-        body: new FormData (formElem)
+        body: new FormData (myForm)
 
     });
 
@@ -372,13 +367,9 @@ window.onload = () => {
 document.getElementById('submit').addEventListener("submit");
 }
 
-// Array Buffers
-  // Collect form data
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const number = document.getElementById('number').value;
-  const message = document.getElementById('message').value;
 
+<<<<<<< HEAD
+=======
   // Convert data to an ArrayBuffer
   const encoder = new TextEncoder();
   const nameArrayBuffer = encoder.encode(name).buffer;
@@ -392,6 +383,10 @@ document.getElementById('submit').addEventListener("submit");
   console.log(messageArrayBuffer);
 
   // You can perform further actions with the ArrayBuffers here    
+<<<<<<< Updated upstream
+=======
+>>>>>>> 29e7187550baf95f85577fce332e28098f120963
+>>>>>>> Stashed changes
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

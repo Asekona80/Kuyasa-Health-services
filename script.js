@@ -55,8 +55,6 @@ function showSlides() {
 
 setInterval(showSlides, 3000);
 
-<<<<<<< Updated upstream
-
 
 document.getElementById("myForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the form from submitting normally
@@ -76,34 +74,6 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     const isEmailValid = emailPattern.test(emailInput);
     const isNumberValid = numberPattern.test(numberInput);
 
-=======
-<<<<<<< HEAD
-    document.addEventListener("DOMContentLoaded", function () {
-        const myForm = document.getElementById("myForm");
-        const successMessage = document.getElementById("success-message");
-=======
-
-
-document.getElementById("myForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting normally
->>>>>>> 29e7187550baf95f85577fce332e28098f120963
-
-    // Get the user input
-    const nameInput = document.getElementById("name").value;
-    const emailInput = document.getElementById("email").value;
-    const numberInput = document.getElementById("number").value;
-
-    // Define regular expressions and flags for validation
-    const namePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
-    const emailPattern = /^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/; // Email pattern
-    const numberPattern = /^\d+$/; // Only digits
-
-    // Test input against patterns
-    const isNameValid = namePattern.test(nameInput);
-    const isEmailValid = emailPattern.test(emailInput);
-    const isNumberValid = numberPattern.test(numberInput);
-
->>>>>>> Stashed changes
     // Check validation results
     if (isNameValid && isEmailValid && isNumberValid) {
         // All fields are valid, you can proceed with form submission or other actions
@@ -133,16 +103,12 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     const seconds = now.getSeconds().toString().padStart(2, "0");
 
     const currentTimeString = `${hours}:${minutes}:${seconds}`;
-<<<<<<< Updated upstream
+
     currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
-=======
-<<<<<<< HEAD
+
     //currentTimeElement.textContent = `CurrentTime: ${currentTimeString}`;
-=======
     currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
->>>>>>> 29e7187550baf95f85577fce332e28098f120963
->>>>>>> Stashed changes
-}
+
 
 // Update the current time every second
 setInterval(updateCurrentTime, 1000);
@@ -165,10 +131,6 @@ function toggleBounce() {
 
 const navbar = document.querySelector('.navbar');
 
-<<<<<<< Updated upstream
-
-=======
-<<<<<<< HEAD
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     navbar.classList.add('fixed');
@@ -202,12 +164,10 @@ window.addEventListener('scroll', () => {
   console.log(emailArrayBuffer);
   console.log(messageArrayBuffer);
 
-  // You can perform further actions with the ArrayBuffers here
-=======
->>>>>>> 29e7187550baf95f85577fce332e28098f120963
+   }
 
->>>>>>> Stashed changes
-  });
+  // You can perform further actions with the ArrayBuffers here
+
  
   function readFile(input){
     let file=input.file[0]
@@ -221,7 +181,7 @@ window.addEventListener('scroll', () => {
     };
   }
 
-
+    })
 
 
 

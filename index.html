@@ -257,7 +257,12 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="/events.html">Events</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li> <a href="#" class="search-weather">Search Weather</a></li>
+                    <div id="weather-data"></div>
                     <li><a href="/game.html">Play Tetris here!</a></li>
+                    
+                    
+                    
                 </ul>
             </div>
             <div class="footer-address">
@@ -368,6 +373,7 @@ document.getElementById('submit').addEventListener("submit");
 }
 
 
+
   // Convert data to an ArrayBuffer
   const encoder = new TextEncoder();
   const nameArrayBuffer = encoder.encode(name).buffer;
@@ -380,8 +386,57 @@ document.getElementById('submit').addEventListener("submit");
   console.log(emailArrayBuffer);
   console.log(messageArrayBuffer);
 
-  // You can perform further actions with the ArrayBuffers here    
+  // You can perform further actions with the ArrayBuffers here 
+  
+  //CORS
+  fetch('https://openweathermap.org/')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json(); // Parse the response as JSON
+  })
+  .then(data => {
+    console.log(data); // Process the data
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+   
+  });
 
+  //adding alert message when clicking search weather link
+  document.addEventListener("DOMContentLoaded", function () {
+  const apiKey = '886b8f257794cf68ce0bf0f59816147d'; // Replace with your actual API key
+  const weatherDataElement = document.getElementById('weather-data');
+  
+  // Function to fetch weather data
+  function fetchWeatherData() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=YOUR_CITY_NAME&appid=${apiKey}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json(); // Parse the response as JSON
+      })
+      .then(data => {
+        // Process the data
+        console.log(data);
+        // You can display the weather data on the page as needed
+        weatherDataElement.textContent = `Temperature: ${data.main.temp}°C, Description: ${data.weather[0].description}`;
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+        alert("There was a problem with the fetch operation");
+      });
+  }
+
+  // Add click event listener to the "Search Weather" link
+  const searchWeatherLink = document.querySelector('.search-weather');
+  searchWeatherLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the link from navigating to a new page
+    fetchWeatherData(); // Call the function to fetch weather data
+  });
+});
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

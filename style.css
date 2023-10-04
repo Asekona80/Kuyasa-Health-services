@@ -216,7 +216,7 @@ padding: 5px 100px;
 .wrapper {
   width: 80%;
   margin: 3%;
-  margin-left: 10rem;
+  margin-left: 5rem;
   background-color: #fff;
   padding: 1rem;
   display: inline-flex;
@@ -539,10 +539,14 @@ h2 {
 }
 
 .navbar, h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img, .socials, .footer p, footer img{
-  display: none;
-  font-size: 1.5rem;
+  /*display: none;*/
+  font-size: 1rem;
   margin: 0 auto;
   padding: 0;
+
+}
+.image-responsive img{
+  width: 300px;
 }
 
 #services, #contact, #about, .footer{
@@ -580,3 +584,44 @@ map img {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  /* CSS for small screens */
+  .image-responsive img{
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS for small screens in landscape mode */
+  .image-responsive img{
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* CSS for medium-sized screens (tablets) */
+}
+
+@media screen and (min-width: 1200px) {
+  /* CSS for large screens (desktops) */
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* CSS for high-resolution displays */
+}
+
+@media screen and (orientation: landscape) {
+  /* CSS for landscape orientation */
+}
+
+@media screen and (orientation: portrait) {
+  /* CSS for portrait orientation */
+}
+
+@media print {
+  /* CSS for print styles */
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* CSS for high-contrast mode */
+}

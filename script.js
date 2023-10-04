@@ -55,6 +55,11 @@ function showSlides() {
 
 setInterval(showSlides, 3000);
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 
 document.getElementById("myForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the form from submitting normally
@@ -74,6 +79,11 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     const isEmailValid = emailPattern.test(emailInput);
     const isNumberValid = numberPattern.test(numberInput);
 
+<<<<<<< Updated upstream
+=======
+
+    
+>>>>>>> Stashed changes
     // Check validation results
     if (isNameValid && isEmailValid && isNumberValid) {
         // All fields are valid, you can proceed with form submission or other actions
@@ -104,11 +114,19 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
     const currentTimeString = `${hours}:${minutes}:${seconds}`;
 
+<<<<<<< Updated upstream
     currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
 
     //currentTimeElement.textContent = `CurrentTime: ${currentTimeString}`;
     currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
 
+=======
+    //currentTimeElement.textContent = `CurrentTime: ${currentTimeString}`;
+
+//    currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
+
+}
+>>>>>>> Stashed changes
 
 // Update the current time every second
 setInterval(updateCurrentTime, 1000);
@@ -131,6 +149,10 @@ function toggleBounce() {
 
 const navbar = document.querySelector('.navbar');
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     navbar.classList.add('fixed');
@@ -140,10 +162,6 @@ window.addEventListener('scroll', () => {
 });
 // Array Buffers
   // Collect form data
-
-
-
-
   window.onload = () => {
     document.getElementById('submitbtn').addEventListener("submit");
     }
@@ -164,9 +182,44 @@ window.addEventListener('scroll', () => {
   console.log(emailArrayBuffer);
   console.log(messageArrayBuffer);
 
+<<<<<<< Updated upstream
    }
 
   // You can perform further actions with the ArrayBuffers here
+=======
+  // Form data thing
+
+  const form = document.getElementById('myForm');
+
+form.addEventListener('submitbtn', async event => {
+  event.preventDefault();
+
+  const data = new FormData(form);
+
+  console.log(Array.from(data));
+
+  try {
+    const res = await fetch(
+      'https://jsonplaceholder.typicode.com/users',
+      {
+        method: 'POST',
+        body: data,
+      },
+    );
+
+    const resData = await res.json();
+
+    console.log(resData);
+  } catch (err) {
+    console.log(err.message);
+  }
+});
+
+
+
+  });
+  
+>>>>>>> Stashed changes
 
  
   function readFile(input){

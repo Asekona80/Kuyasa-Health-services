@@ -625,7 +625,7 @@ map img {
 }
 
 @media screen and (min-width: 1200px) {
-  /* CSS for large screens (desktops) */
+  /* CSS for large screens (desktops)  */
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

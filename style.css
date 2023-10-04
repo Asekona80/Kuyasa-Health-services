@@ -11,7 +11,6 @@ body {
   background: rgb(220, 236, 250);
   display: grid;
   min-height: 100vh;
-  background-attachment: scroll;
 }
 
 /* navbar css styling */
@@ -40,8 +39,6 @@ body {
   align-items: center;
   background-color:transparent;
 
-  transition: backgroung-color 0.5s; 
-
 }
 
 .navbar .logo {
@@ -59,25 +56,11 @@ body {
   transition: 0.6s;
 }
 
-.navbar.sticky {
-  padding: 5px 100px;
-  background: #a8d5e8;
-  backdrop-filter: none;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-.navbar .logo,
-.navbar .sticky .menu a {
-  background-color: #a8d5e8;
-}
-
 .navbar .menu a:hover {
   border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
 }
+
 .hero-box .hero-heading {
   color: #ffffff;
   font-size: 50px;

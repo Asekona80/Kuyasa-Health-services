@@ -57,47 +57,41 @@ setInterval(showSlides, 3000);
 
 
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const myForm = document.getElementById("myForm");
-        const successMessage = document.getElementById("success-message");
+document.getElementById("myForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting normally
 
-        myForm.addEventListener("submit", function (event) {
-            let isValid = true;
+    // Get the user input
+    const nameInput = document.getElementById("name").value;
+    const emailInput = document.getElementById("email").value;
+    const numberInput = document.getElementById("number").value;
 
-            // Name validation
-            const nameInput = document.getElementById("name");
-            if (nameInput.value.trim() === "") {
-                isValid = false;
-                alert("Please enter your name.");
-            }
-    
-            // Email validation
-            const emailInput = document.getElementById("email");
-            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            if (!emailPattern.test(emailInput.value)) {
-                isValid = false;
-                alert("Please enter a valid email address.");
-            }
+    // Define regular expressions and flags for validation
+    const namePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
+    const emailPattern = /^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/; // Email pattern
+    const numberPattern = /^\d+$/; // Only digits
 
-            // Message validation
-            const messageInput = document.getElementById("message");
-            if (messageInput.value.trim() === "") {
-                isValid = false;
-                alert("Please enter a message.");
-            }
+    // Test input against patterns
+    const isNameValid = namePattern.test(nameInput);
+    const isEmailValid = emailPattern.test(emailInput);
+    const isNumberValid = numberPattern.test(numberInput);
 
-            // Number validation (optional)
-            const numberInput = document.getElementById("number");
-            if (numberInput.value.trim() !== "" && isNaN(numberInput.value)) {
-                isValid = false;
-                alert("Please enter a valid number.");
-            }
-            // Prevent form submission if validation fails
-            if (!isValid) {
-                event.preventDefault();
-            }
-        });
-    });
+    // Check validation results
+    if (isNameValid && isEmailValid && isNumberValid) {
+        // All fields are valid, you can proceed with form submission or other actions
+        alert("Form submitted successfully!");
+    } else {
+        // Display error messages for invalid fields
+        if (!isNameValid) {
+            alert("Invalid name. Please enter a valid name.");
+        }
+        if (!isEmailValid) {
+            alert("Invalid email. Please enter a valid email address.");
+        }
+        if (!isNumberValid) {
+            alert("Invalid number. Please enter a valid number.");
+        }
+    }
+});
 
    // script.js
 
@@ -110,7 +104,7 @@ setInterval(showSlides, 3000);
     const seconds = now.getSeconds().toString().padStart(2, "0");
 
     const currentTimeString = `${hours}:${minutes}:${seconds}`;
-    currentTimeElement.textContent = `CurrentTime: ${currentTimeString}`;
+    currentTimeElement.textContent= `CurrentTime: ${currentTimeString}`;
 }
 
 // Update the current time every second
@@ -134,23 +128,10 @@ function toggleBounce() {
 
 const navbar = document.querySelector('.navbar');
 
-/*window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('fixed');
-  } else {
-    navbar.classList.remove('fixed');
-  }
-});*/
-window.addEventListener('DOMContentLoaded', function() {
-    var navbar = document.querySelector('.navbar');
-    var homePage = document.querySelector('.home-page');
-  
-    if (homePage) {
-      navbar.classList.add('hidden');
-    }
+
   });
   
-});
+
 
 
 

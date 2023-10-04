@@ -328,74 +328,8 @@
     <div onclick="scrollToTop()" class="scrollTop"> Top</div>
     <script>
         function scrollToTop() {
-            window.scrollTo(0, 0);
-        }
-
-        const images = document.querySelectorAll('.about-us-images');
-
-        images.forEach(image => {
-            image.addEventListener('mouseenter', () => {
-                image.classList.add('image-hover'); // Add the hover class
-            });
-
-            image.addEventListener('mouseleave', () => {
-                image.classList.remove('image-hover'); // Remove the hover class
-            });
-        });
-
-    </script>
-    <script type="text/javascript">
-window.addEventListener('scroll', function(){
-    var navbar= this.document.querySelector("navbar");
-    navbar.classList.toggle("sticky", window.scrollY > 0);
-});
-
-// This is the form data
-
-formElem.onsubmit = async (e) => {
-    e.preventDefault();
-
-    let respone = await fetch('/article/formdata/post/user',{
-        method: 'POST',
-        body: new FormData (formElem)
-
-    });
-
-    let result = await respone.json();
-
-    alert(result.message);
-};
-
- 
-window.onload = () => {
-document.getElementById('submitbtn').addEventListener("submit");
+    window.scrollTo(0, 0);
 }
-
-// Array Buffers
-  // Collect form data
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const number = document.getElementById('number').value;
-  const message = document.getElementById('message').value;
-
-  // Convert data to an ArrayBuffer
-  const encoder = new TextEncoder();
-  const nameArrayBuffer = encoder.encode(name).buffer;
-  const emailArrayBuffer = encoder.encode(email).buffer;
-  const numArrayBuffer = encoder.encode(number).buffer;
-  const messageArrayBuffer = encoder.encode(message).buffer;
-
-  // Log the ArrayBuffers to the console
-  console.log(nameArrayBuffer);
-  console.log(emailArrayBuffer);
-  console.log(messageArrayBuffer);
-
-  // You can perform further actions with the ArrayBuffers here
-
-                     
-
-           
-
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="static/javascripts/responses.js"></script>

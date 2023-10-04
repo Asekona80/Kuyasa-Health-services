@@ -522,6 +522,7 @@ h2 {
     scroll-behavior: smooth;
     box-sizing: border-box;
 
+<<<<<<< Updated upstream
 }
 
 .scrollTop:hover {
@@ -568,7 +569,28 @@ h2 {
 .dropdown{
   visibility: hidden !important;
 }
+=======
+@media screen and (max-width: 400px) {
+  .footer {
+    padding: 15px;
+    text-align: center;
+  }
+  .footer-left {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .footer-right {
+    max-width: 100%;
+  }
+  body {
+    font-size: 10px;
+  }
+  
+  
+>>>>>>> Stashed changes
 }
+
 
 /* API Map */
 

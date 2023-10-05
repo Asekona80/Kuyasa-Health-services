@@ -1,7 +1,5 @@
    
 //slideshow code//
-
-
 let slideIndex = 0; // Start with the first slide (0-based index)
 showSlides();
 
@@ -144,6 +142,7 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('fixed');
   }
 });
+
 // Array Buffers
   // Collect form data
   window.onload = () => {
@@ -166,35 +165,33 @@ window.addEventListener('scroll', () => {
   console.log(emailArrayBuffer);
   console.log(messageArrayBuffer);
 
+   
+
   
   // Form data thing
+  document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('#myForm'); // Add the CSS selector for the form element
 
-  const form = document.getElementById('myForm');
+  form.addEventListener('submit', (e) =>{
+    e.preventDefault();
 
-form.addEventListener('submit', async event => {
-  event.preventDefault();
+    const formData = new FormData(form);
 
-  const data = new FormData(form);
+    for(item of formData){
+      console.log(item[0], item[1]);
+    }
 
-  console.log(Array.from(data));
-
-  try {
-    const res = await fetch(
-      'https://jsonplaceholder.typicode.com/users',
-      {
-        method: 'POST',
-        body: data,
-      },
-    );
-
-    const resData = await res.json();
-
-    console.log(resData);
-  } catch (err) {
-    console.log(err.message);
-  }
+    fetch('https://httpbin.org/post', {
+      method: "POST",
+      body: formData,
+    })
+    .then(res => res.json())
+    .then(res => console.log(res));
+  });
 });
  
+
+//
   function readFile(input){
     let file=input.file[0]
     let reader=new FileReader();

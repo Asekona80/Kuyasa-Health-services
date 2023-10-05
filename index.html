@@ -412,6 +412,17 @@
     fetchWeatherData(); // Call the function to fetch weather data
   });
 });
+// JavaScript to add background color on scroll
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 0) {
+    navbar.style.backgroundColor = "#053067"; 
+    navbar.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)"; 
+  } else {
+    navbar.style.backgroundColor = "transparent"; 
+    navbar.style.boxShadow = "none";
+  }
+});
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

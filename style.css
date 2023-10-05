@@ -19,7 +19,7 @@ body {
   height: 850px;
   background: url("images/medical-1");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat,n;
   background-size: cover;
   padding-top: 32px;
 }
@@ -38,7 +38,17 @@ body {
   height: 80px;
   align-items: center;
   background-color:transparent;
+  transition: background-color 0.4s;
+  box-shadow: none;
 
+}
+.navbar {
+  /* Other styles... */
+  border-radius: 10px; /* Adjust the value to your preferred border radius */
+}
+.navbar.scrolled {
+  background-color: #053067;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 /* Style the search input */
@@ -62,8 +72,7 @@ body {
 
 /* Style the search results container */
 #searchResults {
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 300px;
@@ -74,11 +83,6 @@ body {
   display: none; 
 }
 
-/* Style the highlighted text within search results */
-#searchResults mark {
-  background-color: yellow;
-  font-weight: bold;
-}
 .navbar .logo {
   margin-top: 20px;
   margin-right: 50px;
@@ -167,7 +171,7 @@ PDOWN MENU */
 }
 /* heading for about and services borders */
 .border1 {
-  margin: 2%;
+  margin: 1%;
   padding: 2rem;
   text-align: center;
   font-size: 50px;
@@ -176,7 +180,7 @@ PDOWN MENU */
 }
 
 .border2 {
-  margin-top: 2%;
+  margin: 1%;
   padding: 2rem;
   text-align: center;
   font-size: 50px;

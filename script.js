@@ -143,55 +143,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Array Buffers
-  // Collect form data
-  window.onload = () => {
-    document.getElementById('submitbtn').addEventListener("submit");
-    }
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const number = document.getElementById('number').value;
-  const message = document.getElementById('message').value;
 
-  // Convert data to an ArrayBuffer
-  const encoder = new TextEncoder();
-  const nameArrayBuffer = encoder.encode(name).buffer;
-  const emailArrayBuffer = encoder.encode(email).buffer;
-  const numArrayBuffer = encoder.encode(number).buffer;
-  const messageArrayBuffer = encoder.encode(message).buffer;
-
-  // Log the ArrayBuffers to the console
-  console.log(nameArrayBuffer);
-  console.log(emailArrayBuffer);
-  console.log(messageArrayBuffer);
-
-   
-
-  
-  // Form data thing
-  document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('#myForm'); // Add the CSS selector for the form element
-
-  form.addEventListener('submit', (e) =>{
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    for(item of formData){
-      console.log(item[0], item[1]);
-    }
-
-    fetch('https://httpbin.org/post', {
-      method: "POST",
-      body: formData,
-    })
-    .then(res => res.json())
-    .then(res => console.log(res));
-  });
-});
- 
-
-//
   function readFile(input){
     let file=input.file[0]
     let reader=new FileReader();

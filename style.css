@@ -563,7 +563,7 @@ h2 {
 
 @media screen and (max-width:600px) {
  
-.navbar, .border1, .border2, .border3, .border4, .bounce-image, .image-responsive, .map, footer p, .btn-box {
+.navbar, .border1, .border2, .border3, .border4, .bounce-image, .image-responsive, .map, footer p, .btn-box, .search-container {
   display: none;
 }
 #hero h4{

@@ -54,6 +54,10 @@ a:hover{
     background-color: #fff;
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+<<<<<<< HEAD
+=======
+    margin-top: 15%;
+>>>>>>> parent of 8261685 (removed margin top on events page)
 }
 
 .img-container,

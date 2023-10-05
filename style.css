@@ -14,10 +14,11 @@ body {
 }
 
 /* navbar css styling */
+
 #hero {
   width: 100%;
   height: 850px;
-  background: url("images/medical-1");
+  background: url("images/Hero\ img.jfif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,12 +37,58 @@ body {
   left: 50%;
   transform: translate(-50%);
   height: 80px;
-  align-items:center ;
-  
+  align-items: center;
+  background-color:transparent;
+  transition: background-color 0.4s;
+  box-shadow: none;
+
 }
+.navbar {
+  /* Other styles... */
+  border-radius: 10px; /* Adjust the value to your preferred border radius */
+}
+.navbar.scrolled {
+  background-color: #053067;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+/* Common styles for search elements */
+.search-element {
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Style the search input */
+#searchInput {
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+/* Style the search button */
+#searchButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Style the search results container */
+#searchResults {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  position: absolute;
+  top: 90%; 
+  left: 0;
+  background-color: white; 
+  display: none; 
+}
+
 .navbar .logo {
-  margin-top:20px;
-  margin-right:50px;
+  margin-top: 20px;
+  margin-right: 50px;
 }
 
 .navbar .menu a {
@@ -52,16 +99,13 @@ body {
   transition-duration: 0.4s;
   letter-spacing: 0.54px;
   transition: 0.6s;
-  
 }
-.navbar .logo,
-.navbar .sticky .menu a{
-  color: #a8d5e8;
-}
+
 .navbar .menu a:hover {
   border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
 }
+
 .hero-box .hero-heading {
   color: #ffffff;
   font-size: 50px;
@@ -89,14 +133,7 @@ body {
 .btn-box .btn-join {
   margin-top: 60px;
 }
-.navbar.sticky {
-padding: 5px 100px;
-  background:  #a8d5e8;
-}
-.sticky + .content {
-  padding-top: 60px;
-}
-/* DROPDOWN MENU */
+PDOWN MENU */
 .dropbtn {
   color: white;
   padding: 16px;
@@ -125,7 +162,8 @@ padding: 5px 100px;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ccc}
+.dropdown-content a:hover
+ {background-color: #ccc}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -136,7 +174,7 @@ padding: 5px 100px;
 }
 /* heading for about and services borders */
 .border1 {
-  margin: 2%;
+  margin: 1%;
   padding: 2rem;
   text-align: center;
   font-size: 50px;
@@ -145,7 +183,7 @@ padding: 5px 100px;
 }
 
 .border2 {
-  margin-top: 2%;
+  margin: 1%;
   padding: 2rem;
   text-align: center;
   font-size: 50px;
@@ -287,12 +325,10 @@ ul {
   animation: bounce 4s infinite;
 }
 
-
 .container-form {
   width: 600px;
   padding: 20px;
   margin-right: 9%;
-
   border-radius: 5px;
   text-align: center;
   justify-content: center;
@@ -305,8 +341,6 @@ form {
   background-color: #b9d9eb;
   padding: 5%;
   margin-left:10% ;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
 }
 /* Style the form title */
 h1 {
@@ -357,7 +391,6 @@ button[type="submit"]:hover {
   margin-left: 35%;
   margin-bottom: 30px;
   justify-content: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .join-form h5 {
   margin-top: 0;
@@ -529,45 +562,94 @@ h2 {
     background-color: #f7f7f7;
     color: #000;
 }
+/* Style the search input */
+
+
 @media screen and (max-width:600px) {
-.aboutUs, .slideshow-container, .form-container, .footer, .container-h {
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
-    margin: 0 ;
-    padding: 0;
-    
+ 
+.navbar, .border1, .border2, .border3, .border4, .bounce-image, .image-responsive, .map, footer p, .btn-box, .search-container {
+  display: none;
 }
-
-.navbar, h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img, .socials, .footer p, footer img{
-  /*display: none;*/
-  font-size: 1rem;
-  margin: 0 auto;
-  padding: 0;
-
-}
-.image-responsive img{
-  width: 300px;
-}
-
-#services, #contact, #about, .footer{
+#hero h4{
   font-size: 1.5rem;
-  margin: 0 auto;
-  padding: 0;
+  
+}
+#hero{
+  height: 25%;
+}
+/* about us styling on small screen*/
+.aboutUs {
+  flex-direction: column;
+  text-align: center;
 }
 
- .container-form{
-  width: 85%;
- }
-
- #hero{
-  height: 40%;
- }
+.Vision {
+  margin-top: 20px;
 }
 
-@media screen and (min-width:400px) {
+.container-aboutUs {
+  flex-direction: column;
+  align-items: center;
+}
+
+.column {
+  margin-bottom: 20px;
+}
+
+/* slideshow styling on small screen*/
+.services {
+  padding: 20px;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  margin: 0;
+}
+
+.mySlides {
+  max-width: 100%;
+}
+/*contact form styling for small screen*/
+
+.form-container {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-photo {
+  margin-bottom: 20px;
+}
+
+.container-form {
+  max-width: 100%;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+}
+
+
+@keyframes fade {
+0% {
+  opacity: 0.4;
+}
+100% {
+  opacity: 1;
+}
+
+ }
+
+
+@media screen and (min-width:600px) {
 .dropdown{
   visibility: hidden !important;
+  
 }
 =======
 @media screen and (max-width: 400px) {
@@ -591,25 +673,10 @@ h2 {
 >>>>>>> Stashed changes
 }
 
-
-/* API Map */
-
-map {
-  flex-basis: calc(
-    50% - 20px
-  ); /* Set the width of the map to 50% with some spacing */
-}
-
-map img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-
 @media screen and (max-width: 767px) {
   /* CSS for small screens */
-  .image-responsive img{
-    width: 300px;
+  .image-responsive img, .navbar, h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img, .socials, .footer p, footer img{
+    width: 100px;
   }
 }
 
@@ -622,10 +689,11 @@ map img {
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
   /* CSS for medium-sized screens (tablets) */
+
 }
 
 @media screen and (min-width: 1200px) {
-  /* CSS for large screens (desktops)  */
+  /* CSS for large screens (desktops) */
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -646,4 +714,19 @@ map img {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* CSS for high-contrast mode */
+}
+}
+
+/* API Map */
+
+map {
+  flex-basis: calc(
+    50% - 20px
+  ); /* Set the width of the map to 50% with some spacing */
+}
+
+map img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
 }

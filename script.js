@@ -177,6 +177,55 @@ window.addEventListener('scroll', () => {
     });
 });
 
+ const cookieBox = document.querySelector(".popupy");
+const acceptButton = document.getElementById("acceptBtn");
+const declineButton = document.getElementById("declineBtn");
+const closeButton = document.getElementById("closeButton");
+
+const executeCodes = () => {
+    // Check if cookie contains "codinglab"
+    if (document.cookie.includes("codinglab")) return;
+
+    cookieBox.style.display = "flex";
+    // Prevent scrolling
+    document.body.style.overflow = "hidden";
+
+    acceptButton.addEventListener("click", () => {
+        cookieBox.style.display = "none";
+        // Set cookies for 1 month (60 seconds * 60 minutes * 24 hours * 30 days)
+        const expirationDate = new Date(Date.now() + (60 * 60 * 24 * 30 * 1000));
+        document.cookie = "codinglab=accepted; expires=" + expirationDate.toUTCString();
+        // Allow scrolling when cookies are accepted
+        document.body.style.overflow = "auto";
+    });
+
+    declineButton.addEventListener("click", () => {
+        cookieBox.style.display = "none";
+        // Set cookies for 1 day (60 seconds * 60 minutes * 24 hours)
+        const expirationDate = new Date(Date.now() + (60 * 60 * 24 * 1000));
+        document.cookie = "codinglab=declined; expires=" + expirationDate.toUTCString();
+        // Allow scrolling when cookies are declined
+        document.body.style.overflow = "auto";
+    });
+
+    closeButton.addEventListener("click", () => {
+        cookieBox.style.display = "none";
+        // Set a flag to indicate that the popup has been closed
+        localStorage.setItem("close-button", "true");
+        // Allow scrolling when the popup is closed
+        document.body.style.overflow = "auto";
+    });
+};
+
+ 
+
+//executeCodes function will be called on webpage load
+
+window.addEventListener("load", executeCodes);;
+
+ 
+
+
 
 
 

@@ -522,6 +522,7 @@ h2 {
     scroll-behavior: smooth;
     box-sizing: border-box;
 
+<<<<<<< Updated upstream
 }
 
 .scrollTop:hover {
@@ -568,6 +569,7 @@ h2 {
 .dropdown{
   visibility: hidden !important;
 }
+=======
 @media screen and (max-width: 400px) {
   .footer {
     padding: 15px;
@@ -586,6 +588,7 @@ h2 {
   }
   
   
+>>>>>>> Stashed changes
 }
 
 

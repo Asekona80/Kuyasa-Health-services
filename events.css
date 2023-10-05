@@ -55,6 +55,7 @@ a:hover{
     background-color: #fff;
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    margin-top: 15%;
 }
 
 .img-container,
@@ -68,6 +69,7 @@ a:hover{
 
 .img-container img {
     width: 100%;
+    
 }
 
 .body-container {

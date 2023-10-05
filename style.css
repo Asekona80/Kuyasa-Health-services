@@ -562,36 +562,90 @@ h2 {
 
 
 @media screen and (max-width:600px) {
-.aboutUs, .slideshow-container, .form-container, .footer, .container-h {
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
-    margin: 0 ;
-    padding: 0;
-    
+ 
+.navbar, .border1, .border2, .border3, .border4, .bounce-image, .image-responsive, .map, footer p, .btn-box {
+  display: none;
 }
-.image-responsive img{
-  width: 300px;
-}
-
-#services, #contact, #about, .footer{
+#hero h4{
   font-size: 1.5rem;
-  margin: 0 auto;
-  padding: 0;
+  
+}
+#hero{
+  height: 25%;
+}
+/* about us styling on small screen*/
+.aboutUs {
+  flex-direction: column;
+  text-align: center;
 }
 
- .container-form{
-  width: 85%;
- }
-
- #hero{
-  height: 40%;
- }
+.Vision {
+  margin-top: 20px;
 }
 
-@media screen and (min-width:400px) {
+.container-aboutUs {
+  flex-direction: column;
+  align-items: center;
+}
+
+.column {
+  margin-bottom: 20px;
+}
+
+/* slideshow styling on small screen*/
+.services {
+  padding: 20px;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  margin: 0;
+}
+
+.mySlides {
+  max-width: 100%;
+}
+/*contact form styling for small screen*/
+
+.form-container {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-photo {
+  margin-bottom: 20px;
+}
+
+.container-form {
+  max-width: 100%;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+}
+
+
+@keyframes fade {
+0% {
+  opacity: 0.4;
+}
+100% {
+  opacity: 1;
+}
+
+ }
+
+
+@media screen and (min-width:600px) {
 .dropdown{
   visibility: hidden !important;
+  
 }
 @media screen and (max-width: 400px) {
   .footer {
@@ -616,7 +670,7 @@ h2 {
 @media screen and (max-width: 767px) {
   /* CSS for small screens */
   .image-responsive img, .navbar, h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img, .socials, .footer p, footer img{
-    width: 300px;
+    width: 100px;
   }
 }
 

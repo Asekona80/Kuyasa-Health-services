@@ -19,7 +19,7 @@ body {
   height: 850px;
   background: url("images/medical-1");
   background-position: center;
-  background-repeat: no-repeat,n;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 32px;
 }

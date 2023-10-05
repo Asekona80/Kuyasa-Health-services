@@ -38,10 +38,9 @@ body {
   transform: translate(-50%);
   height: 80px;
   align-items: center;
-  background-color:transparent;
+  background-color: transparent;
   transition: background-color 0.4s;
   box-shadow: none;
-
 }
 .navbar {
   /* Other styles... */
@@ -49,7 +48,7 @@ body {
 }
 .navbar.scrolled {
   background-color: #053067;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* Common styles for search elements */
 .search-element {
@@ -60,7 +59,7 @@ body {
 /* Style the search input */
 #searchInput {
   border: 1px solid #ccc;
-  width: 200px;
+  width: 100px;
 }
 
 /* Style the search button */
@@ -80,10 +79,10 @@ body {
   border-radius: 5px;
   width: 300px;
   position: absolute;
-  top: 90%; 
+  top: 90%;
   left: 0;
-  background-color: white; 
-  display: none; 
+  background-color: white;
+  display: none;
 }
 
 .navbar .logo {
@@ -112,7 +111,7 @@ body {
   margin-left: 100px;
   margin-bottom: 50px;
 }
-.hero-heading{
+.hero-heading {
   margin-top: 21%;
 }
 .btn-box {
@@ -133,8 +132,7 @@ body {
 .btn-box .btn-join {
   margin-top: 60px;
 }
-PDOWN MENU */
-.dropbtn {
+PDOWN MENU */ .dropbtn {
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -144,7 +142,6 @@ PDOWN MENU */
 .dropdown {
   position: relative;
   display: inline-block;
-
 }
 
 .dropdown-content {
@@ -162,15 +159,16 @@ PDOWN MENU */
   display: block;
 }
 
-.dropdown-content a:hover
- {background-color: #ccc}
+.dropdown-content a:hover {
+  background-color: #ccc;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #2980B9;
+  background-color: #2980b9;
 }
 /* heading for about and services borders */
 .border1 {
@@ -241,7 +239,7 @@ PDOWN MENU */
   transition: transform 0.2s;
 }
 .image-hover:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 /* Styling for Services and The Cards/slideshow*/
 
@@ -249,7 +247,6 @@ PDOWN MENU */
   background: #a8d5e8;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-
 }
 .wrapper {
   width: 80%;
@@ -272,15 +269,15 @@ PDOWN MENU */
   font-size: 2.5rem;
   font-weight: 900;
   padding-bottom: 1.5rem;
-  color: #011C39;
+  color: #011c39;
 }
 .articleText {
   font-size: 1.5rem;
 }
-  .dot {
-    cursor: pointer;
-    font-size: 2.5rem;
-  }
+.dot {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
 /*contact form styling*/
 
 ul {
@@ -297,14 +294,13 @@ ul {
 
 .form-photo-container {
   text-align: center;
-  margin-bottom: 50px; 
-
+  margin-bottom: 50px;
 }
 
 .form-photo {
-  flex: 1; 
-  margin: 0; 
-  padding: 0; 
+  flex: 1;
+  margin: 0;
+  padding: 0;
   margin-left: 10%;
 }
 
@@ -313,11 +309,12 @@ ul {
   height: auto;
 }
 @keyframes bounce {
-  0%, 100% {
-      transform: translateY(0);
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
@@ -340,7 +337,7 @@ form {
   border: 1px solid transparent;
   background-color: #b9d9eb;
   padding: 5%;
-  margin-left:10% ;
+  margin-left: 10%;
 }
 /* Style the form title */
 h1 {
@@ -380,7 +377,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
-
 
 /* join us form*/
 .join-form {
@@ -429,7 +425,6 @@ button {
   font-size: 1.5rem;
 }
 
-
 /* This is the styling for the footer only */
 /* Footer styling */
 .footer {
@@ -455,15 +450,13 @@ button {
 .footer-right {
   flex: 1;
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-links,
 .footer-address {
-  flex-basis: calc(
-    50% - 20px
-  ); 
+  flex-basis: calc(50% - 20px);
 }
 
 .footer-links h2,
@@ -541,29 +534,27 @@ h2 {
   padding-top: 50px;
   flex-basis: 100%;
 }
-  /* Styling for the back to top button */
-  .scrollTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px; /* Change right to left */
-    padding: 10px 15px;
-    background-color: #053067;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.5s ease 0s;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-
+/* Styling for the back to top button */
+.scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; /* Change right to left */
+  padding: 10px 15px;
+  background-color: #053067;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 .scrollTop:hover {
-    background-color: #f7f7f7;
-    color: #000;
+  background-color: #f7f7f7;
+  color: #000;
 }
 /* Styles for the popup overlay */
 .popupy {
-
   position: fixed;
   bottom: 50px;
   right: 75%;
@@ -574,33 +565,26 @@ h2 {
   padding: 15px 25px 22px;
   transition: right 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-
 }
 .popupy .data {
   margin-top: 16px;
-
 }
 
 .popupy .data p {
   color: #333;
   font-size: 16px;
-
 }
 .popupy.show {
   right: 20px;
-
 }
 .data p a {
   color: #4070f4;
   text-decoration: none;
-
 }
 
 .data p a:hover {
   text-decoration: underline;
-
 }
-
 
 /* Add your existing styles for buttons and other elements here */
 
@@ -614,30 +598,23 @@ h2 {
   color: #007bff;
   outline: none;
   cursor: pointer;
-
 }
 .buttons #acceptBtn:hover {
-
   background-color: #034bf1;
-
 }
 
 #declineBtn {
-
   border: 2px solid #4070f4;
 
   background-color: #fff;
 
   color: #4070f4;
-
 }
 
 #declineBtn:hover {
-
   background-color: #4070f4;
 
   color: #fff;
-
 }
 .close-button:hover {
   color: #333;
@@ -658,161 +635,168 @@ h2 {
   width: calc(100% / 2 - 10px);
 
   transition: all 0.2s ease;
-
 }
-
 
 /* Style the search input */
 
-
-@media screen and (max-width:600px) {
- 
-.navbar, .border1, .border2, .border3, .border4, .bounce-image, .image-responsive, .map, footer p, .btn-box, .search-container {
-  display: none;
-}
-#hero h4{
-  font-size: 1.5rem;
-  
-}
-#hero{
-  height: 25%;
-}
-/* about us styling on small screen*/
-.aboutUs {
-  flex-direction: column;
-  text-align: center;
-}
-
-.Vision {
-  margin-top: 20px;
-}
-
-.container-aboutUs {
-  flex-direction: column;
-  align-items: center;
-}
-
-.column {
-  margin-bottom: 20px;
-}
-
-/* slideshow styling on small screen*/
-.services {
-  padding: 20px;
-}
-
-.slideshow-container {
-  max-width: 100%;
-  margin: 0;
-}
-
-.mySlides {
-  max-width: 100%;
-}
-/*contact form styling for small screen*/
-
-.form-container {
-  flex-direction: column;
-  padding: 20px;
-}
-
-.form-photo {
-  margin-bottom: 20px;
-}
-
-.container-form {
-  max-width: 100%;
-}
-
-.form label,
-.form input,
-.form textarea,
-.form button {
-  width: 100%;
-  margin: 10px 0;
-}
-
-}
-
-
-@keyframes fade {
-0% {
-  opacity: 0.4;
-}
-100% {
-  opacity: 1;
-}
-
- }
-
-
-@media screen and (min-width:600px) {
-.dropdown{
-  visibility: hidden !important;
-  
-}
-@media screen and (max-width: 400px) {
-  .footer {
-    padding: 15px;
+@media screen and (max-width: 600px) {
+  .navbar,
+  .border1,
+  .border2,
+  .border3,
+  .border4,
+  .bounce-image,
+  .image-responsive,
+  .map,
+  footer p,
+  .btn-box,
+  .search-container {
+    display: none;
+  }
+  #hero h4 {
+    font-size: 1rem;
+  }
+  #hero {
+    height: 25%;
+  }
+  /* about us styling on small screen*/
+  .aboutUs {
+    flex-direction: column;
     text-align: center;
   }
-  .footer-left {
-    max-width: 100%;
-    margin-right: 0;
+
+  .Vision {
+    margin-top: 20px;
+  }
+
+  .container-aboutUs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
     margin-bottom: 20px;
   }
-  .footer-right {
+
+  /* slideshow styling on small screen*/
+  .services {
+    padding: 20px;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .mySlides {
     max-width: 100%;
   }
-  body {
-    font-size: 10px;
+  /*contact form styling for small screen*/
+
+  .form-container {
+    flex-direction: column;
+    padding: 20px;
   }
-  
-  
-}
 
-@media screen and (max-width: 767px) {
-  /* CSS for small screens */
-  .image-responsive img, .navbar, h4, .btn-box, .column img, .column, .slideshow-container, .form-photo img, .socials, .footer p, footer img{
-    width: 100px;
+  .form-photo {
+    margin-bottom: 20px;
+  }
+
+  .container-form {
+    max-width: 100%;
+  }
+
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    width: 100%;
+    margin: 10px 0;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* CSS for small screens in landscape mode */
-  .image-responsive img{
-    width: 400px;
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-  /* CSS for medium-sized screens (tablets) */
+@media screen and (min-width: 600px) {
+  .dropdown {
+    visibility: hidden !important;
+  }
+  @media screen and (max-width: 400px) {
+    .footer {
+      padding: 15px;
+      text-align: center;
+    }
+    .footer-left {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .footer-right {
+      max-width: 100%;
+    }
+    body {
+      font-size: 10px;
+    }
+  }
 
-}
+  @media screen and (max-width: 767px) {
+    /* CSS for small screens */
+    .image-responsive img,
+    .navbar,
+    h4,
+    .btn-box,
+    .column img,
+    .column,
+    .slideshow-container,
+    .form-photo img,
+    .socials,
+    .footer p,
+    footer img {
+      width: 100px;
+    }
+  }
 
-@media screen and (min-width: 1200px) {
-  /* CSS for large screens (desktops) */
-}
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS for small screens in landscape mode */
+    .image-responsive img {
+      width: 400px;
+    }
+  }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* CSS for high-resolution displays */
-}
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    /* CSS for medium-sized screens (tablets) */
+  }
 
-@media screen and (orientation: landscape) {
-  /* CSS for landscape orientation */
-}
+  @media screen and (min-width: 1200px) {
+    /* CSS for large screens (desktops) */
+  }
 
-@media screen and (orientation: portrait) {
-  /* CSS for portrait orientation */
-}
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* CSS for high-resolution displays */
+  }
 
-@media print {
-  /* CSS for print styles */
-}
+  @media screen and (orientation: landscape) {
+    /* CSS for landscape orientation */
+  }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  /* CSS for high-contrast mode */
-}
+  @media screen and (orientation: portrait) {
+    /* CSS for portrait orientation */
+  }
+
+  @media print {
+    /* CSS for print styles */
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* CSS for high-contrast mode */
+  }
 }
 
 /* API Map */

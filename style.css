@@ -14,12 +14,13 @@ body {
 }
 
 /* navbar css styling */
+
 #hero {
   width: 100%;
   height: 850px;
-  background: url("images/medical-1");
+  background: url("images/Hero\ img.jfif");
   background-position: center;
-  background-repeat: no-repeat,n;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 32px;
 }
@@ -50,12 +51,15 @@ body {
   background-color: #053067;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
+/* Common styles for search elements */
+.search-element {
+  font-size: 16px;
+  border-radius: 5px;
+}
 
 /* Style the search input */
 #searchInput {
-  font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
   width: 200px;
 }
 
@@ -66,7 +70,6 @@ body {
   border: none;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 5px;
   margin-left: 10px;
 }
 
@@ -78,7 +81,7 @@ body {
   width: 300px;
   position: absolute;
   top: 90%; 
-  left:0;
+  left: 0;
   background-color: white; 
   display: none; 
 }

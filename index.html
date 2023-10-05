@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,35 +34,42 @@
                 <a href="#about">About Us</a>
                 <a href="#services">Services</a>
                 <a href="events.html">Events</a>
-                <a href="#contact">Contact </a>
+                <a href="#contact">Contact</a>
             </div>
           </div>
-        <div class="container-h">
+          <div class="container-h">
             <div class="navbar">
                 <div class="logo">
                     <img src="images/Group 1.png" alt="logo" width="29%">
                 </div>
-                
+           
                 <div class="menu">
                     <a href="#hero">Home</a>
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
                     <a href="events.html">Events</a>
                     <a href="#contact">Contact</a>
-                    
+                </div>
 
+                <!-- Move search elements outside of .navbar -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button id="searchButton">Search</button>
+                    <div id="searchResults"></div>
                 </div>
             </div>
+        </div>
+        
+        <!-- Add hero section -->
+        <div id="hero">
             <div class="hero-box">
-                <h4 class="hero-heading">
-                    Elevating health, <br>
-                    Empowering lives <br>
-                    Because You Deserve The Best.
-                </h4>
-                <!--Join us button-->
+                <div class="hero-heading">
+                    Elevating health <br>
+                    Empowering lives<br>
+                    because You Deserve The Best.
+                </div>
                 <div class="btn-box">
                     <a href="join.html" class="btn-join">Join Us</a>
-
                 </div>
             </div>
         </div>
@@ -226,7 +234,7 @@
                 <label for="message">Message:</label>
                 <textarea type="text" id="message" name="message" ></textarea>
     
-                <button type="submit">Submit</button>
+                <button type="submit" id="submitbtn" value="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -256,7 +264,12 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="/events.html">Events</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li> <a href="#" class="search-weather">Search Weather</a></li>
+                    <div id="weather-data"></div>
                     <li><a href="/game.html">Play Tetris here!</a></li>
+                    
+                    
+                    
                 </ul>
             </div>
             <div class="footer-address">
@@ -269,9 +282,7 @@
                 </ul>
 
                 <div class="map">
-                    <a href="https://www.google.com/maps/dir/-33.8690248,18.6531911/97+Durham+Ave,+Salt+River,+Cape+Town,+7925/@-33.9013173,18.4778913,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1dcc5d08518ba1b9:0x1398e85e424f762!2m2!1d18.4606593!2d-33.9333712?entry=ttu">
-                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=97+Durham+Ave,+Salt+River,+Cape+Town,+7925&zoom=15&size=200x200&key=AIzaSyByYWyPgA6M25THX0nRRulj0sIJKk_bbZc"
-                             alt="Map"></a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.3017348887256!2d18.458084375919277!3d-33.93336672240629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d08518ba1b9%3A0x1398e85e424f762!2s97%20Durham%20Ave%2C%20Salt%20River%2C%20Cape%20Town%2C%207925!5e0!3m2!1sen!2sza!4v1696413591113!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
                 </div>
             </div>
         </div>
@@ -345,56 +356,72 @@
 
     </script>
     <script type="text/javascript">
-window.addEventListener('scroll', function(){
-    var navbar= this.document.querySelector("navbar");
-    navbar.classList.toggle("sticky", window.scrollY > 0);
+
+
+
+
+  // You can perform further actions with the ArrayBuffers here 
+  
+  //CORS
+  fetch('https://openweathermap.org/')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json(); // Parse the response as JSON
+  })
+  .then(data => {
+    console.log(data); // Process the data
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+   
+  });
+
+  //adding alert message when clicking search weather link
+  document.addEventListener("DOMContentLoaded", function () {
+  const apiKey = '886b8f257794cf68ce0bf0f59816147d'; // Replace with your actual API key
+  const weatherDataElement = document.getElementById('weather-data');
+  
+  // Function to fetch weather data
+  function fetchWeatherData() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=YOUR_CITY_NAME&appid=${apiKey}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json(); // Parse the response as JSON
+      })
+      .then(data => {
+        // Process the data
+        console.log(data);
+        // You can display the weather data on the page as needed
+        weatherDataElement.textContent = `Temperature: ${data.main.temp}°C, Description: ${data.weather[0].description}`;
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+        alert("There was a problem with the fetch operation");
+      });
+  }
+
+  // Add click event listener to the "Search Weather" link
+  const searchWeatherLink = document.querySelector('.search-weather');
+  searchWeatherLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the link from navigating to a new page
+    fetchWeatherData(); // Call the function to fetch weather data
+  });
 });
-
-// This is the form data
-
-formElem.onsubmit = async (e) => {
-    e.preventDefault();
-
-    let respone = await fetch('/article/formdata/post/user',{
-        method: 'POST',
-        body: new FormData (formElem)
-
-    });
-
-    let result = await respone.json();
-
-    alert(result.message);
-};
-
- 
-window.onload = () => {
-document.getElementById('submitbtn').addEventListener("submit");
-}
-
-// Array Buffers
-  // Collect form data
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const number = document.getElementById('number').value;
-  const message = document.getElementById('message').value;
-
-  // Convert data to an ArrayBuffer
-  const encoder = new TextEncoder();
-  const nameArrayBuffer = encoder.encode(name).buffer;
-  const emailArrayBuffer = encoder.encode(email).buffer;
-  const numArrayBuffer = encoder.encode(number).buffer;
-  const messageArrayBuffer = encoder.encode(message).buffer;
-
-  // Log the ArrayBuffers to the console
-  console.log(nameArrayBuffer);
-  console.log(emailArrayBuffer);
-  console.log(messageArrayBuffer);
-
-  // You can perform further actions with the ArrayBuffers here
-
-                     
-
-           
+// JavaScript to add background color on scroll
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 0) {
+    navbar.style.backgroundColor = "#053067"; 
+    navbar.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)"; 
+  } else {
+    navbar.style.backgroundColor = "transparent"; 
+    navbar.style.boxShadow = "none";
+  }
+});
 
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

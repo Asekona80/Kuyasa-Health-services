@@ -177,51 +177,49 @@ window.addEventListener('scroll', () => {
     });
 });
 
+ // Your JavaScript code here
  const cookieBox = document.querySelector(".popupy");
-const acceptButton = document.getElementById("acceptBtn");
-const declineButton = document.getElementById("declineBtn");
-const closeButton = document.getElementById("closeButton");
+ const acceptButton = document.getElementById("acceptBtn");
+ const declineButton = document.getElementById("declineBtn");
+ const closeButton = document.getElementById("closeButton");
 
-const executeCodes = () => {
-    // Check if cookie contains "codinglab"
-    if (document.cookie.includes("codinglab")) return;
+ const executeCodes = () => {
+     // Check if cookie contains "codinglab"
+     if (document.cookie.includes("codinglab")) return;
 
-    cookieBox.style.display = "flex";
-    // Prevent scrolling
-    document.body.style.overflow = "hidden";
+     const closeCookiePopup = () => {
+         cookieBox.style.display = "none";
+         document.body.style.overflow = "auto";
+     };
 
-    acceptButton.addEventListener("click", () => {
-        cookieBox.style.display = "none";
-        // Set cookies for 1 month (60 seconds * 60 minutes * 24 hours * 30 days)
-        const expirationDate = new Date(Date.now() + (60 * 60 * 24 * 30 * 1000));
-        document.cookie = "codinglab=accepted; expires=" + expirationDate.toUTCString();
-        // Allow scrolling when cookies are accepted
-        document.body.style.overflow = "auto";
-    });
+     acceptButton.addEventListener("click", () => {
+         closeCookiePopup();
 
-    declineButton.addEventListener("click", () => {
-        cookieBox.style.display = "none";
-        // Set cookies for 1 day (60 seconds * 60 minutes * 24 hours)
-        const expirationDate = new Date(Date.now() + (60 * 60 * 24 * 1000));
-        document.cookie = "codinglab=declined; expires=" + expirationDate.toUTCString();
-        // Allow scrolling when cookies are declined
-        document.body.style.overflow = "auto";
-    });
+         const expirationDate = new Date(Date.now() + 60 * 60 * 24 * 30 * 1000);
+         document.cookie = "codinglab=accepted; expires=" + expirationDate.toUTCString();
+     });
 
-    closeButton.addEventListener("click", () => {
-        cookieBox.style.display = "none";
-        // Set a flag to indicate that the popup has been closed
-        localStorage.setItem("close-button", "true");
-        // Allow scrolling when the popup is closed
-        document.body.style.overflow = "auto";
-    });
-};
+     declineButton.addEventListener("click", () => {
+         closeCookiePopup();
 
- 
+         const expirationDate = new Date(Date.now() + 60 * 60 * 24 * 1000);
+         document.cookie = "codinglab=declined; expires=" + expirationDate.toUTCString();
+     });
 
-//executeCodes function will be called on webpage load
+     closeButton.addEventListener("click", () => {
+         closeCookiePopup();
+         localStorage.setItem("close-button", "true");
+     });
 
-window.addEventListener("load", executeCodes);;
+     const closeButtonClicked = localStorage.getItem("close-button");
+     if (!closeButtonClicked) {
+         cookieBox.style.display = "flex";
+         document.body.style.overflow = "hidden";
+     }
+ };
+
+ window.addEventListener("load", executeCodes);
+
 
  
 

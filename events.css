@@ -28,6 +28,7 @@ body {
   font-family: "Poppins", sans-serif;
 font-size: 1.2rem;
 color: #fff;
+
 }
 a:hover{
   border-bottom: 2px solid #ffffff;
@@ -68,6 +69,7 @@ a:hover{
 
 .img-container img {
     width: 100%;
+    
 }
 
 .body-container {

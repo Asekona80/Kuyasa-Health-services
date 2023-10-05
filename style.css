@@ -41,6 +41,44 @@ body {
 
 }
 
+/* Style the search input */
+#searchInput {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Style the search button */
+#searchButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Style the search results container */
+#searchResults {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  position: absolute;
+  top: 90%; 
+  left:0;
+  background-color: white; 
+  display: none; 
+}
+
+/* Style the highlighted text within search results */
+#searchResults mark {
+  background-color: yellow;
+  font-weight: bold;
+}
 .navbar .logo {
   margin-top: 20px;
   margin-right: 50px;
@@ -516,6 +554,9 @@ h2 {
     background-color: #f7f7f7;
     color: #000;
 }
+/* Style the search input */
+
+
 @media screen and (max-width:600px) {
 .aboutUs, .slideshow-container, .form-container, .footer, .container-h {
     flex-direction: column;

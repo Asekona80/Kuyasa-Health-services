@@ -166,9 +166,7 @@ window.addEventListener('scroll', () => {
   console.log(emailArrayBuffer);
   console.log(messageArrayBuffer);
 
-   
-
-  // You can perform further actions with the ArrayBuffers here
+  
   // Form data thing
 
   const form = document.getElementById('myForm');
@@ -196,13 +194,6 @@ form.addEventListener('submit', async event => {
     console.log(err.message);
   }
 });
-
-
-
-
-
-  
-
  
   function readFile(input){
     let file=input.file[0]
@@ -215,7 +206,27 @@ form.addEventListener('submit', async event => {
         console.log(reader.error)
     };
   }
+//Flags code for the search button
+  document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("searchInput");
+    const searchButton = document.getElementById("searchButton");
+    const searchResults = document.getElementById("searchResults");
 
+    searchButton.addEventListener("click", function() {
+        const searchText = searchInput.value;
+        const searchRegex = new RegExp(searchText, "ig"); 
+
+
+        const sampleText = "This is a sample text for your search keyword.";
+        const matches = sampleText.match(searchRegex);
+
+        if (matches) {
+            searchResults.innerHTML = `<p>Found ${matches.length} match(es) for: ${searchText}</p>`;
+        } else {
+            searchResults.innerHTML = `<p>No results found for: ${searchText}</p>`;
+        }
+    });
+});
 
 
 

@@ -9,7 +9,6 @@
 }
 body {
   background: rgb(220, 236, 250);
-  display: grid;
   min-height: 100vh;
 }
 
@@ -172,7 +171,7 @@ PDOWN MENU */ .dropbtn {
 }
 /* heading for about and services borders */
 .border1 {
-  margin: 1%;
+  margin: 5%;
   padding: 2rem;
   text-align: center;
   font-size: 50px;
@@ -557,23 +556,33 @@ h2 {
 
 @media screen and (max-width: 600px) {
   .navbar,
-  .border1,
-  .border2,
-  .border3,
-  .border4,
   .bounce-image,
   .image-responsive,
   .map,
   footer p,
-  .btn-box,
-  .search-container {
+  .search-container,
+  .footer-left {
     display: none;
   }
-  #hero h4 {
-    font-size: 1rem;
+  #hero .hero-heading {
+    font-size: 1.5rem;
   }
   #hero {
-    height: 25%;
+    height: 60%;
+  }
+  #hero,
+  .services {
+    padding: 50px;
+  }
+  .btn-box {
+    width: 50%;
+  }
+  .border1,
+  .border2,
+  .border3,
+  .border4 {
+    font-size: 2rem;
+    margin: 0 auto;
   }
   /* about us styling on small screen*/
   .aboutUs {
@@ -583,11 +592,13 @@ h2 {
 
   .Vision {
     margin-top: 20px;
+    font-size: 1rem;
   }
 
   .container-aboutUs {
     flex-direction: column;
     align-items: center;
+    font-size: 1rem;
   }
 
   .column {
@@ -597,6 +608,7 @@ h2 {
   /* slideshow styling on small screen*/
   .services {
     padding: 20px;
+    font-size: 1rem;
   }
 
   .slideshow-container {
@@ -658,7 +670,7 @@ h2 {
       max-width: 100%;
     }
     body {
-      font-size: 10px;
+      font-size: 1rem;
     }
   }
 

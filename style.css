@@ -554,7 +554,7 @@ h2 {
 }
 /* Styles for the popup overlay */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .navbar,
   .bounce-image,
   .image-responsive,
@@ -652,11 +652,11 @@ h2 {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .dropdown {
     visibility: hidden !important;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 700px) {
     .footer {
       padding: 15px;
       text-align: center;

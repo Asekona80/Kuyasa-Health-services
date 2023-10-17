@@ -150,8 +150,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchText = searchInput.value;
     const searchRegex = new RegExp(searchText, "ig");
 
-    const sampleText = "This is a sample text for your search keyword.";
-    const matches = sampleText.match(searchRegex);
+    const sampleText = "health.";
+    let matches = sampleText.match(searchRegex);
 
     if (matches) {
       searchResults.innerHTML = `<p>Found ${matches.length} match(es) for: ${searchText}</p>`;

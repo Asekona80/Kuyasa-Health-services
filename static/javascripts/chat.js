@@ -1,6 +1,4 @@
 
-
-
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
 

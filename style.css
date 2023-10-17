@@ -554,7 +554,7 @@ h2 {
   background-color: #ffffff;
   position: absolute;
   font-size: 14px;
-  width: 70vw;
+  width: 50vw;
   max-width: 42.85em;
   box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
   font-family: "Poppins", sans-serif;
@@ -599,6 +599,20 @@ h2 {
   bottom: 2em;
   right: 2em;
 }
+@media only screen and (max-width: 37.5em) {
+  #cookiePopup {
+    width: 100%;
+  }
+  .hide {
+    bottom: 2em;
+    right: 0;
+  }
+  .show {
+    right: 0;
+    bottom: 0;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   #cookiePopup {
     width: 100%;

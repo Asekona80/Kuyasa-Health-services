@@ -49,35 +49,30 @@ body {
   background-color: #053067;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* Common styles for search elements */
-.search-element {
-  font-size: 16px;
-  border-radius: 5px;
-}
 
-/* Style the search input */
-#searchInput {
-  border: 1px solid #ccc;
-  width: 100px;
-}
+    /* Styles for search elements */
+    .search-container {
+      text-align: center;
+      margin-top: 30px;
+  }
+  #searchInput {
+      padding: 5px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  #searchButton {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+  }
+  #searchResults {
+      margin-top: 10px;
+  }
 
-/* Style the search button */
-#searchButton {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-/* Style the search results container */
-#searchResults {
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-top: 10px;
-} 
 
 .navbar .logo {
   margin-top: 20px;

@@ -141,26 +141,22 @@ function readFile(input) {
   };
 }
 //Flags code for the search button
-document.addEventListener("DOMContentLoaded", function () {
-  const searchInput = document.getElementById("searchInput");
-  const searchButton = document.getElementById("searchButton");
-  const searchResults = document.getElementById("searchResults");
+const items = ["health, services, care"];
 
-  searchButton.addEventListener("click", function () {
-    const searchText = searchInput.value;
-    const searchRegex = new RegExp(searchText, "ig");
+        document.getElementById("searchButton").addEventListener("click", function() {
+            const searchInput = document.getElementById("searchInput").value;
+            const searchResults = document.getElementById("searchResults");
+            searchResults.innerHTML = "";
 
-    const sampleText = "health.";
-    let matches = sampleText.match(searchRegex);
+            const regex = new RegExp(searchInput, 'ig'); 
 
-    if (matches) {
-      searchResults.innerHTML = `<p>Found ${matches.length} match(es) for: ${searchText}</p>`;
-    } else {
-      searchResults.innerHTML = `<p>No results found for: ${searchText}</p>`;
-    }
-  });
-});
-
-
+            for (const item of items) {
+                if (regex.test(item)) {
+                    const resultElement = document.createElement("div");
+                    resultElement.textContent = item;
+                    searchResults.appendChild(resultElement);
+                }
+            }
+        });
 
 

@@ -99,9 +99,4 @@ function getBotResponse(input) {
     else {
         return "I'm sorry, I couldn't understand your request. How can I assist you further with South African hospital-related queries?";
     }
-
-    // You can add more 'else if' statements for specific services, departments, or FAQs.
-else {
-        return "I'm sorry, I couldn't understand your request. How can I assist you further?";
-    }
 }

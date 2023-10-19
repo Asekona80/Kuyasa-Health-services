@@ -11,7 +11,7 @@ function getBotResponse(input) {
     // Simple responses
     if (input.includes("hello")) {
         return "How can I be of assistance?.";
-    } else if (input.includes("Thank you")) {
+    } else if (input.includes("thank you")) {
         return "Glad to be of assistance 👍";
     }
     else if (input.includes("how are you?")) {

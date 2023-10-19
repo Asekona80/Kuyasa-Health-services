@@ -141,22 +141,7 @@ function readFile(input) {
   };
 }
 //Flags code for the search button
-const items = ["health, services, care"];
 
-        document.getElementById("searchButton").addEventListener("click", function() {
-            const searchInput = document.getElementById("searchInput").value;
-            const searchResults = document.getElementById("searchResults");
-            searchResults.innerHTML = "";
 
-            const regex = new RegExp(searchInput, 'ig'); 
-
-            for (const item of items) {
-                if (regex.test(item)) {
-                    const resultElement = document.createElement("div");
-                    resultElement.textContent = item;
-                    searchResults.appendChild(resultElement);
-                }
-            }
-        });
 
 

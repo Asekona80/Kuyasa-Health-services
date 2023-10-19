@@ -69,6 +69,17 @@ body {
       padding: 5px 10px;
       cursor: pointer;
   }
+  /* Styles for the Clear button */
+#clearButton {
+  background-color: #043769; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
   #searchResults {
       margin-top: 10px;
   }

@@ -61,6 +61,7 @@
           <div class="search-container">
             <input type="text" id="searchInput" placeholder="Search for a word">
             <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
             <div id="searchResults">
                 <!-- Search results will be displayed here -->
             </div>
@@ -561,6 +562,39 @@ window.onload = () => {
     checkCookie();
   }, 2000);
 };
+
+const items = ["health", "services", "care"];
+
+        document.getElementById("searchButton").addEventListener("click", function() {
+            const searchInput = document.getElementById("searchInput").value;
+            const searchResults = document.getElementById("searchResults");
+
+            // Clear the search results box before displaying new results
+            searchResults.innerHTML = "";
+
+            const regex = new RegExp(searchInput, 'ig');
+
+            for (const item of items) {
+                if (regex.test(item)) {
+                    const resultElement = document.createElement("div");
+                    resultElement.textContent = item;
+                    searchResults.appendChild(resultElement);
+                }
+            }
+        });
+
+        document.getElementById("clearButton").addEventListener("click", function() {
+            const searchInput = document.getElementById("searchInput");
+            const searchResults = document.getElementById("searchResults");
+
+            // Clear the search results box
+            searchResults.innerHTML = "";
+
+            // Clear the search input field
+            searchInput.value = "";
+        });
+
+
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="static/javascripts/responses.js"></script>
